@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>new-plane</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../source/css/style.css">
+  </head>
+  <body class="page__body">
+    <section class="new-plane">
+      <div class="page__center">
+        <h2 class="new-plane__title">Добавить план:</h2>
+        <form class="new-plane__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="new-plane__field">
+            <div class="new-plane__wrap">
+              <ul class="new-plane__list">
+                <li class="new-plane__item new-plane__item--current">Даты</li>
+                <li class="new-plane__item">маршрут</li>
+                <li class="new-plane__item">развлечения</li>
+              </ul>
+              <h3 class="new-plane__title">Шаг 1. Даты пребывания</h3>
+              <p class="new-plane__description">Укажите предпочтительное количество попутчиков, которых вы хотели бы позвать в поездку, и ее предполагаемую длительность.</p>
+              <p class="new-plane__find-people">
+                <button class="increase-btn" type="button">
+                  <span class="page__hidden page__button">увеличить на 1</span>
+                </button>
+                <button class="decrease-btn page__button" type="button">
+                  <span class="page__hidden">уменьшить на 1</span>
+                </button>
+                <span class="new-plane__signed">чел.</span>
+                <label for="find" class="find-people">ищу попутчиков:</label>
+                <input class="new-plane__find-input" id="find" type="text" value="2">
+              </p>
+              <p class="new-plane__quantity-people">
+                <button class="increase-btn" type="button" name="Increase">
+                  <span class="page__hidden page__button">увеличить на 1</span>
+                </button>
+                <button class="decrease-btn page__button" type="button" name="Decrease">
+                  <span class="page__hidden">уменьшить на 1</span>
+                </button>
+                <span class="new-plane__signed">дн.</span>
+                <label class="quantity" for="quantity">длительность:</label>
+                <input class="new-plane__quantity" id="quantity" type="text" value="3">
+              </p>
+              <input class="new-plane__with-children page__hidden" id="with-children" type="checkbox" checked>
+              <label for="with-children">Можно с детьми</label>
+              <p class="new-plane__date">
+                <button class="btn-right page__button" type="button" >
+                  <span class="page__hidden">вправо</span>
+                </button>
+                <button class="btn-left page__button" type="button">
+                  <span class="page__hidden">влево</span>
+                </button>
+                <input class="new-plane__date-input" type="text" value="Март 2019">
+              </p>
+              <table class="new-plane__table table-plans">
+                <tbody>
+                  <tr class="table-plans__row">
+                    <th class="table-plans__head"><span class="table-plans__head-mobile">П</span><span class="table-plans__desktop">Пн</span></th>
+                    <th class="table-plans__head"><span class="table-plans__head-mobile">В</span><span class="table-plans__desktop">Вт</span></th>
+                    <th class="table-plans__head"><span class="table-plans__head-mobile">С</span><span class="table-plans__desktop">Ср</span></th>
+                    <th class="table-plans__head"><span class="table-plans__head-mobile">Ч</span><span class="table-plans__desktop">Чт</span></th>
+                    <th class="table-plans__head"><span class="table-plans__head-mobile">П</span><span class="table-plans__desktop">Пт</span></th>
+                    <th class="table-plans__head"><span class="table-plans__head-mobile">С</span><span class="table-plans__desktop">Сб</span></th>
+                    <th class="table-plans__head"><span class="table-plans__head-mobile">В</span><span class="table-plans__desktop">Вс</span></th>
+                  </tr>
+                  <tr class="table-plans__row">
+                    <td class="table-plans__cell"><span class="table-plans__number">23</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">24</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">25</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">26</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">27</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">28</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">1</span></td>
+                  </tr>
+                  <tr class="table-plans__row">
+                    <td class="table-plans__cell"><span class="table-plans__number">2</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">3</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">4</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">5</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">6</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">7</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">8</span></td>
+                  </tr>
+                  <tr class="table-plans__row">
+                    <td class="table-plans__cell"><span class="table-plans__number">9</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">10</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">11</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">12</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">13</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">14</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">15</span></td>
+                  </tr>
+                  <tr class="table-plans__row">
+                    <td class="table-plans__cell"><span class="table-plans__number">16</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">17</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">18</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">19</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">20</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">21</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">22</span></td>
+                  </tr>
+                  <tr class="table-plans__row">
+                    <td class="table-plans__cell"><span class="table-plans__number">23</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">24</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">25</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number table-plans__number--selected">26</span><span class="table-plans__cell-desktop">Заезд</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number table-plans__number--selected">27</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number table-plans__number--selected">28</span><span class="table-plans__cell-desktop">Выезд</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number table-plans__number--gray">29</span></td>
+                  </tr>
+                  <tr class="table-plans__row table-plans__row--gray">
+                    <td class="table-plans__cell"><span class="table-plans__number">30</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">31</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">1</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">2</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">3</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">4</span></td>
+                    <td class="table-plans__cell"><span class="table-plans__number">5</span></td>
+                  </tr>
+                </tbody>
+              </table>
+              <a class="new-plane__next page__link" href="#second-step">Следующий шаг</a>
+            </div>
+          </fieldset>
+          <fieldset class="new-plane__field">
+            <div class="new-plane__wrap">
+              <ul class="new-plane__list">
+                <li class="new-plane__item">Даты</li>
+                <li class="new-plane__item new-plane__item--current">маршрут</li>
+                <li class="new-plane__item">развлечения</li>
+              </ul>
+              <h3 class="new-plane__title">Шаг 2. Маршрут</h3>
+              <p class="new-plane__description">Укажите страны, которые вы хотели бы посетить. Это может быть одна или сразу несколько.</p>
+              <div class="new-plane__countries">
+                <div class="new-plane__country new-plane__country--first">Босния и герцеговина</div>
+                <div class="new-plane__country new-plane__country--second">Чехия</div>
+                <div class="new-plane__country new-plane__country--third">выберите страну</div>
+                <div class="new-plane__popup choose__country">
+                  <div class="choose-country__header">
+                    <h2 class="choose-country__tittle">Выберите страну</h2>
+                    <button class="close-btn page__button" type="button">
+                      <span class="page__hidden">Закрыть</span>
+                    </button>
+                  </div>
+                  <div class="choose-country__wrap">
+                    <ul class="choose-country__list page__list">
+                      <li class="choose-country__item">
+                        <ul class="choose-country__row page__list">
+                          <li class="choose-country__letter choose-country__letter--selected">А</li>
+                          <li class="choose-country__letter">Б</li>
+                          <li class="choose-country__letter">В</li>
+                          <li class="choose-country__letter">Г</li>
+                          <li class="choose-country__letter">Д</li>
+                        </ul>
+                      </li>
+                      <li class="choose-country__item">
+                        <ul class="choose-country__row page__list">
+                          <li class="choose-country__letter">Е</li>
+                          <li class="choose-country__letter">З</li>
+                          <li class="choose-country__letter">И</li>
+                          <li class="choose-country__letter">К</li>
+                          <li class="choose-country__letter">Л</li>
+                        </ul>
+                      </li>
+                      <li class="choose-country__item">
+                        <ul class="choose-country__row page__list">
+                          <li class="choose-country__letter">М</li>
+                          <li class="choose-country__letter">Н</li>
+                          <li class="choose-country__letter">О</li>
+                          <li class="choose-country__letter">П</li>
+                          <li class="choose-country__letter">Р</li>
+                        </ul>
+                      </li>
+                      <li class="choose-country__item">
+                        <ul class="choose-country__row page__list">
+                          <li class="choose-country__letter">С</li>
+                          <li class="choose-country__letter">Т</li>
+                          <li class="choose-country__letter">У</li>
+                          <li class="choose-country__letter">Ф</li>
+                          <li class="choose-country__letter">Х</li>
+                        </ul>
+                      </li>
+                      <li class="choose-country__item">
+                        <ul class="choose-country__row page__list">
+                          <li class="choose-country__letter">Ч</li>
+                          <li class="choose-country__letter">Ш</li>
+                          <li class="choose-country__letter">Э</li>
+                          <li class="choose-country__letter">Ю</li>
+                          <li class="choose-country__letter">Я</li>
+                        </ul>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="choose-country__result">
+                    <ul class="filter__filtered-list page__list">
+                      <li class="filter__sorted-item"><a class="filter__location page__link" href="islands/australia">Австралия</a></li>
+                      <li class="filter__filtered-item"><a class="filter__location page__link" href="europe/austria">Австрия</a></li>
+                      <li class="filter__filtered-item"><a class="filter__location page__link" href="asia/azerbaijan">Азербайджан</a></li>
+                      <li class="filter__filtered-item"><a class="filter__location page__link" href="europe/albania">Албания</a></li>
+                      <li class="filter__filtered-item"><a class="filter__location page__link" href="africa/algeria">Алжир</a></li>
+                      <li class="filter__filtered-item"><a class="filter__location page__link" href="africa/angola">Ангола</a></li>
+                      <li class="filter__filtered-item"><a class="filter__location page__link" href="europe/andorra">Андора</a></li>
+                      <li class="filter__filtered-item"><a class="filter__location page__link" href="islands/antigua-and-barbuda">Антигуа и Барбуда</a></li>
+                      <li class="filter__filtered-item"><a class="filter__location page__link" href="south-america/argentine">Аргентина</a></li>
+                      <li class="filter__filtered-item"><a class="filter__location page__link" href="asia/armenia">Армения</a></li>
+                      <li class="filter__filtered-item"><a class="filter__location page__link" href="asia/afghanistan">Афганистан</a></li>
+                    </ul>
+                  </div>
+                </div>
+                <div class="new-plane__add"><p class="new-plane__new-country">Добавить страну</p></div>
+                <div class="new-plane__flag">
+                  <button class="delete-country page__button"></button>
+                </div>
+                <div class="new-plane__flag">
+                  <button class="delete-country page__button"></button>
+                </div>
+              </div>
+                <a class="new-plane__next page__link" href="#third-step">Следующий шаг</a>
+                <a class="new-plane__back page__link" href="#first-step">На шаг назад</a>
+            </div>
+          </fieldset>
+          <fieldset class="new-plane__field">
+            <div class="new-plan__wrap">
+              <ul class="new-plane__list">
+                <li class="new-plane__item">Даты</li>
+                <li class="new-plane__item">маршрут</li>
+                <li class="new-plane__item new-plane__item--current">развлечения</li>
+              </ul>
+              <h3 class="new-plane__title">Шаг 3. Развлечения</h3>
+              <p class="new-plane__description">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
+              <label for="comment-first">Босния и Герцеговина</label>
+              <textarea name="" id="comment-first" cols="30" rows="10" placeholder="План действий"></textarea>
+              <label for="comment-second">Чехия</label>
+              <textarea name="" id="comment-second" cols="30" rows="10" placeholder="План действий">Пить пиво и лазитьпо старым замкам, наслаждаться архитектурой и вот это все.</textarea>
+            </div>
+            <input class="submit-form" type="submit" value="Отправить" aria-label="Отправить форму">
+            <a class="new-plan__back page__link" href="#second-step">На шаг назад</a>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>

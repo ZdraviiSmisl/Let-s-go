@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html class="page" lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>profile-block</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../../source/css/style.css">
+  </head>
+  <body class="page__body">
+    <section class="profile">
+      <h2 class="page__hidden">Ваш профиль</h2>
+      <div class="page__center">
+        <div class="person__bar bar">
+          <div class="bar__group value-80">
+            <span class="bar__label">80</span>
+            <span class="bar__level">level</span>
+            <div class="bar__full-circle">
+              <div class="bar__circle left-side"></div>
+              <div class="bar__circle right-side"></div>
+            </div>
+            <div class="bar__shadow"></div>
+          </div>
+        </div>
+        <picture></picture>
+        <a class="profile__change-photo page__link" href="#">
+          <span class="profile__name-mobile">сменить фото</span>
+          <span class="profile__name-desktop">фото</span>
+        </a>
+        <form class="profile__form" action="https://echo.htmlacademy.ru" method="post">
+          <fieldset class="profile__field hashtags">
+            <legend class="profile__legend">ТЭГИ</legend>
+            <textarea class="profile__textarea" name="hashtags" cols="30" rows="10" placeholder="Укажите минимум 3 хэштэга">#бургер #бар #футбол #концерт #крафт</textarea>
+          </fieldset>
+          <fieldset class="profile__field transport-field">
+            <legend class="profile__legend">транспорт</legend>
+            <label class="transport__label">
+              <input class="transport__plane page__hidden" type="checkbox" checked>
+              <span class="transport__pointer"></span>
+            </label>
+            <label class="transport__label">
+              <input class="transport__car page__hidden" type="checkbox" checked>
+              <span class="transport__pointer"></span>
+            </label>
+            <label class="transport__label">
+              <input class="transport__bike page__hidden" type="checkbox">
+              <span class="transport__pointer"></span>
+            </label>
+            <label class="transport__label">
+              <input class="transport__on-foot page__hidden" type="checkbox" checked>
+              <span class="transport__pointer"></span>
+            </label>
+          </fieldset>
+        </form>
+      </div>
+    </section>
+  </body>
+</html>
