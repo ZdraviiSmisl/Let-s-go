@@ -5,7 +5,7 @@
       "always",
       {
         "except": [
-          "first-nested",
+          "new-plane-nested",
           "blockless-after-blockless"
         ],
         "ignore": [
@@ -144,7 +144,7 @@
       "always",
       {
         "except": [
-          "first-nested"
+          "new-plane-nested"
         ],
         "ignore": [
           "after-comment"
