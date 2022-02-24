@@ -13,6 +13,7 @@
     "gulp-sourcemaps": "3.0.0",
     "postcss": "^8.4.5",
     "postcss-scss": "^4.0.2",
+    "prettier": "2.5.1",
     "stylelint": "^14.2.0"
   },
   "scripts": {
@@ -36,6 +37,9 @@
     "source/sass/**/*.scss"
   ],
   "engines": {
-    "node": "^12.x || ^16.x"
+    "node": "^12 || ^16"
+  },
+  "dependencies": {
+    "ee-first": "^1.1.1"
   }
 }

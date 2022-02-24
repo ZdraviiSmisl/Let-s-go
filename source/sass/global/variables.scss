@@ -5,5 +5,26 @@ $not-desktop: 1439px;
 
 
 :root {
+  --basic-white: hsla(0, 0%, 100%, 1);
+  --basic-pink: hsla(344, 68%, 49%, 1);
+  --basic-green: hsla(90, 78%, 50%, 1);
+  --light-red: hsla(0, 92%, 72%, 1);
+  --basic-black: hsla(0, 0%, 0%, 1);
+  --basic-black-transparent: hsla(0, 0%, 0%, 0.6);
+  --black-blue: hsla(229, 46%, 18%, 1);
+  --basic-blue: hsla(228, 41%, 16%, 1);
+  --origin-blue: hsla(229, 49%, 15%, 1);
+  --special-blue: hsla(224, 52%, 24%, 1);
+  --special-orange: hsla(27, 98%, 60%, 1);
+  --white-orange: hsla(34, 100%, 59%, 1);
+  --special-yellow: hsla(41, 100%, 59%, 1);
+  --origin-gray: hsla(0, 0%, 27%, 1);
+  --white-yellow: hsla(47, 100%, 65%, 1);
+  --light-blue: hsla(229, 38%, 92%, 1);
+  --very-light-blue: hsla(227, 33%, 95%, 1);
+  --header-min-height: 73px;
 
+  @media (min-width: $tablet-width) {
+    --header-min-height: 132px;
+  }
 }
