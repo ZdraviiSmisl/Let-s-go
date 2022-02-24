@@ -30,6 +30,12 @@
   list-style: none;
 }
 
+.page__img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
 .page__button {
   padding: 0;
   border: none;
@@ -47,6 +53,7 @@
     text-decoration: none;
     font-variant: inherit;
     font-family: inherit;
+    cursor: pointer;
   }
 }
 

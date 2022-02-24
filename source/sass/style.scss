@@ -3,9 +3,16 @@
 @import "global/normalize.css";
 @import "global/variables.scss";
 @import "global/mixins.scss";
+@import "global/fonts.scss";
 //Blocks
 
 @import "blocks/page.scss";
 @import "blocks/header.scss";
 @import "blocks/actions.scss";
 @import "blocks/new-plan.scss";
+@import "blocks/main-nav.scss";
+@import "blocks/intro.scss";
+@import "blocks/about-us.scss";
+@import "blocks/directions.scss";
+@import "blocks/travel-companions.scss";
+/*@import "blocks/circle-bar.scss";*/

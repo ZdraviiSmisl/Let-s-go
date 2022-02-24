@@ -46,6 +46,9 @@ const watcher = () => {
   gulp.watch("source/*.html").on("change", sync.reload);
 }
 
+exports.build = build;
+
+
 exports.default = gulp.series(
   styles, server, watcher
 );
