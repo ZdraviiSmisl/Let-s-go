@@ -38,7 +38,7 @@
   }
 
   &--2 {
-    stroke-dashoffset:calc(130 - (130 * 99) / 100);
+    stroke-dashoffset: calc(130 - (130 * 99) / 100);
     stroke: var(--special-orange);
   }
 }
