@@ -265,8 +265,8 @@
     background-position: 40px 425px;
 
     &::before {
-      top: 40px;
-      left: 71px;
+      top: 69px;
+      left: 38px;
       width: 212px;
       height: 212px;
       border-radius: 20px;
@@ -395,7 +395,12 @@
 
   .companions__outer-wrap {
     width: 1320px;
-    background-position: 486px 112px
+    background-position: 486px 112px;
+
+    &::before {
+      top: 48px;
+      left: -1px;
+    }
   }
 
   .companions__wrap {
