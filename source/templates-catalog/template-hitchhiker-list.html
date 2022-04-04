@@ -1,190 +1,226 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>hitchhiker-list</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="../css/style.css">
-  </head>
-  <body class="page__body">
-    <section class="hitchhikers">
-      <div class="page__center">
-        <article class="hitchhikers__article personal-card">
-          <h3 class="personal-card_title">
-            <a class="person-card_link page__link" href="firsova-profile.html">Таня Фирсова</a>
-          </h3>
-          <button class="personal-card__like page__button" type="button">1,5 М</button>
-          <a class="personal-card__link page__link" href="firsova-profile.html">
-            <picture></picture>
-          </a>
-          <p class="personal-card__hashtags">#ЗОЖ #ПП #Фитнес #пляж  #авокадо #смузи</p>
-          <p class="personal-card__desires">хочет посетить:</p>
-          <ul class="personal-card__list page__list">
-            <li class="personal-card__item"><span class="person__country">шри-ланка</span></li>
-            <li class="personal-card__item"><span class="person__country">Таиланд</span></li>
-            <li class="personal-card__item"><span class="person__country">сейшелы</span></li>
-          </ul>
-          <div class="personal-card__block">
-            <p class="personal-card__transport">транспорт:</p>
-              <ul class="personal-card__list transport">
-                <li class="transport__item"><span class="page__hidden">get on plane</span></li>
-                <li class="transport__item"><span class="page__hidden">get by car</span></li>
-                <li class="transport__item"><span class="page__hidden">bike</span></li>
-                <li class="transport__item"><span class="page__hidden">get on foot</span></li>
-              </ul>
-          </div>
-          <div class="personal-card__block">
-            <p class="personal-card__level">левел:</p>
-            <div class="person__bar bar">
-              <div class="bar__group value-99">
-                <span class="bar__label">99</span>
-                <span class="bar__level">level</span>
-                <div class="bar__full-circle">
-                  <div class="bar__circle left-side"></div>
-                  <div class="bar__circle right-side"></div>
-                </div>
-                <div class="bar__shadow"></div>
-              </div>
+<head>
+  <meta charset="UTF-8">
+  <title>hitchhiker-list</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="page__body">
+<section class="hitchhikers">
+  <h2 class="page__hidden">Список попутчиков</h2>
+  <div class="page__center page__center--desktop-except hitchhikers__wrap">
+    <article class="hitchhikers__article personal-card">
+      <h3 class="personal-card__title">
+        <a class="personal-card__link page__link" href="firsova-profile.html">Таня Фирсова</a>
+      </h3>
+      <button class="personal-button personal-button--first" type="button"></button>
+      <span class="personal-card__counter-like">1,5 М</span>
+      <a class="personal-card__link page__link" href="firsova-profile.html">
+        <picture>
+          <source media="(min-width: 1320px)" srcset="../img/firsova-desktop@1x.jpg, ../img/firsova-desktop@2x.jpg 2x">
+          <source media="(min-width:768px)" srcset="../img/firsova-tablet@1x.jpg, ../img/firsova-tablet@2x.jpg 2x">
+          <img class="personal-card__photo page__img" src="source/img/firsova-mobile@1x.jpg"
+               srcset="../img/firsova-mobile@2x.jpg 2x" alt="Tania Firsova">
+        </picture>
+      </a>
+      <p class="personal-card__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
+      <span class="personal-card__desires">хочет посетить:</span>
+      <ul class="personal-card__list desires page__list">
+        <li class="desires__item"><span class="person__country">шри-ланка</span></li>
+        <li class="desires__item"><span class="person__country">Таиланд</span></li>
+        <li class="desires__item"><span class="person__country">сейшелы</span></li>
+      </ul>
+      <div class="personal-card__block">
+        <span class="personal-card__transport">транспорт:</span>
+        <ul class="personal-card__list transport page__list">
+          <li class="transport__item">fdf<span class="page__hidden">get on plane</span></li>
+          <li class="transport__item">fdf<span class="page__hidden">get by car</span></li>
+          <li class="transport__item">fdf<span class="page__hidden">bike</span></li>
+          <li class="transport__item">fdf<span class="page__hidden">get on foot</span></li>
+        </ul>
+      </div>
+      <div class="personal-card__block">
+        <span class="personal-card__level">левел:</span>
+        <div class="person__bar circle-bar circle-bar--catalog">
+          <div class="circle-bar__field person__bar-field">
+            <svg class="circle-bar__svg">
+              <circle class="circle-bar__circle-99 circle" cx="20" cy="20" r="20"></circle>
+              <circle class="circle-bar__circle-99 circle" cx="23" cy="23" r="21"></circle>
+            </svg>
+            <div class="circle-bar__reached-level catalog-level">
+              <span class="circle-bar__number number-catalog">99</span><span
+              class="circle-bar__level circle-bar__level--hide">level</span>
             </div>
           </div>
-          <a class="personal-card__feedback-link" href="feedback.html">Позвать!</a>
-        </article>
-        <article class="hitchhikers__article personal-card">
-          <h3 class="personal-card_title">
-            <a class="person-card_link page__link" href="demin-profile.html">Петя Демин</a>
-          </h3>
-          <button class="personal-card__like page__button" type="button">1500</button>
-          <a class="personal-card__link page__link" href="demin-profile.html">
-            <picture></picture>
-          </a>
-          <p class="personal-card__hashtags">#бургер #бар #футбол #концерт #крафт</p>
-          <p class="personal-card__desires">хочет посетить:</p>
-          <ul class="personal-card__list page__list">
-            <li class="personal-card__item"><span class="person__country">бельгия</span></li>
-            <li class="personal-card__item"><span class="person__country">чехия</span></li>
-          </ul>
-          <div class="personal-card__block">
-            <p class="personal-card__transport">транспорт:</p>
-            <ul class="personal-card__list transport">
-              <li class="transport__item"><span class="page__hidden">get on plane</span></li>
-              <li class="transport__item"><span class="page__hidden">get by car</span></li>
-              <li class="transport__item"><span class="page__hidden">bike</span></li>
-              <li class="transport__item"><span class="page__hidden">get on foot</span></li>
-            </ul>
-          </div>
-          <div class="personal-card__block">
-            <p class="personal-card__level">левел:</p>
-            <div class="person__bar bar">
-              <div class="bar__group value-80">
-                <span class="bar__label">80</span>
-                <span class="bar__level">level</span>
-                <div class="bar__full-circle">
-                  <div class="bar__circle left-side"></div>
-                  <div class="bar__circle right-side"></div>
-                </div>
-                <div class="bar__shadow"></div>
-              </div>
-            </div>
-          </div>
-          <a class="personal-card__feedback-link" href="feedback.html">Позвать!</a>
-        </article>
-        <article class="hitchhikers__article personal-card">
-          <h3 class="personal-card_title">
-            <a class="person-card_link page__link" href="solomonov-profile.html">Марк Смолов</a>
-          </h3>
-          <button class="personal-card__like page__button" type="button">170</button>
-          <a class="personal-card__link page__link" href="solomonov-profile.html">
-            <picture></picture>
-          </a>
-          <p class="personal-card__hashtags">#рэп #тату #хайпбист #кроссовки #суприм</p>
-          <p class="personal-card__desires">хочет посетить:</p>
-          <ul class="personal-card__list page__list">
-            <li class="personal-card__item"><span class="person__country">сша</span></li>
-            <li class="personal-card__item"><span class="person__country">австралия</span></li>
-            <li class="personal-card__item"><span class="person__country">доминика</span></li>
-          </ul>
-          <div class="personal-card__block">
-            <p class="personal-card__transport">транспорт:</p>
-            <ul class="personal-card__list transport">
-              <li class="transport__item"><span class="page__hidden">get on plane</span></li>
-              <li class="transport__item"><span class="page__hidden">get by car</span></li>
-              <li class="transport__item"><span class="page__hidden">bike</span></li>
-              <li class="transport__item"><span class="page__hidden">get on foot</span></li>
-            </ul>
-          </div>
-          <div class="personal-card__block">
-            <p class="personal-card__level">левел:</p>
-            <div class="person__bar bar">
-              <div class="bar__group value-25">
-                <span class="bar__label">25</span>
-                <span class="bar__level">level</span>
-                <div class="bar__full-circle">
-                  <div class="bar__circle left-side"></div>
-                  <div class="bar__circle right-side"></div>
-                </div>
-                <div class="bar__shadow"></div>
-              </div>
-            </div>
-          </div>
-          <a class="personal-card__feedback-link" href="feedback.html">Позвать!</a>
-        </article>
-        <article class="hitchhikers__article personal-card">
-          <h3 class="personal-card_title">
-            <a class="person-card_link page__link" href="rogovaia-profile.html">Лариса Роговая</a>
-          </h3>
-          <button class="personal-card__like page__button" type="button">23</button>
-          <a class="personal-card__link page__link" href="rogovaia-profile.html">
-            <picture></picture>
-          </a>
-          <p class="personal-card__hashtags">#бургер #бар #футбол #концерт #крафт</p>
-          <p class="personal-card__desires">хочет посетить:</p>
-          <ul class="personal-card__list page__list">
-            <li class="personal-card__item"><span class="person__country">Великобритания</span></li>
-            <li class="personal-card__item"><span class="person__country">Германия</span></li>
-          </ul>
-          <div class="personal-card__block">
-            <p class="personal-card__transport">транспорт:</p>
-            <ul class="personal-card__list transport">
-              <li class="transport__item"><span class="page__hidden">get on plane</span></li>
-              <li class="transport__item"><span class="page__hidden">get by car</span></li>
-              <li class="transport__item"><span class="page__hidden">bike</span></li>
-              <li class="transport__item"><span class="page__hidden">get on foot</span></li>
-            </ul>
-          </div>
-          <div class="personal-card__block">
-            <p class="personal-card__level">левел:</p>
-            <div class="person__bar bar">
-              <div class="bar__group value-50">
-                <span class="bar__label">50</span>
-                <span class="bar__level">level</span>
-                <div class="bar__full-circle">
-                  <div class="bar__circle left-side"></div>
-                  <div class="bar__circle right-side"></div>
-                </div>
-                <div class="bar__shadow"></div>
-              </div>
-            </div>
-          </div>
-          <a class="personal-card__feedback-link" href="feedback.html">Позвать!</a>
-        </article>
-        <a class="hitchhiker__more" href="new-hitchhiker.html">показать еще</a>
-        <div class="hitchhiker__pagination">
-          <ul class="hitchhiker__list-pagination pagination page__list">
-            <li class="pagination__item">
-              <a class="pagination__link link" href="1.html">1</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link link" href="2.html">2</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link link" href="3.html">3</a>
-            </li>
-            <li class="pagination__item">
-              <a class="pagination__link link" href="4.html">4</a>
-            </li>
-          </ul>
         </div>
       </div>
-    </section>
-  </body>
+      <a class="personal-card__feedback-link page__link" href="feedback.html">Позвать!</a>
+    </article>
+    <article class="hitchhikers__article personal-card">
+      <h3 class="personal-card__title">
+        <a class="personal-card__link page__link" href="demin-profile.html">Петя Демин</a>
+      </h3>
+      <button class="personal-button"></button>
+      <span class="personal-card__counter-like">1500</span>
+      <a class="personal-card__link page__link" href="demin-profile.html">
+        <picture>
+          <source media="(min-width: 1320px)" srcset="../img/demin-desktop@1x.jpg, ../img/demin-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="../img/demin-tablet@1x.jpg, ../img/demin-tablet@2x.jpg 2x">
+          <img class="personal-card__photo page__img" src="source/img/demin-mobile@1x.jpg"
+               srcset="../img/demin-mobile@2x.jpg 2x" alt="Peter Demin">
+        </picture>
+      </a>
+      <p class="personal-card__hashtags">#бургер #бар #футбол #концерт #крафт</p>
+      <span class="personal-card__desires">хочет посетить:</span>
+      <ul class="personal-card__list desires page__list">
+        <li class="desires__item"><span class="person__country">бельгия</span></li>
+        <li class="desires__item"><span class="person__country">чехия</span></li>
+      </ul>
+      <div class="personal-card__block">
+        <span class="personal-card__transport">транспорт:</span>
+        <ul class="personal-card__list transport page__list">
+          <li class="transport__item">fdf<span class="page__hidden">get on plane</span></li>
+          <li class="transport__item">fdf<span class="page__hidden">get by car</span></li>
+          <li class="transport__item">fdf<span class="page__hidden">bike</span></li>
+          <li class="transport__item">fdf<span class="page__hidden">get on foot</span></li>
+        </ul>
+      </div>
+      <div class="personal-card__block">
+        <span class="personal-card__level">левел:</span>
+        <div class="person__bar circle-bar circle-bar--catalog">
+          <div class="circle-bar__field person__bar-field">
+            <svg class="circle-bar__svg">
+              <circle class="circle-bar__circle-80 circle-80" cx="20" cy="20" r="20"></circle>
+              <circle class="circle-bar__circle-80 circle-80" cx="23" cy="23" r="21"></circle>
+            </svg>
+            <div class="circle-bar__reached-level catalog-level">
+              <span class="circle-bar__number number-catalog">80</span><span
+              class="circle-bar__level circle-bar__level--hide">level</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="personal-card__feedback-link page__link" href="feedback.html">Позвать!</a>
+    </article>
+    <article class="hitchhikers__article personal-card">
+      <h3 class="personal-card__title">
+        <a class="personal-card__link page__link" href="smolov-profile.html">Марк Смолов</a>
+      </h3>
+      <button class="personal-button"></button>
+      <span class="personal-card__counter-like">170</span>
+      <a class="personal-card__link page__link" href="smolov-profile.html">
+        <picture>
+          <source media="(min-width: 1320px)" srcset="../img/smolov-desktop@1x.jpg, ../img/smolov-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="../img/smolov-tablet@1x.jpg, ../img/smolov-tablet@2x.jpg 2x">
+          <img class="personal-card__photo page__img" src="source/img/smolov-mobile@1x.jpg"
+               srcset="../img/smolov-mobile@2x.jpg 2x" alt="Mark Smolov">
+        </picture>
+      </a>
+      <p class="personal-card__hashtags">#рэп #тату #хайпбист #кроссовки #суприм</p>
+      <span class="personal-card__desires">хочет посетить:</span>
+      <ul class="personal-card__list desires page__list">
+        <li class="desires__item"><span class="person__country">сша</span></li>
+        <li class="desires__item"><span class="person__country">австралия</span></li>
+        <li class="desires__item"><span class="person__country">доминика</span></li>
+      </ul>
+      <div class="personal-card__block">
+        <span class="personal-card__transport">транспорт:</span>
+        <ul class="personal-card__list transport page__list">
+          <li class="transport__item">dfd<span class="page__hidden">get on plane</span></li>
+          <li class="transport__item">df<span class="page__hidden">get by car</span></li>
+          <li class="transport__item">fd<span class="page__hidden">bike</span></li>
+          <li class="transport__item">df<span class="page__hidden">get on foot</span></li>
+        </ul>
+      </div>
+      <div class="personal-card__block">
+        <span class="personal-card__level">левел:</span>
+        <div class="person__bar circle-bar circle-bar--catalog">
+          <div class="circle-bar__field person__bar-field">
+            <svg class="circle-bar__svg">
+              <circle class="circle-bar__circle-80 circle-25" cx="20" cy="20" r="20"></circle>
+              <circle class="circle-bar__circle-80 circle-25" cx="23" cy="23" r="21"></circle>
+            </svg>
+            <div class="circle-bar__reached-level catalog-level">
+              <span class="circle-bar__number number-catalog">25</span><span
+              class="circle-bar__level circle-bar__level--hide">level</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="personal-card__feedback-link page__link" href="feedback.html">Позвать!</a>
+    </article>
+    <article class="hitchhikers__article personal-card">
+      <h3 class="personal-card__title">
+        <a class="personal-card__link page__link" href="rogovaia-profile.html">Лариса Роговая</a>
+      </h3>
+      <button class="personal-button"></button>
+      <span class="personal-card__counter-like">23</span>
+      <a class="personal-card__link page__link" href="rogovaia-profile.html">
+        <picture>
+          <source media="(min-width: 1320px)" srcset="../img/rogovaya-desktop@1x.jpg, ../img/rogovaya-desktop@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="../img/rogovaya-tablet@1x.jpg, ../img/rogovaya-tablet@2x.jpg 2x">
+          <img class="personal-card__photo page__img" src="source/img/rogovaya-mobile@1x.jpg"
+               srcset="../img/rogovaya-mobile@2x.jpg 2x" alt="Larisa Rogovaya">
+        </picture>
+      </a>
+      <p class="personal-card__hashtags">#образование #карьера #учеба #линкедин</p>
+      <span class="personal-card__desires">хочет посетить:</span>
+      <ul class="personal-card__list desires page__list">
+        <li class="desires__item"><span class="person__country">Великобритания</span></li>
+        <li class="desires__item"><span class="person__country">Германия</span></li>
+      </ul>
+      <div class="personal-card__block">
+        <span class="personal-card__transport">транспорт:</span>
+        <ul class="personal-card__list transport page__list">
+          <li class="transport__item">fdf<span class="page__hidden">get on plane</span></li>
+          <li class="transport__item">fd<span class="page__hidden">get by car</span></li>
+          <li class="transport__item">fd<span class="page__hidden">bike</span></li>
+          <li class="transport__item">fdf<span class="page__hidden">get on foot</span></li>
+        </ul>
+      </div>
+      <div class="personal-card__block">
+        <span class="personal-card__level">левел:</span>
+        <div class="person__bar circle-bar circle-bar--catalog">
+          <div class="circle-bar__field person__bar-field">
+            <svg class="circle-bar__svg">
+              <circle class="circle-bar__circle-80 circle-50" cx="20" cy="20" r="20"></circle>
+              <circle class="circle-bar__circle-80 circle-50" cx="23" cy="23" r="21"></circle>
+            </svg>
+            <div class="circle-bar__reached-level catalog-level">
+              <span class="circle-bar__number number-catalog">50</span><span
+              class="circle-bar__level circle-bar__level--hide">level</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a class="personal-card__feedback-link page__link page__link" href="feedback.html">Позвать!</a>
+    </article>
+    <a class="hitchhiker__more page__link" href="new-hitchhiker.html">показать еще</a>
+    <div class="pagination">
+      <ul class="pagination__list page__list">
+        <li class="pagination__item ">
+          <a class="pagination__link page__link" href="previous-page.html">pre<span class="page__hidden">Предыдущая страница каталога</span>
+          </a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link page__link" href="1.html" aria-current="page">1</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link page__link" href="2.html">2</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link page__link" href="3.html">3</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link page__link" href="4.html">4</a>
+        </li>
+        <li class="pagination__item">
+          <a class="pagination__link page__link" href="next-page.html">next<span class="page__hidden">Следующая страница каталога</span></a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+</body>
 </html>

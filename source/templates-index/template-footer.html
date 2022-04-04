@@ -7,31 +7,37 @@
     <link rel="stylesheet" href="../css/style.css">
   </head>
   <body class="page__body">
-    <footer class="page-footer footer">
-      <div class="page__center">
-        <p class="footer__text"><strong></strong>Погнали?</p>
+    <footer class="page__footer footer">
+      <div class="page__center footer__wrap">
+        <picture>
+          <source media="(min-width:1320px)" srcset="../img/logo-full-desktop-blue@1x.png, ../img/logo-full-desktop-blue@2x.png 2x">
+          <source media="(min-width: 768px)" srcset="../img/logo-full-tablet-blue@1x.png, ../img/logo-full-tablet-blue@2x.png 2x">
+          <img class="footer__logo page__img" src="../img/logo-mobile-blue@1x.png" srcset="../img/logo-mobile-blue@2x.png 2x" alt="Логотип компании 'Погнали'">
+        </picture>
         <div class="footer__part social">
-          <ul class="social__list">
+          <ul class="social__list page__list">
             <li class="social__item">
               <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy">
-                <span class="page__hidden">Мы в Facebook</span>
+                <span>Мы в Facebook</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
-                <span class="page__hidden">Мы Вконтакте</span>
+                <span>Мы Вконтакте</span>
               </a>
             </li>
             <li class="social__item">
               <a class="social__link social__link--inst" href="https://www.instagram.com/htmlacademy/?hl=ru">
-                <span class="page__hidden">Мы в Instagram</span>
+                <span>Мы в Instagram</span>
               </a>
             </li>
           </ul>
         </div>
         <div class="footer__part copyright ">
           <span class="copyright__text">Разработано</span>
-          <a class="copyright__link link" href="https://htmlacademy.ru/intensive/htmlcss" aria-label="Логотип компании"></a>
+          <a class="copyright__link page__link" href="https://htmlacademy.ru/intensive/htmlcss">
+            <span class="page__hidden">HTML Academy</span>
+          </a>
         </div>
       </div>
     </footer>

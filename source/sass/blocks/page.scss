@@ -66,5 +66,9 @@
 @media (min-width: $desktop-width) {
   .page__center {
     width: 1320px;
+
+    &--desktop-except {
+      display: contents;
+    }
   }
 }

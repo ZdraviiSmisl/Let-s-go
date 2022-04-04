@@ -1,0 +1,232 @@
+.tariffs {
+  font-size: 16px;
+  line-height: 16px;
+  font-weight: 300;
+  background-color: var(--very-light-blue);
+  border-radius: 0 0 20px 20px;
+}
+
+.tariffs__wrap {
+  background-image: url("../../img/rates@1x.png");
+  background-position: 170px 41px;
+  background-repeat: no-repeat;
+  background-size: 100px;
+}
+
+.tariffs__add {
+  margin: 0;
+  padding: 56px 109px 55px 26px;;
+  font-size: 24px;
+  line-height: 24px;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--special-orange);
+}
+
+.tariffs__list {
+  position: relative;
+  counter-reset: section;
+  padding-bottom: 14px;
+}
+
+.tariffs__item {
+  position: relative;
+  font-weight: 300;
+  color: var(--origin-gray);
+
+  &::before {
+    content: counter(section);
+    counter-increment: section;
+    position: absolute;
+    top: -8px;
+    right: 1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 34px;
+    height: 34px;
+    font-weight: 500;
+    border-radius: 50%;
+  }
+
+  &:nth-child(1)::before {
+    background-color: var(--special-orange);
+  }
+
+  &:nth-child(2)::before {
+    top: -10px;
+    right: 0;
+    background-color: var(--special-yellow);
+  }
+
+  &:nth-child(3)::before {
+    top: -10px;
+    right: 0;
+    background-color: var(--white-yellow);
+  }
+}
+
+.tariffs__name {
+  margin: 0;
+  padding: 0 0 7px 23px;
+
+  &--1::before,
+  &--1::after,
+  &--3::before,
+  &--3::after {
+    content: "";
+    position: absolute;
+    top: -12px;
+    right: 47px;
+    width: 200px;
+    height: 1px;
+    background-color: var(--extra-light-blue);
+  }
+
+  &--1::after,
+  &--3::after {
+    top: 52px;
+  }
+}
+
+.tariffs__price {
+  display: inline-block;
+  margin: 0;
+  padding: 0 0 28px 23px;
+}
+
+.tariffs__for-business {
+  padding: 0 0 35px 26px;
+  letter-spacing: 0.6px;
+  font-weight: 700;
+  color: var(--middle-blue);
+}
+
+@media (min-width: $tablet-width) {
+  .tariffs {
+    font-size: 28px;
+    line-height: 28px;
+    border-radius: 0 0 53px 53px;
+  }
+
+  .tariffs__wrap {
+    background-image: url("../../img/rates@1x.png"),
+    url("../../img/price-back-tablet@1x.png");
+    background-position: 542px 411px, 490px 150px;
+    background-size: 100px, 198px;
+  }
+
+  .tariffs__add {
+    padding: 69px 0 95px 102px;
+    letter-spacing: 2px;
+    font-size: 45px;
+    line-height: 45px;
+  }
+
+  .tariffs__list {
+    padding-bottom: 32px;
+  }
+
+  .tariffs__item {
+    display: flex;
+    justify-content: space-between;
+
+    &::before {
+      left: 0;
+      top: -20px;
+      width: 68px;
+      height: 68px;
+    }
+
+    &:nth-of-type(2)::before,
+    &:nth-of-type(3)::before {
+      top: -18px;
+    }
+  }
+
+  .tariffs__name {
+    padding: 0 0 38px 90px;
+
+    &--1::before,
+    &--1::after,
+    &--3::before,
+    &--3::after {
+      top: -17px;
+      right: 36px;
+      width: 560px;
+    }
+
+    &--1::after,
+    &--3::after {
+      top: 48px;
+    }
+  }
+
+  .tariffs__price {
+    padding: 0 35px 28px 0;
+  }
+
+  .tariffs__for-business {
+    padding: 0 0 106px 91px;
+    letter-spacing: 0.8px;
+    font-size: 20px;
+    line-height: 20px;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .tariffs {
+    border-radius: 0 0 69px 69px;
+  }
+
+  .tariffs__wrap {
+    background-image: url("../../img/rates-desktop@1x.png"),
+    url("../../img/price-back-desktop@1x.png");
+    background-size: 198px, 446px;
+    background-position: 1049px 285px, 690px 233px;
+  }
+
+  .tariffs__add {
+    padding: 101px 0 154px 422px
+  }
+
+  .tariffs__list {
+    padding-bottom: 34px;
+  }
+
+  .tariffs__item {
+
+    &::before {
+      top: -19px;
+      left: 70px;
+    }
+
+    &:nth-child(2)::before {
+      top: -17px;
+    }
+
+    &:nth-child(3)::before {
+      top: -15px;
+    }
+  }
+
+  .tariffs__name {
+    padding-left: 160px;
+
+    &--1::before,
+    &--1::after,
+    &--3::before,
+    &--3::after {
+      width: 812px;
+      left: 162px;
+    }
+  }
+
+  .tariffs__price {
+    padding-right: 345px;
+  }
+
+  .tariffs__for-business {
+    padding:0 0 190px 159px;
+  }
+}

@@ -6,6 +6,7 @@
 @import "global/fonts.scss";
 //Blocks
 
+//Index
 @import "blocks/page.scss";
 @import "blocks/header.scss";
 @import "blocks/actions.scss";
@@ -15,4 +16,16 @@
 @import "blocks/about-us.scss";
 @import "blocks/directions.scss";
 @import "blocks/travel-companions.scss";
-/*@import "blocks/circle-bar.scss";*/
+@import "blocks/tariffs.scss";
+@import "blocks/authorization.scss";
+@import "blocks/info.scss";
+@import "blocks/map.scss";
+@import "blocks/footer.scss";
+
+//Catalog
+@import "blocks/country-filter.scss";
+@import "blocks/search-form.scss";
+@import "blocks/hitchhikers-list.scss";
+@import "blocks/main-head-catalog.scss";
+
+//Form
