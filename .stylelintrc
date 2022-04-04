@@ -5,7 +5,6 @@
       "always",
       {
         "except": [
-          "new-plane-nested",
           "blockless-after-blockless"
         ],
         "ignore": [

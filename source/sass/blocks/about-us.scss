@@ -8,10 +8,8 @@
   background-size: 292px;
   background-position: 52% 50%;
   background-repeat: no-repeat;
-  outline: 3px solid black;
+  outline: 3px solid #000000;
   z-index: 4;
-
-
 }
 
 .about-us__title {
@@ -21,7 +19,7 @@
   line-height: 1em;
   font-weight: 700;
   letter-spacing: 1px;
-  color: var(--special-orange)
+  color: var(--special-orange);
 }
 
 .tablet-wrap {
@@ -34,7 +32,7 @@
   font-size: 16px;
   line-height: 22px;
   font-weight: 300;
-  color: var(--basic-white)
+  color: var(--basic-white);
 }
 
 .call-to-action {

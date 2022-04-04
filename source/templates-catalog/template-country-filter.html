@@ -7,28 +7,30 @@
     <link rel="stylesheet" href="../css/style.css">
   </head>
   <body class="page__body">
+  <input class="filter__btn" type="checkbox" id="modal-filter">
     <section class="filter">
-      <div class="page__center">
+      <div class="page__center filter__wrap">
+        <h1 class="page__hidden">Поиск по странам и континентам</h1>
+        <label class="filter__btn-close" for="modal-filter">Свернуть</label>
+        <label class="filter__btn-open" for="modal-filter">Показать все</label>
         <div class="filter__container">
-          <h2 class="filter__tittle">Фильтрация по странам:</h2>
-          <button class="filter__toggle" type="button">
-            <span class="filter__open">показать все</span>
-            <span class="filter__close">свернуть</span>
-          </button>
-        </div>
-        <div class="filter__modal modal">
-          <ul class="filter__list continents page-list">
-            <li class="continents__item">Европа</li>
-            <li class="continents__item">Азия</li>
-            <li class="continents__item">америка</li>
-            <li class="continents__item">острова</li>
+          <p class="filter__tittle">Фильтрация по странам:</p>
+          <ul class="filter__list filter__list continents page__list">
+            <li class="continents__item"><a class="continents__name continents__name--first page__link" href="#">Европа</a></li>
+            <li class="continents__item"><a class="continents__name page__link" href="#">Азия</a></li>
+            <li class="continents__item"><a class="continents__name page__link" href="#">Америка</a></li>
+            <li class="continents__item"><a class="continents__name page__link" href="#">Острова</a></li>
           </ul>
-          <ul class="filter__list alphabet">
+        </div>
+
+
+        <div class="filter__modal page__list">
+          <ul class="filter__alphabet alphabet page__list">
             <li class="alphabet__item-row">
-              <ul class="alphabet__list">
+              <ul class="alphabet__list page__list">
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">A</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn alphabet__btn--first page__button" type="button">A</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="islands/australia">Австралия</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="europe/austria">Австрия</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="asia/azerbaijan">Азербайджан</a></li>
@@ -43,8 +45,8 @@
                   </ul>
                 </li>
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">Б</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">Б</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Багамские Острова</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Бангладеш</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Барбадос</a></li>
@@ -65,8 +67,8 @@
                   </ul>
                 </li>
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">В</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">В</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Вануату</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Великобритания</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Венгрия</a></li>
@@ -76,8 +78,8 @@
                   </ul>
                 </li>
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">Г</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">Г</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Габон</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Гаити</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Гайана</a></li>
@@ -94,8 +96,8 @@
                   </ul>
                 </li>
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">Д</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">Д</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Дания</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Джибути</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Доминика</a></li>
@@ -105,23 +107,23 @@
               </ul>
             </li>
             <li class="alphabet__item-row">
-              <ul class="alphabet__list">
+              <ul class="alphabet__list page__list">
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">Е</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">Е</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Египет</a></li>
                   </ul>
                 </li>
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">Ж</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">З</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Замбия</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Зимбабве</a></li>
                   </ul>
                 </li>
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">З</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">И</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Израиль</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Индия</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Индонезия</a></li>
@@ -135,8 +137,8 @@
                   </ul>
                 </li>
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">К</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">К</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Кабо-Верде</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Казахстан</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Камбоджа</a></li>
@@ -152,8 +154,8 @@
                   </ul>
                 </li>
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">Л</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">Л</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Лаос</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Латвия</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Лесото</a></li>
@@ -168,10 +170,10 @@
               </ul>
             </li>
             <li class="alphabet__item-row">
-              <ul class="alphabet__list">
+              <ul class="alphabet__list page__list">
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">М</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">М</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Маврикий</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Мавритания</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Мадагаскар</a></li>
@@ -184,8 +186,8 @@
                   </ul>
                 </li>
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">Н</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">Н</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Намибия</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Науру</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Непал</a></li>
@@ -198,15 +200,15 @@
                   </ul>
                 </li>
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">О</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">О</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">ОАЭ</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Оман</a></li>
                   </ul>
                 </li>
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">П</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">П</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Пакистан</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Палау</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Панама</a></li>
@@ -218,8 +220,8 @@
                   </ul>
                 </li>
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">Р</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">Р</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Руанда</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Румыния</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Россия</a></li>
@@ -228,10 +230,10 @@
               </ul>
             </li>
             <li class="alphabet__item-row">
-              <ul class="alphabet__list">
+              <ul class="alphabet__list page__list">
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">С</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">С</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Сальвадор</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Самоа</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Сан-Марино</a></li>
@@ -247,8 +249,8 @@
                   </ul>
                 </li>
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">Т</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">Т</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Таджикистан</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Таиланд</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Танзания</a></li>
@@ -262,8 +264,8 @@
                   </ul>
                 </li>
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">У</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">У</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Уганда</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Узбекистан</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Украина</a></li>
@@ -271,8 +273,8 @@
                   </ul>
                 </li>
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">Ф</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">Ф</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Фиджи</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Филиппины</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Финляндия</a></li>
@@ -280,18 +282,18 @@
                   </ul>
                 </li>
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">Х</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">Х</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Хорватия</a></li>
                   </ul>
                 </li>
               </ul>
             </li>
             <li class="alphabet__item-row">
-              <ul class="alphabet__list">
+              <ul class="alphabet__list page__list">
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">Ч</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">Ч</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Чад</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Черногория</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Чехия</a></li>
@@ -299,16 +301,16 @@
                   </ul>
                 </li>
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">Ш</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">Ш</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Швейцария</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Швеция</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Шри-Ланка</a></li>
                   </ul>
                 </li>
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">Э</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">Э</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Эквадор</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Эритрея</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Эсватини</a></li>
@@ -317,15 +319,15 @@
                   </ul>
                 </li>
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">Ю</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">Ю</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">ЮАР</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Южный Судан</a></li>
                   </ul>
                 </li>
                 <li class="alphabet__item-cell">
-                  <button class="alphabet__btn button" type="button">Я</button>
-                  <ul class="alphabet__list-sorted">
+                  <button class="alphabet__btn page__button" type="button">Я</button>
+                  <ul class="alphabet__list-sorted page__list">
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Ямайка</a></li>
                     <li class="alphabet__sorted-item"><a class="alphabet__location page__link" href="#">Япония</a></li>
                   </ul>
@@ -333,20 +335,20 @@
               </ul>
             </li>
           </ul>
-          <ul class="filter__filtered-list">
+          <ul class="filter__sorted-list page__list">
             <li class="filter__sorted-item"><a class="filter__location page__link" href="islands/australia">Австралия</a></li>
-            <li class="filter__filtered-item"><a class="filter__location page__link" href="europe/austria">Австрия</a></li>
-            <li class="filter__filtered-item"><a class="filter__location page__link" href="asia/azerbaijan">Азербайджан</a></li>
-            <li class="filter__filtered-item"><a class="filter__location page__link" href="europe/albania">Албания</a></li>
-            <li class="filter__filtered-item"><a class="filter__location page__link" href="africa/algeria">Алжир</a></li>
-            <li class="filter__filtered-item"><a class="filter__location page__link" href="africa/angola">Ангола</a></li>
-            <li class="filter__filtered-item"><a class="filter__location page__link" href="europe/andorra">Андора</a></li>
-            <li class="filter__filtered-item"><a class="filter__location page__link" href="islands/antigua-and-barbuda">Антигуа и Барбуда</a></li>
-            <li class="filter__filtered-item"><a class="filter__location page__link" href="south-america/argentine">Аргентина</a></li>
-            <li class="filter__filtered-item"><a class="filter__location page__link" href="asia/armenia">Армения</a></li>
-            <li class="filter__filtered-item"><a class="filter__location page__link" href="asia/afghanistan">Афганистан</a></li>
+            <li class="filter__sorted-item"><a class="filter__location page__link" href="europe/austria">Австрия</a></li>
+            <li class="filter__sorted-item"><a class="filter__location page__link" href="asia/azerbaijan">Азербайджан</a></li>
+            <li class="filter__sorted-item"><a class="filter__location page__link" href="europe/albania">Албания</a></li>
+            <li class="filter__sorted-item"><a class="filter__location page__link" href="africa/algeria">Алжир</a></li>
+            <li class="filter__sorted-item"><a class="filter__location page__link" href="africa/angola">Ангола</a></li>
+            <li class="filter__sorted-item"><a class="filter__location page__link" href="europe/andorra">Андора</a></li>
+            <li class="filter__sorted-item"><a class="filter__location page__link" href="islands/antigua-and-barbuda">Антигуа и Барбуда</a></li>
+            <li class="filter__sorted-item"><a class="filter__location page__link" href="south-america/argentine">Аргентина</a></li>
+            <li class="filter__sorted-item"><a class="filter__location page__link" href="asia/armenia">Армения</a></li>
+            <li class="filter__sorted-item"><a class="filter__location page__link" href="asia/afghanistan">Афганистан</a></li>
           </ul>
-          <button class="filter__close page__button" type="button">Свернуть</button>
+          <label class="filter__label-close" for="modal-filter">Свернуть</label>
         </div>
       </div>
     </section>
