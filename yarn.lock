@@ -1135,9 +1135,9 @@
   "resolved" "https://registry.npmjs.org/ee-first/-/ee-first-1.1.1.tgz"
   "version" "1.1.1"
 
-"ee-new-plane@1.1.1":
+"ee-new-plan@1.1.1":
   "integrity" "sha1-WQxhFWsK4vTwJVcyoViyZrxWsh0="
-  "resolved" "https://registry.npmjs.org/ee-new-plane/-/ee-new-plane-1.1.1.tgz"
+  "resolved" "https://registry.npmjs.org/ee-new-plan/-/ee-new-plan-1.1.1.tgz"
   "version" "1.1.1"
 
 "electron-to-chromium@^1.4.17":
@@ -2932,7 +2932,7 @@
   "resolved" "https://registry.npmjs.org/on-finished/-/on-finished-2.3.0.tgz"
   "version" "2.3.0"
   dependencies:
-    "ee-new-plane" "1.1.1"
+    "ee-new-plan" "1.1.1"
 
 "once@^1.3.0", "once@^1.3.1", "once@^1.3.2", "once@^1.4.0":
   "integrity" "sha1-WDsap3WWHUsROsF9nFC6753Xa9E="

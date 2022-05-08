@@ -9,45 +9,53 @@
   <body class="page__body">
     <section class="profile">
       <h2 class="page__hidden">Ваш профиль</h2>
-      <div class="page__center">
-        <div class="person__bar bar">
-          <div class="bar__group value-80">
-            <span class="bar__label">80</span>
-            <span class="bar__level">level</span>
-            <div class="bar__full-circle">
-              <div class="bar__circle left-side"></div>
-              <div class="bar__circle right-side"></div>
+      <div class="page__center profile__wrap">
+        <div class="person__bar circle-bar circle-bar--form">
+          <div class="circle-bar__field person__bar-field bar-field">
+            <svg class="circle-bar__svg">
+              <circle class="circle-bar__circle-80 circle-80" cx="20" cy="20" r="20"></circle>
+              <circle class="circle-bar__circle-80 circle-80" cx="23" cy="23" r="21"></circle>
+            </svg>
+            <div class="circle-bar__reached-level catalog-level">
+              <span class="circle-bar__number number-catalog">80</span><span
+              class="circle-bar__level circle-bar__level--hide">level</span>
             </div>
-            <div class="bar__shadow"></div>
           </div>
         </div>
-        <picture></picture>
+        <picture class="profile__pic">
+          <source media="(min-width: 1320px)" srcset="../img/demin-desktop-form@1x.jpg, ../img/demin-desktop-form@2x.jpg 2x">
+          <source media="(min-width: 768px)" srcset="../img/demin-tablet-form@1x.jpg, ../img/demin-tablet-form@2x.jpg 2x">
+          <img class="profile__photo page__img" src="../img/demin-mobile-form@1x.jpg" srcset="../img/demin-mobile-form@2x.jpg 2x"  alt="Фото профиля">
+        </picture>
         <a class="profile__change-photo page__link" href="#">
           <span class="profile__name-mobile">сменить фото</span>
           <span class="profile__name-desktop">фото</span>
         </a>
-        <form class="profile__form" action="https://echo.htmlacademy.ru" method="post">
+        <form class="profile__form" action="https://echo.htmlacademy.ru" method="GET">
           <fieldset class="profile__field hashtags">
-            <legend class="profile__legend">ТЭГИ</legend>
-            <textarea class="profile__textarea" name="hashtags" cols="30" rows="10" placeholder="Укажите минимум 3 хэштэга">#бургер #бар #футбол #концерт #крафт</textarea>
+            <legend class="hashtags__legend profile-legend">тэги</legend>
+            <label for="hashtags"></label>
+            <textarea class="hashtags__textarea" id="hashtags" name="hashtags" placeholder="Укажите минимум 3 хэштэга">#бургер #бар #футбол #концерт #крафт</textarea>
           </fieldset>
-          <fieldset class="profile__field transport-field">
-            <legend class="profile__legend">транспорт</legend>
-            <label class="transport__label">
-              <input class="transport__plane page__hidden" type="checkbox" checked>
-              <span class="transport__pointer"></span>
+        </form>
+        <form class="profile__form" action="https://echo.htmlacademy.ru" method="GET">
+          <fieldset class="profile__field way">
+            <legend class="way__legend profile-legend">транспорт</legend>
+            <label class="way__label">df
+              <input class="way__plane page__hidden" type="checkbox" checked>
+              <span class="way__pointer"></span>
             </label>
-            <label class="transport__label">
-              <input class="transport__car page__hidden" type="checkbox" checked>
-              <span class="transport__pointer"></span>
+            <label class="way__label">fd
+              <input class="way__car page__hidden" type="checkbox" checked>
+              <span class="way__pointer"></span>
             </label>
-            <label class="transport__label">
-              <input class="transport__bike page__hidden" type="checkbox">
-              <span class="transport__pointer"></span>
+            <label class="way__label">fd
+              <input class="way__bike page__hidden" type="checkbox">
+              <span class="way__pointer"></span>
             </label>
-            <label class="transport__label">
-              <input class="transport__on-foot page__hidden" type="checkbox" checked>
-              <span class="transport__pointer"></span>
+            <label class="way__label">fd
+              <input class="way__on-foot page__hidden" type="checkbox" checked>
+              <span class="way__pointer"></span>
             </label>
           </fieldset>
         </form>
