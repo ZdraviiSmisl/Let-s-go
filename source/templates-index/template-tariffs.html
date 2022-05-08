@@ -25,7 +25,30 @@
             <span class="tariffs__price">59 руб./мес</span>
           </li>
         </ul>
-        <button class="tariffs__for-business page__button"type="button">Показать тарифы для бизнеса</button>
+        <label class="tariffs-others" for="all" type="button">Показать тарифы для бизнеса</label>
+        <input class="tariffs-input" type="checkbox" id="all">
+        <div class="tariffs__popup tariffs-modal">
+          <h3 class="tariffs-modal__tittle">Бизнес-тарифы</h3>
+          <ul class="tariffs-modal__list page__list">
+            <li class="tariffs-modal__item">
+              <p class="tariffs-modal__text">Реклама у блогера</p>
+              <span class="tariffs-modal__price">300 000 руб.<span class="page__hidden">рублей</span>/пост</span>
+            </li>
+            <li class="tariffs-modal__item">
+              <p class="tariffs-modal__text">Накрутка подписчиков</p>
+              <span class="tariffs-modal__price">от 1 руб.<span class="page__hidden">рублей</span>/шт.<span class="page__hidden">штук</span></span>
+            </li>
+            <li class="tariffs-modal__item">
+              <p class="tariffs-modal__text">Лайки от ботов</p>
+              <span class="tariffs-modal__price">от 20 коп.<span class="page__hidden">копеек</span>/лайк</span>
+            </li>
+            <li class="tariffs-modal__item">
+              <p class="tariffs-modal__text">Ваш продакт-плейсмент</p>
+              <span class="tariffs-modal__price">Индивидуально</span>
+            </li>
+          </ul>
+          <button class="tariffs-modal__close page__button" type="button">Закрыть окно</button>
+        </div>
       </div>
     </section>
   </body>
