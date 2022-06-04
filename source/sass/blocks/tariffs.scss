@@ -1,21 +1,27 @@
 .tariffs {
+  position: relative;
+  margin-bottom: -30px;
+  font-family: "BloggerSans", "Arial", sans-serif;
   font-size: 16px;
   line-height: 16px;
   font-weight: 300;
   background-color: var(--very-light-blue);
-  border-radius: 0 0 20px 20px;
+  border-radius: 0 0 30px 30px;
+  z-index: -3;
 }
 
 .tariffs__wrap {
+  padding-top: 85px;
+  padding-bottom: 40px;
   background-image: url("../../img/rates@1x.png");
-  background-position: 170px 41px;
+  background-position: 170px 71px;
   background-repeat: no-repeat;
   background-size: 100px;
 }
 
 .tariffs__add {
   margin: 0;
-  padding: 56px 109px 55px 26px;;
+  padding: 0 109px 55px 26px;;
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
@@ -96,15 +102,16 @@
 }
 
 .tariffs-others {
-  padding: 0 0 35px 26px;
+  padding: 0 0 0 26px;
   letter-spacing: 0.6px;
   font-weight: 700;
   color: var(--middle-blue);
+  cursor: pointer;
 }
 
 .tariffs__popup {
   position: relative;
-  top: -2000px;
+  top: -9000px;
   display: block;
   height: 0;
 }
@@ -113,44 +120,112 @@
   display: none;
 
   &:checked ~ .tariffs__popup {
-    margin-bottom: -300px;
-    top: -335px;
+    position: relative;
+    margin-bottom: -449px;
+    top: -415px;
     height: auto;
-    width: 270px;
-    z-index: 10;
+    box-sizing: border-box;
     background-color: var(--basic-white);
+    border-radius: 20px;
+    z-index: 10;
   }
 }
 
-.tariffs-modal {
+.tariffs-modal__wrap {
   display: grid;
+  padding: 34px 25px 0 25px;
 }
 
 .tariffs-modal__tittle {
+  margin: 0 0 39px 0;
   font-size: 24px;
   line-height: 24px;
+  font-weight: 700;
   color: var(--special-orange);
   text-align: center;
-
+  letter-spacing: 1px;
 }
 
+.tariffs-modal__list {
+  position: relative;
+  font-size: 16px;
+  line-height: 22px;
+  font-weight: 300;
+  color: var(--origin-gray);
+}
+
+.tariffs-modal__item {
+  padding-bottom: 22px;
+
+  &:last-of-type {
+    padding-bottom: 45px;
+  }
+}
+
+.tariffs-modal__text {
+  margin: 0;
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -10px;
+    width: 100%;
+    min-width: 228px;
+    height: 0.5px;
+    background-color: var(--light-black);
+  }
+}
+
+.tariffs-modal__price {
+  display: block;
+  position: relative;
+  line-height: 22px;
+
+  &--last::before {
+    content: "";
+    position: absolute;
+    top: 37px;
+    width: 100%;
+    min-width: 228px;
+    height: 0.5px;
+    background-color: var(--light-black);
+  }
+}
+
+.tariffs-close {
+  display: block;
+  margin: 0 auto;
+  padding: 20px 0 20px 0;
+  text-align: center;
+  font-weight: 700;
+  line-height: 24px;
+  letter-spacing: 0.8px;
+  text-transform: uppercase;
+  color: var(--special-blue);
+  background-color: var(--super-light-blue);
+  border-radius: 0 0 20px 20px;
+  cursor: pointer;
+}
 
 @media (min-width: $tablet-width) {
   .tariffs {
+    margin-bottom: -50px;
     font-size: 28px;
     line-height: 28px;
-    border-radius: 0 0 53px 53px;
+    border-radius: 0 0 60px 60px;
   }
 
   .tariffs__wrap {
+    padding-bottom: 102px;
     background-image: url("../../img/rates@1x.png"),
     url("../../img/price-back-tablet@1x.png");
-    background-position: 542px 411px, 490px 150px;
+    background-position: 542px 441px, 490px 182px;
     background-size: 100px, 198px;
   }
 
   .tariffs__add {
-    padding: 69px 0 95px 102px;
+    padding: 17px 0 95px 102px;
     letter-spacing: 2px;
     font-size: 45px;
     line-height: 45px;
@@ -205,18 +280,80 @@
     font-size: 20px;
     line-height: 20px;
   }
+
+  .tariffs-input {
+
+    &:checked ~ .tariffs__popup {
+      margin-bottom: -516px;
+      top: -453px;
+    }
+  }
+
+  .tariffs-modal__wrap {
+    grid-template-columns: auto auto;
+    grid-template-rows: repeat(auto-fit, minmax(60px, auto));
+    padding: 54px 93px 50px 90px;
+    row-gap: 27px;
+  }
+
+  .tariffs-modal__tittle {
+    grid-area: 1/1/2/3;
+    font-size: 45px;
+    line-height: 45px;
+    letter-spacing: 2px;
+  }
+
+  .tariffs-modal__list {
+    display: contents;
+    font-size: 22px;
+    line-height: 28px;
+  }
+
+  .tariffs-modal__item {
+    display: contents;
+  }
+
+  .tariffs-modal__text {
+    grid-column: 1/2;
+    justify-self: self-start;
+
+    &::before {
+      top: -16px;
+      min-width: 505px;
+      height: 1px;
+    }
+  }
+
+  .tariffs-modal__price {
+    grid-column: 2/3;
+    justify-self: self-end;
+
+    &--last::before {
+      left: -360px;
+      min-width: 505px;
+      height: 1px;
+    }
+  }
+
+  .tariffs-close {
+    padding: 40px 0 44px 0;
+    text-transform: initial;
+    letter-spacing: -1px;
+  }
 }
 
 @media (min-width: $desktop-width) {
   .tariffs {
-    border-radius: 0 0 69px 69px;
+    border-radius: 0 0 60px 60px;
   }
 
   .tariffs__wrap {
+    padding-top: 31px;
+    padding-bottom: 188px;
     background-image: url("../../img/rates-desktop@1x.png"),
     url("../../img/price-back-desktop@1x.png");
     background-size: 198px, 446px;
-    background-position: 1049px 285px, 690px 233px;
+    background-position: 1049px 316px, 690px 264px;
   }
 
   .tariffs__add {
@@ -260,6 +397,37 @@
   }
 
   .tariffs-others {
-    padding:0 0 190px 159px;
+    padding-left: 159px;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .tariffs-input {
+
+    &:checked ~ .tariffs__popup {
+      margin: 0 auto -527px auto;
+      width: 750px;
+    }
+  }
+
+  .tariffs-modal__wrap {
+    padding-bottom: 64px;
+    padding-left: 60px;
+    padding-right: 60px;
+
+  }
+
+  .tariffs-modal__text {
+
+    &::before {
+      min-width: 625px;
+    }
+  }
+
+  .tariffs-modal__price {
+
+    &--last::before {
+      left: -485px;
+      min-width: 625px;
+    }
   }
 }

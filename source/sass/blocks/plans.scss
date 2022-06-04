@@ -1,9 +1,13 @@
 .plans {
+  position: relative;
+  margin-bottom: -25px;
   background-color: var(--extra-light-blue-2);
+  border-radius: 30px 30px 0 0;
+  z-index: -3;
 }
 
 .plans__wrap {
-  padding: 7px 0 0 0;
+  padding: 7px 0 50px 0;
   font-size: 14px;
   font-weight: 500;
 }
@@ -31,7 +35,7 @@
   border-radius: 10px;
 
   &:last-of-type {
-    margin-bottom: 27px;
+    margin-bottom: 0;
   }
 }
 
@@ -144,7 +148,7 @@
     letter-spacing: 2px;
 
     .plans__item:last-of-type & {
-     padding-left: 18px;
+      padding-left: 18px;
     }
   }
 

@@ -1,5 +1,8 @@
 .profile {
+  position: relative;
+  margin-bottom: -20px;
   background-color: var(--very-light-blue);
+  z-index: -3;
 }
 
 .profile__wrap {

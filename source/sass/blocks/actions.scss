@@ -1,6 +1,9 @@
 
 .actions {
-  // .actions__list
+  margin-bottom: -1px;
+  background-color: var(--black-blue);
+  z-index: 0;
+
   &__list {
     display: grid;
     grid-template-columns: 1fr;
@@ -8,7 +11,6 @@
     row-gap: 0;
   }
 
-  // .actions__item
   &__item {
     margin: 0;
     padding: 0;
@@ -45,7 +47,7 @@
   }
 
   &__action--forth {
-    padding: 24px 76px 20px 27px;
+    padding: 24px 76px 15px 27px;
     background-color: var(--white-yellow);
     border-radius: 10px;
   }
@@ -61,7 +63,11 @@
 
 @media (min-width: $tablet-width) {
   .actions {
-    // .actions__list
+    position: relative;
+    margin-bottom: -140px;
+    background-color: transparent;
+    z-index: 8;
+
     &__list {
       grid-template-rows: repeat(2, auto);
       grid-template-columns: repeat(2, auto);
@@ -110,7 +116,8 @@
 
 @media (min-width: $desktop-width) {
   .actions {
-    // .actions__list
+    margin-bottom: -172px;
+
     &__list {
       grid-template-columns: repeat(4, auto);
       grid-template-rows: auto;

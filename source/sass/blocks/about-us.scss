@@ -1,20 +1,22 @@
 .about-us {
+  position: relative;
+  margin-bottom: -40px;
+  background-image: url("../../img/service-back-mobile@1x.png");
   background-color: var(--black-blue);
+  background-position: center 93%;
+  background-repeat: no-repeat;
+  background-size: 292px;
   border-radius: 0 0 30px 30px;
+  z-index: 0;
 }
 
 .about-us__wrap {
-  background-image: url("../../img/service-back-mobile@1x.png");
-  background-size: 292px;
-  background-position: 52% 50%;
-  background-repeat: no-repeat;
-  outline: 3px solid #000000;
-  z-index: 4;
+  padding-bottom: 82px;
 }
 
 .about-us__title {
   margin: 0;
-  padding: 32px 0 0 24px;
+  padding: 73px 0 0 24px;
   font-size: 24px;
   line-height: 1em;
   font-weight: 700;
@@ -37,7 +39,7 @@
 
 .call-to-action {
   margin: 0;
-  padding: 0 27px 81px 27px;
+  padding: 0 27px 0 27px;
   font-size: 16px;
   line-height: 22px;
   font-weight: 700;
@@ -51,18 +53,20 @@
 
 @media (min-width: $tablet-width) {
   .about-us {
-    border-radius: 0 0 54px 54px;
+    background-image: url("../../img/service-back-tablet@1x.png");
+    background-size: 720px;
+    background-position: center 73%;
+    background-repeat: no-repeat;
+    border-radius: 0 0 60px 60px;
   }
 
   .about-us__wrap {
-    background-image: url("../../img/service-back-tablet@1x.png");
-    background-size: 720px;
-    background-position: 7% -11%;
-    background-repeat: no-repeat;
+    padding-top: 273px;
+    padding-bottom: 89px;
   }
 
   .about-us__title {
-    padding: 27px 0 0 34px;
+    padding: 0 0 0 34px;
     letter-spacing: 2px;
     font-size: 45px;
   }
@@ -78,31 +82,40 @@
   }
 
   .call-to-action {
-    padding: 0 350px 81px 32px;
+    padding: 0 350px 53px 32px;
     letter-spacing: 1px;
     font-size: 21px;
     line-height: 25px;
   }
 
   .about-us__more {
-    margin: 0 0 115px 0;
-    display: inline-block;
-    padding: 0 0 0 0;
+    display: inline-flex;
+    box-sizing: border-box;
+    padding: 29px 133px 27px 28px;
+    min-width: 276px;
     font-size: 24px;
     letter-spacing: 1px;
     line-height: 1em;
     font-weight: 700;
     color: var(--special-blue);
     background-color: var(--white-yellow);
-    transform: translateX(67px);
+    border-radius: 20px;
+    transform: translateX(36px);
   }
 }
 
 @media (min-width: $desktop-width) {
-  .about-us__wrap {
+  .about-us {
     background-image: url("../../img/img-back@1x.png");
     background-size: 630px;
-    background-position: 100% 100%;
+    background-position: 750px 380px;
+    border-radius: 0 0 56px 56px;
+    z-index: 7;
+  }
+
+  .about-us__wrap {
+    padding-top: 297px;
+    padding-bottom: 166px;
   }
 
   .about-us__title {
@@ -135,13 +148,15 @@
   }
 
   .call-to-action {
-    padding: 0 770px 115px 68px;
-    letter-spacing: 0;
+    padding: 0 799px 85px 71px;
+    letter-spacing: 1px;
     line-height: 24px;
   }
 
   .about-us__more {
-    transform: translateX(103px);
-    margin-bottom: 190px;
+    padding-right: 123px;
+    min-width: 274px;
+    letter-spacing: 2px;
+    transform: translateX(71px);
   }
 }

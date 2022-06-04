@@ -1,4 +1,4 @@
-$mobile-only: 659.5px;
+$mobile-only: 767.5px;
 $tablet-width: 768px;
 $desktop-width: 1440px;
 $not-desktop: 1439px;
@@ -8,14 +8,18 @@ $not-desktop: 1439px;
   --light-pink: hsla(0, 56%, 95%, 1);
   --trasparent: hsla(50, 33%, 25%, 1.00);
   --basic-white: hsla(0, 0%, 100%, 1);
+  --white: hsla(0, 0%, 95%, 1);
   --basic-pink: hsla(344, 68%, 49%, 1);
   --basic-green: hsla(90, 78%, 50%, 1);
   --light-red: hsla(0, 92%, 72%, 1);
   --basic-black: hsla(0, 0%, 0%, 1);
   --basic-black-transparent: hsla(0, 0%, 0%, 0.6);
+  --light-black: hsla(0, 0%, 0%, 0.1);
   --new-blue: hsla(229, 48%, 18%, 1);
   --black-blue: hsla(229, 46%, 18%, 1);
+  --super-blue: hsla(228, 35%, 92%, 1);
   --basic-blue: hsla(228, 41%, 15%, 1);
+  --extra-blue: hsla(228, 41%, 15%, 1);
   --origin-blue: hsla(229, 49%, 15%, 1);
   --special-blue: hsla(224, 52%, 24%, 1);
   --special-blue-30: hsla(224, 52%, 24%, 0.3);
@@ -28,6 +32,7 @@ $not-desktop: 1439px;
   --origin-gray: hsla(0, 0%, 27%, 1);
   --origin-gray-transparent: hsla(0, 0%, 27%, 0.8);
   --white-gray: hsla(0, 0%, 77%, 1);
+  --extra-gray: hsla(0, 0%, 85%, 1);;
   --next-gray: hsla(0, 0%, 80%, 1);
   --white-yellow: hsla(47, 100%, 65%, 1);
   --one-more-yellow: hsl(47, 89%, 56%, 1);
@@ -44,9 +49,14 @@ $not-desktop: 1439px;
   --slightly-blue: hsla(229, 24%, 87%, 1);
   --new-gray: hsla(228, 16%, 64%, 1);
   --trasparent: hsl(0, 0%, 0%, 0);
+  --super-light-blue: hsla(228, 26%, 96%, 1);
   --header-min-height: 73px;
 
   @media (min-width: $tablet-width) {
     --header-min-height: 132px;
+  }
+
+  @media (min-width: $desktop-width) {
+    --header-min-height: 90px
   }
 }

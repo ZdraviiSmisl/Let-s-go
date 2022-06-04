@@ -1,67 +1,123 @@
 .filter {
+  position: relative;
+  margin-bottom: -16px;
+  grid-row: 2/3;;
+  min-height: 66px;
+  max-height: 0;
+  font-family: inherit;
   --filter-bg: var(--light-blue-2);
   background-color: var(--filter-bg);
   border-radius: 0 0 25px 25px;
-  height: 150px;
+  z-index: -5;
 }
 
 .filter__wrap {
-  position: relative;
-  padding: 20px 0 0 0;
+  padding: 30px 0 0 0;
   text-align: left;
   font-size: 16px;
 }
 
-.filter__btn {
+.filter-close {
   display: none;
 }
 
-.filter__btn:checked ~ .filter {
-  margin-bottom: -1000px;
-  height: auto;
-  z-index: 20;
+.filter__btn {
+  display: none;
+
+  &:checked ~ .filter {
+    position: absolute;
+    top: 380px;
+    left: 50%;
+    right: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    min-width: 320px;
+    height: auto;
+    max-height: fit-content;
+    z-index: -2;
+  }
+
+  &:checked ~ .filter .filter__wrap {
+    padding-bottom: 31px;
+  }
+
+  &:checked ~ .filter .filter-open {
+    display: none;
+  }
+
+  &:checked ~ .filter .filter-close {
+    display: block;
+  }
+
+  &:checked ~ .filter .filter__tittle {
+    padding-bottom: 9px;
+  }
+}
+
+.filter__ahead-block {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 24px;
+  align-items: center;
+}
+
+.filter-close,
+.filter-open {
+  order: 2;
+  align-self: self-start;
+  max-height: 0;
+  color: var(--black-blue);
+  -webkit-tap-highlight-color: var(--trasparent);
+  cursor: pointer;
+  z-index: 10;
+}
+
+.continents {
+  order: 3;
+}
+
+.filter-close {
+  top: 31px;
+}
+
+.filter__word {
+  display: none;
+}
+
+.filter-open__svg,
+.filter-close__svg {
+  padding-bottom: 4px;
+  fill: currentColor;
 }
 
 .filter__modal,
 .continents {
-  position: relative;
-  top: -999px;
-}
-
-.filter__btn-close,
-.filter__btn-open {
-  position: absolute;
-  z-index: 10;
-  -webkit-tap-highlight-color: var(--trasparent);
-  cursor: pointer;
-}
-
-.filter__btn-close {
   display: none;
 }
 
-.filter__btn-open {
-  top: 40px;
-  right: 50px;
-  width: 135px;
+.filter__btn:checked ~ .filter .filter__modal,
+.filter__btn:checked ~ .filter .continents {
+  display: block;
 }
 
-.filter__btn:checked ~ .filter .filter__wrap .filter__modal {
-  top: 0;
-}
-
-.filter__btn:checked ~ .filter .filter__wrap .filter__container .continents {
-  top: 0;
-}
-
-.filter__tittle,
-.continents__name {
+.continents__name,
+.filter__tittle {
   margin: 0;
-  letter-spacing: 0.8px;
+  letter-spacing: 0.7px;
   text-transform: uppercase;
+  font-size: inherit;
   line-height: 18px;
   font-weight: bold;
   color: var(--black-blue)
+}
+
+.filter__tittle {
+  order: 1;
+
+  & .filter__img {
+    padding-right: 5px;
+    fill: currentColor;
+  }
 }
 
 .continents {
@@ -84,17 +140,13 @@
   }
 }
 
-.filter__tittle {
-  padding: 0 0 32px 26px;
-}
-
-
 .filter__list {
-  padding: 0 0 26px 23px;
+  padding: 0 0 23px 25px;
 }
 
 .alphabet {
   padding: 0 0 9px 23px;
+  max-width: 225px;
 }
 
 .alphabet__item-row {
@@ -112,7 +164,7 @@
 }
 
 .alphabet__btn {
-  width: 45px;
+  width: 44px;
   height: 42px;
   font-size: 14px;
   font-weight: 500;
@@ -147,7 +199,7 @@
 
 .filter__label-close {
   display: inline-block;
-  margin: 0 0 27px 0;
+  margin: 0;
   padding: 10px 81px 10px 109px;
   line-height: 20px;
   font-weight: 700;
@@ -162,58 +214,87 @@
 
 @media (min-width: $tablet-width) {
   .filter {
+    margin-bottom: 7px;
+    min-height: 186px;
     border-radius: 0 0 55px 55px;
+
+    .filter__btn:checked ~ & {
+      top: 355px;
+    }
   }
 
   .filter__wrap {
     grid-template-columns: minmax(350px, auto) auto;
     grid-template-rows: repeat(3, auto);
-    padding: 59px 0 0 0;
+    padding-top: 108px;
     font-size: 20px;
-  }
 
-  .filter__container {
-    grid-area: 1/1/1/3;
-  }
-
-  .filter__btn:checked {
-
-    & ~ .filter__btn-open {
-      display: none;
-    }
-
-    & ~ .filter__btn-close {
-      display: block;
+    .filter__btn:checked ~ .filter & {
+      padding-top: 0;
+      padding-bottom: 79px;
     }
   }
 
-  .filter__btn-close,
-  .filter__btn-open {
-    right: 115px;
-    top: 60px;
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    line-height: 20px;
+  .filter__ahead-block {
+    flex-flow: initial;
+    justify-content: initial;
+    align-items: baseline;
+    gap: 73px;
+    max-height: 0;
+
+    .filter__btn:checked ~ .filter & {
+      position: absolute;
+      top: 228px;
+      gap: 82px;
+      padding-bottom: 0;
+    }
   }
 
   .filter__tittle {
     display: none;
   }
 
-  .filter__modal {
+  .filter__word {
+    display: inline-block;
+    padding-right: 15px;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 1px;
+
+    .filter__btn:checked ~ .filter & {
+      transform: translateY(-8px);
+    }
+  }
+
+  .filter-open__svg {
+    width: 30px;
+    height: 7px;
+  }
+
+  .filter-close__svg {
+    width: 23px;
+    height: 23px;
+    padding-left: 39px;
+  }
+
+  .continents,
+  .filter__btn:checked ~ .filter .continents {
+    order: 1;
+    display: flex;
+    flex-flow: row wrap;
+    max-height: 0;
+    column-gap: 30px;
+    padding: 0 0 50px 32px;
+  }
+
+
+  .filter__btn:checked ~ .filter .filter__modal {
     display: grid;
     grid-template-columns: repeat(2, auto);
     grid-auto-flow: row;
     grid-row: 2/4;
-    top: -2000px;
-  }
-
-  .continents {
-    display: flex;
-    flex-flow: row wrap;
-    column-gap: 30px;
-    padding: 0 0 50px 32px;
-    top: 0;
+    padding-top: 311px;
+    padding-bottom: 0;
   }
 
   .continents__name {
@@ -230,6 +311,7 @@
     grid-auto-flow: row;
     row-gap: 26px;
     padding: 0 0 65px 29px;
+    max-width: 352px;
   }
 
   .alphabet__item-row {
@@ -271,7 +353,7 @@
   }
 
   .filter__label-close {
-    margin: 0 0 79px 0;
+    margin: 0;
     grid-area: 3/1/4/3;
     box-sizing: border-box;
     width: 615px;
@@ -281,57 +363,83 @@
 }
 
 @media (min-width: $desktop-width) {
+  .filter {
+    margin-bottom: 65px;
+    grid-column: 1/3;
+
+    .filter__btn:checked ~ & {
+      position: relative;
+      top: 1329px;
+      margin-bottom: -40px;
+    }
+  }
+
   .filter__wrap {
     grid-template-columns: max-content;
     grid-template-rows: auto auto 100px;
     justify-content: center;
-    padding: 63px 0 65px 0;
+    padding: 0;
   }
 
-  .filter__container {
-    display: flex;
-    align-items: baseline;
-    padding: 0 0 61px 67px;
-    gap: 30px;
+  .filter__ahead-block,
+  .filter__btn:checked ~ .filter .filter__ahead-block {
+    position: relative;
+    top: 231px;
+    gap: 0;
+  }
+
+  .filter__ahead-block {
+    top: 105px;
   }
 
   .filter__tittle {
+    order: 1;
     display: inline-block;
-    padding: 0 0 0 0;
-    min-width: 248px;
+    padding: 0 0 0 21px;
+    letter-spacing: 1px;
+
+    .filter__img {
+      padding-right: 13px;
+      width: 23px;
+      height: 15px;
+    }
   }
 
-  .filter__btn:checked ~ .filter {
-    height: auto;
-    z-index: 0;
+  .continents,
+  .filter__btn:checked ~ .filter .continents {
+    order: 2;
+    gap: 34px;
+    padding-left: 28px;
   }
 
-  .filter__btn-close,
-  .filter__btn-open {
-    top: 67px;
-    right: 163px;
-  }
-
-  .filter__list {
-    display: contents;
+  .filter-close,
+  .filter-open {
+    order: 3;
+    padding-left: 345px;
   }
 
   .filter__modal {
-    grid-template-columns: 1fr;
     position: relative;
-    top: -3000px;
+    /*top: -3000px;*/
+
+    .filter__btn:checked ~ .filter & {
+      top: 0;
+      grid-template-columns: 1fr;
+      padding-bottom: 0;
+    }
   }
 
   .alphabet {
     padding: 0 0 63px 37px;
-    row-gap: 46px;
+    row-gap: 32px;
+    max-width: 1215px;
   }
 
   .alphabet__item-row {
     align-items: stretch;
-    padding: 0 30px 0 0;
+    padding: 14px 0 0 0;
     margin: 0;
-    column-gap: 42px;
+    column-gap: 41px;
     flex-wrap: wrap;
 
     &:nth-of-type(3) {
@@ -343,7 +451,7 @@
     margin: 0;
     padding: 0;
     align-self: normal;
-    width: 210px;
+    min-width: 210px;
   }
 
   .alphabet__btn {
@@ -370,7 +478,7 @@
 
   .filter__label-close {
     padding: 42px 0 38px 40px;
-    width: 1320px;
+    min-width: 1320px;
     text-align: center;
     transform: translateX(0px);
     border-radius: 20px;
