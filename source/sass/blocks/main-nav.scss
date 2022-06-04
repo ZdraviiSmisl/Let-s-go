@@ -1,10 +1,5 @@
 .main-nav {
-  position: relative;
-  /*width: 100%;*/
-  padding-top: var(--header-min-height);
-  text-align: center;
-  background-color: var(--basic-white);
-  outline: 3px solid greenyellow;
+  width: 100%;
 }
 
 .main-nav__toggle {
@@ -20,12 +15,15 @@
 }
 
 .main-services {
+  display: block;
+  width: 100%;
   font-size: 30px;
   line-height: 35px;
   font-weight: 500;
   color: var(--black-blue);
   text-transform: uppercase;
   letter-spacing: 1px;
+  -webkit-tap-highlight-color: transparent;
 }
 
 .nav-contacts__link {
@@ -51,6 +49,18 @@
 .nav-contacts__mail {
   padding-left: 29px;
   letter-spacing: 0.3px;
+}
+
+.social {
+
+  &--head {
+    display: none;
+  }
+
+  .header__input:checked ~ .page-header &--head {
+    display: block;
+    background: transparent;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -79,11 +89,7 @@
   }
 
   .nav-contacts__login {
-    position: absolute;
-    top: 50px;
-    right: 31px;
-    font-size: 20px;
-    letter-spacing: 0.7px;
+    display: none;
   }
 
   .nav-contacts__number,
@@ -107,5 +113,23 @@
 @media (min-width: $desktop-width) {
   .main-nav {
     display: flex;
+    flex-flow: row wrap;
+  }
+
+  .main-nav__item {
+    align-self: self-end;
+  }
+
+  .main-services {
+    display: inline-block;
+    padding-bottom: 7px;
+    font-size: 20px;
+    line-height: 20px;
+    letter-spacing: 0.5px;
+    color: var(--basic-white)
+  }
+
+  .page-header--scrolled .main-services {
+    color: var(--black-blue)
   }
 }

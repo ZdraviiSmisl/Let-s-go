@@ -6,7 +6,10 @@
 @import "global/fonts.scss";
 //Blocks
 
+
+
 //Index
+@import "blocks/logo.scss";
 @import "blocks/page.scss";
 @import "blocks/header.scss";
 @import "blocks/actions.scss";
@@ -33,3 +36,4 @@
 @import "blocks/dates-of-stay.scss";
 @import "blocks/itinerary.scss";
 @import "blocks/activities.scss";
+@import "blocks/create-plan.scss";

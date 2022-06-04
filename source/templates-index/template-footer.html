@@ -9,11 +9,23 @@
   <body class="page__body">
     <footer class="page__footer footer">
       <div class="page__center footer__wrap">
-        <picture>
-          <source media="(min-width:1320px)" srcset="../img/logo-full-desktop-blue@1x.png, ../img/logo-full-desktop-blue@2x.png 2x">
-          <source media="(min-width: 768px)" srcset="../img/logo-full-tablet-blue@1x.png, ../img/logo-full-tablet-blue@2x.png 2x">
-          <img class="footer__logo page__img" src="../img/logo-mobile-blue@1x.png" srcset="../img/logo-mobile-blue@2x.png 2x" alt="Логотип компании 'Погнали'">
-        </picture>
+        <a class="footer__logo logo">
+          <div class="logo__wrap logo__wrap--mobile">
+            <svg class="logo__image" width="96" height="15">
+              <use href="../../img/logo.svg#logo-mobile"/>
+            </svg>
+          </div>
+          <div class="logo__wrap logo__wrap--tablet">
+            <svg class="logo__image" width="166" height="42">
+              <use href="../../img/logo.svg#logo-tablet"/>
+            </svg>
+          </div>
+          <div class="logo__wrap logo__wrap--desktop">
+            <svg class="logo__image" width="200" height="50">
+              <use href="../../img/logo.svg#logo-desktop"/>
+            </svg>
+          </div>
+        </a>
         <div class="footer__part social">
           <ul class="social__list page__list">
             <li class="social__item">

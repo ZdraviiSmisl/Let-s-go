@@ -1,5 +1,9 @@
 .companions {
+  position: relative;
+  margin-bottom: -30px;
   background-color: var(--black-blue);
+  border-radius: 0 0 30px 30px;
+  z-index: -2;
 }
 
 .companions__wrap {
@@ -7,7 +11,8 @@
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: repeat(4, auto);
-  padding-top: 73px;
+  padding-top: 93px;
+  padding-bottom: 28px;
   background-image: url("../../img/smolov-back-desktop@1x.png");
   background-repeat: no-repeat;
   background-size: 143px;
@@ -266,10 +271,10 @@
     row-gap: 60px;
     grid-template-columns: repeat(2, auto);
     grid-template-rows: repeat(3, auto);
-    padding: 137px 0 88px 0;
+    padding: 188px 0 88px 0;
     background-image: url("../../img/rogovaya-back-desktop@1x.png");
     background-size: 285px;
-    background-position: 368px 79px;
+    background-position: 368px 132px;
 
     &::before {
       width: 212px;
@@ -398,15 +403,15 @@
     grid-row: 0;
     grid-template-columns: repeat(3, auto);
     grid-template-rows: auto;
-    padding: 0 0 135px 0;
-    background-position: 129px 364px;
+    padding: 72px 0 135px 0;
+    background-position: 130px 435px;
 
     &::before {
       transform: translate(1%, 10%);
     }
 
     &::after {
-      transform: translate(340%, 79%);
+      transform: translate(340%, 129%);
     }
   }
 
@@ -426,7 +431,7 @@
     grid-area: 1/1/1/2;
     margin: 0 0 0 0;
     padding: 380px 0 0 68px;
-    letter-spacing: 0;
+    letter-spacing: 1px;
   }
 
   .companions__people {

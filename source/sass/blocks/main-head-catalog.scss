@@ -1,5 +1,10 @@
 .catalog-head {
-  background-color: var(--new-blue);
+  position: relative;
+  margin-bottom: -12px;
+  grid-row: 1/2;
+  background-color: var(--basic-blue);
+  border-radius: 0 0 23px 22px;
+  z-index: -1;
 }
 
 .catalog-head__wrapper {
@@ -7,13 +12,29 @@
   flex-flow: row wrap;
   justify-content: space-between;
   align-items: center;
+  padding-top: 21px;
+  padding-bottom: 15px;
 }
 
 .catalog-head__title {
+  position: relative;
+  margin: 0;
   font-size: 36px;
   line-height: 36px;
   font-weight: 700;
   color: var(--basic-white);
+  letter-spacing: 2px;
+
+  &::before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    left: 0;
+    min-width: 172px;
+    height: 5px;
+    border-radius: 4px;
+    background-color: var(--special-orange)
+  }
 }
 
 .catalog-head__back {
@@ -21,30 +42,71 @@
 }
 
 @media (min-width: $tablet-width) {
-  .catalog-head{
+  .catalog-head {
+    margin-bottom: -47px;
+    border-radius: 0 0 60px 60px;
+  }
+
+  .catalog-head__wrapper {
+    justify-content: initial;
+    gap: 151px;
+    padding-top: 108px;
+    padding-bottom: 90px;
   }
 
   .catalog-head__title {
+    padding-left: 37px;
     font-size: 60px;
     line-height: 20px;
+    letter-spacing: 3px;
+
+    &::before {
+      bottom: -95px;
+      left: 34px;
+      min-width: 288px;
+      height: 8px;
+    }
   }
 
   .catalog-head__back {
-    display: block;
+    position: relative;
+    display: inline-flex;
+    align-self: self-end;
+    box-sizing: border-box;
     font-size: 20px;
     line-height: 20px;
     font-weight: 700;
+    letter-spacing: 1px;
+    text-transform: uppercase;
     color: var(--basic-white);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  .catalog__svg-back {
+    padding-left: 27px;
+    fill: currentColor;
   }
 }
 
 @media (min-width: $desktop-width) {
   .catalog-head {
+    grid-column: 1/3;
+  }
+
+  .catalog-head__wrapper {
+    gap: 728px;
+    padding-top: 148px;
   }
 
   .catalog-head__title {
+    padding-left: 66px;
+
+    &::before {
+      left: 66px;
+    }
   }
 
   .catalog-head__back {
+    padding-top: 4px;
   }
 }

@@ -1,8 +1,10 @@
 .map {
+  position: relative;
+  margin-bottom: -129px;
+  z-index: -6;
 }
 
 .map__wrap {
-  position: relative;
   width: 100%;
 
   &:before {
@@ -37,6 +39,7 @@
 
 @media(min-width: $desktop-width) {
   .map {
+    margin-bottom: -138px;
   }
 
   .map__frame {

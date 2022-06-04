@@ -1,12 +1,15 @@
 .authorization {
+  position: relative;
+  margin-bottom: -40px;
   background-color: var(--black-blue);
   border-radius: 0 0 31px 26px;
+  z-index: -4;
 }
 
 .authorization__wrap {
   display: grid;
   grid-template: repeat(4, auto)/auto;
-  padding: 74px 0 0 0;
+  padding: 102px 0 0 0;
   font-size: 16px;
   line-height: 22px;
   font-weight: 300;
@@ -94,11 +97,12 @@
 
 @media (min-width: $tablet-width) {
   .authorization {
+    margin-bottom: -50px;
     border-radius: 0 0 60px 60px;
   }
 
   .authorization__wrap {
-    padding-top: 54px;
+    padding-top: 105px;
     padding-bottom: 80px;
     font-size: 28px;
   }
@@ -166,7 +170,7 @@
 
   .authorization__wrap {
     grid-template: repeat(5,auto)/repeat(2,1fr);
-    padding: 105px 0 136px 0;
+    padding: 154px 0 136px 0;
   }
 
   .authorization__suggest {
