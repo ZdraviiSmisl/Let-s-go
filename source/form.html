@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="./css/style.css">
   </head>
-  <body class="page__body">
+  <body class="page__body page__body--form">
     <input class="header__input" id="toggle" type="checkbox">
     <header class="page-header header">
       <div class="header__wrapper page__center">
@@ -68,7 +68,7 @@
               <a class="nav-contacts__link nav-contacts__mail page__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
             </li>
           </ul>
-          <div class="main-nav__social social">
+          <div class="main-nav__social social social--head">
             <ul class="social__list page__list">
               <li class="social__item">
                 <a class="social-fb" href="https://www.facebook.com/htmlacademy">
@@ -91,15 +91,20 @@
       </div>
     </header>
     <main class="page-main">
-      <section class="catalog-head">
+     <!-- <picture class="">
+        <source media="(min-width: 1320px)" srcset="../img/demin-desktop-form@1x.jpg, ../img/demin-desktop-form@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="../img/demin-tablet-form@1x.jpg, ../img/demin-tablet-form@2x.jpg 2x">
+        <img class="profile__photo page__img" src="../img/demin-mobile-form@1x.jpg" srcset="../img/demin-mobile-form@2x.jpg 2x"  alt="Фото профиля">
+      </picture>-->
+      <section class="catalog-head catalog-head--form">
         <div class="page__center catalog-head__wrapper">
-          <h1 class="catalog-head__title">Направления</h1>
-          <a class="catalog-head__back page__link" href="index.html">на главную</a>
+          <h1 class="catalog-head__title catalog-head__title--dir">Направления</h1>
+          <a class="catalog-head__back catalog-head__back--dir page__link" href="index.html">на главную</a>
         </div>
       </section>
       <section class="profile">
         <h2 class="page__hidden">Ваш профиль</h2>
-        <div class="page__center profile__wrap">
+        <div class="page__center page__center--tablet-except profile__wrap">
           <div class="person__bar circle-bar circle-bar--form">
             <div class="circle-bar__field person__bar-field bar-field">
               <svg class="circle-bar__svg">
@@ -129,43 +134,43 @@
             </fieldset>
           </form>
           <form class="profile__form" action="https://echo.htmlacademy.ru" method="GET">
-            <fieldset class="profile__field way">
+            <fieldset class="profile__field transport way">
               <legend class="way__legend profile-legend">транспорт</legend>
-              <label class="way__label">df
-                <input class="way__plane page__hidden" type="checkbox" checked>
-                <span class="way__pointer"></span>
+              <label class="transport__label plane" aria-label="По воздуху">
+                <input class="transport__checkbox  page__hidden" type="checkbox" checked>
+                <span class="plane__back back back--form"></span>
               </label>
-              <label class="way__label">fd
-                <input class="way__car page__hidden" type="checkbox" checked>
-                <span class="way__pointer"></span>
+              <label class="transport__label bus" aria-label="На общественном транспорте">
+                <input class="transport__checkbox page__hidden" type="checkbox" checked>
+                <span class="bus__back back back--form"></span>
               </label>
-              <label class="way__label">fd
-                <input class="way__bike page__hidden" type="checkbox">
-                <span class="way__pointer"></span>
+              <label class="transport__label bike" aria-label="На мотоцикле">
+                <input class="transport__checkbox page__hidden" type="checkbox">
+                <span class="bike__back back back--form"></span>
               </label>
-              <label class="way__label">fd
-                <input class="way__on-foot page__hidden" type="checkbox" checked>
-                <span class="way__pointer"></span>
+              <label class="transport__label on-foot" aria-label="Пешком">
+                <input class="transport__checkbox page__hidden" type="checkbox" checked>
+                <span class="on-foot__back back back--form"></span>
               </label>
             </fieldset>
           </form>
         </div>
       </section>
       <section class="plans">
-        <div class="page__center plans__wrap">
+        <div class="page__center page__center--tablet-except plans__wrap">
           <h2 class="plans__title">Мои планы:</h2>
           <ul class="plans__list page__list">
             <li class="plans__item">
+              <span class="plans__number">1.</span>
               <p class="plans__countries">
-                <span class="plans__number">1.</span>
                 Франция, Италия</p>
               <p class="plans__people">3 попутчика</p>
               <p class="plans__date">26 мар — 29 мар</p>
               <a class="plans__edit page__link" href="edit-your-plan.html">изменить</a>
             </li>
             <li class="plans__item">
+              <span class="plans__number">2.</span>
               <p class="plans__countries">
-                <span class="plans__number">2.</span>
                 Таиланд, Индонезия</p>
               <p class="plans__people">1 попутчик</p>
               <p class="plans__date">1 июл — 15 июл</p>
@@ -401,7 +406,7 @@
                 <label class="comment-label" for="comment-first">Босния и Герцеговина</label>
                 <textarea class="comment-text" name="comment" id="comment-first" placeholder="План действий"></textarea>
                 <label class="comment-label" for="comment-second">Чехия</label>
-                <textarea class="comment-text" name="comment" id="comment-second" placeholder="Пить пиво и лазить по&nbsp;старым замкам, наслаждаться&nbsp;архитектурой и вот это все." readonly></textarea>
+                <textarea class="comment-text" name="comment" id="comment-second" placeholder="Пить пиво и лазить по&nbsp;старым замкам, наслаждаться архитектурой и вот это все." readonly></textarea>
                 <button class="submit-form" type="submit" aria-label="Отправить форму">Отправить</button>
                 <a class="plan__back plan__back--second page__link" href="#second-step">На шаг назад</a>
               </div>
@@ -456,5 +461,6 @@
         </div>
       </div>
     </footer>
+    <script src="js/scrolled-menu.js"></script>
   </body>
 </html>

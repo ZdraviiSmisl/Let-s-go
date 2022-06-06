@@ -55,11 +55,14 @@
 
   &--head {
     display: none;
+
   }
 
   .header__input:checked ~ .page-header &--head {
     display: block;
     background: transparent;
+    border-bottom: none;
+    border-bottom: 0;
   }
 }
 

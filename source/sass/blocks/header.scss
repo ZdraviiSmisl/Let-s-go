@@ -32,20 +32,19 @@
   }
 }
 
-/*.header--catalog {
-  position: relative;
-  margin-bottom: -1px;
-  z-index: -1;
-}*/
-
 .header__input:checked ~ .page-header {
   margin-bottom: 1px;
   background-color: var(--basic-white);
   z-index: 10;
 }
 
+.header__input:checked ~ .page-header--scrolled {
+  min-height: 568px;
+}
+
 .header__wrapper {
   position: relative;
+  margin-bottom: 1px;
   display: grid;
   grid-template-columns: 1fr;
   grid-template-rows: var(--header-min-height) 1fr;
@@ -152,6 +151,11 @@
 }
 
 @media (min-width: $tablet-width) {
+
+  .header__input:checked ~ .page-header--scrolled {
+    min-height: 910px;
+  }
+
   .header__logo {
     padding-top: 15px;
   }

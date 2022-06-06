@@ -13,8 +13,8 @@
 }
 
 .plans__title {
-  margin: 0 0 32px 0;
-  padding: 20px 0 0 0;
+  margin: 0;
+  padding: 20px 0 30px 0;
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
@@ -79,15 +79,14 @@
 
 @media (min-width: $tablet-width) {
   .plans__wrap {
-    width: 618px;
-    padding-left: 75px;
-    padding-right: 75px;
+    padding-bottom: 70px;
     font-size: 20px;
   }
 
   .plans__title {
-    margin: 0 0 52px 0;
-    padding: 48px 0 0 0;
+    margin-bottom: 50px;
+    padding-top: 47px;
+    padding-bottom: 0;
     font-size: 36px;
     line-height: 36px;
     letter-spacing: 1.5px;
@@ -98,10 +97,10 @@
   }
 
   .plans__item {
+    margin-bottom: 10px;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(15px, auto));
-    grid-template-rows: repeat(auto-fit, minmax(15px, auto));
-    padding: 40px 35px 17px 40px;
+    grid-template-columns: repeat(auto-fit, minmax(50px, auto));
+    padding: 40px 35px 19px 40px;
     border-radius: 10px;
 
     &:last-of-type {
@@ -121,26 +120,31 @@
   }
 
   .plans__number {
-    top: 43px;
-    right: 27px;
+    justify-self: self-end;
+    position: static;
+    top: 0;
+    right: 0;
   }
 
   .plans__countries {
     grid-area: 1/1/2/3;
     padding: 0 0 0 0;
-    letter-spacing: 3px;
+    font-size: 24px;
+    line-height: 24px;
+    letter-spacing: 1px;
   }
 
   .plans__people,
   .plans__date,
   .plans__edit {
-    padding: 58px 0 0 0;
+    align-self: center;
+    padding: 49px 0 0 0;
+    max-height: 20px;
   }
 
   .plans__people {
     grid-area: 2/1/3/2;
     letter-spacing: 2.3px;
-
   }
 
   .plans__date {
@@ -153,23 +157,25 @@
   }
 
   .plans__edit {
-    margin-left: auto;
     grid-area: 2/3/3/4;
+    justify-self: self-end;
     letter-spacing: 3px;
   }
 
 }
 
 @media (min-width: $desktop-width) {
+  .plans {
+    margin-bottom: -50px;
+    border-radius: 54px 54px 0 0;
+  }
+
   .plans__wrap {
-    margin-left: 60px;
-    margin-right: 60px;
-    width: 1320px;
-    padding: 0 0 0 64px;
+    padding: 0 0 87px 124px;
   }
 
   .plans__title {
-    margin: 0 0 50px 0;
+    margin: 0 0 55px 0;
     padding: 47px 0 0 8px;
   }
 
@@ -179,7 +185,7 @@
 
   .plans__item {
     margin-bottom: 14px;
-    padding: 40px 40px 35px 43px;
+    padding: 34px 40px 40px 43px;
 
     &:last-of-type {
       margin-bottom: 27px;
@@ -193,12 +199,19 @@
   .plans__number {
     position: static;
     grid-area: 1/1/2/2;
-    padding-right: 24px;
+    justify-self: self-start;
+    padding: 0;
   }
 
   .plans__countries {
     grid-area: 1/1/2/2;
-    letter-spacing: 3px;
+    padding-left: 50px;
+    min-width: 207px;
+    letter-spacing: 1px;
+
+    .plans__item:last-of-type & {
+      min-width: 222px;
+    }
   }
 
   .plans__people,
@@ -209,25 +222,33 @@
 
   .plans__people {
     grid-area: 1/2/2/3;
-    transform: translateX(150px);
+    justify-self: self-start;
+    padding-left: 158px;
+    min-width: 145px;
+    max-width: 0;
 
     .plans__item:last-of-type & {
-      transform: translateX(128px);
+      padding-left: 141px;
     }
   }
 
   .plans__date {
-    grid-area: 1/3/2/4;
-    padding: 0 48px 0 0;
+    grid-area: 1/2/2/4;
+    justify-self: center;
+    padding-left: 106px;
+    max-width: 0;
+    min-width: 190px;
+    letter-spacing: 2.4px;
 
     .plans__item:last-of-type & {
-      padding: 0 64px 0 4px;
+      padding: 0 0 0 91px;
+      letter-spacing: 2.6px;
     }
   }
 
   .plans__edit {
     margin-left: auto;
     grid-area: 1/3/2/4;
-    letter-spacing: 3px;
+    letter-spacing: 2.2px;
   }
 }

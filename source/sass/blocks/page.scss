@@ -106,6 +106,13 @@
 
 @media (min-width: $desktop-width) {
 
+  .page__body {
+
+    &--form {
+      background-color: var(--very-light-blue);
+    }
+  }
+
   .page-main {
 
     &--catalog {
