@@ -1,21 +1,20 @@
 
 .itinerary__container {
+  position: relative;
   padding: 24px 26px 11px 24px;
 }
 
 .plan__title {
 
   &--second {
-    margin-bottom: 30px;
-    padding-right: 75px;
-    padding-bottom: 0;
+    padding: 0 75px 15px 0;
   }
 
   &--second::before {
     content: "";
     position: absolute;
-    top: 277px;
-    right: -5px;
+    top: 261px;
+    right: -7px;
     width: 21px;
     height: 21px;
     background-color: var(--very-light-blue);
@@ -80,13 +79,14 @@
 
   &:last-of-type {
     width: 218px;
+    z-index: 0;
   }
 
   &:last-of-type::before {
     content: "";
-    top: 17px;
-    right: 47px;
     position: absolute;
+    top: 16px;
+    right: 45px;
     width: 6px;
     height: 6px;
     border: 1px solid var(--basic-gray);
@@ -154,6 +154,7 @@
     height: 8px;
     background-color: var(--special-blue);
     border-radius: 50%;
+    z-index: 10;
   }
 
   &:first-of-type {
@@ -218,8 +219,8 @@
   display: none;
 
   &:checked ~ .choose__country {
-    top: -88px;
-    margin-bottom: -563px;
+    position: absolute;
+    top: 277px;
     width: 220px;
     height: auto;
     background-color: var(--basic-white);
@@ -323,7 +324,7 @@
 
 @media (min-width: $tablet-width) {
   .itinerary {
-    margin-bottom: 45px;
+    margin-bottom: 49px;
     padding: 0;
     border-radius: 30px;
   }
@@ -342,6 +343,7 @@
       margin-bottom: 38px;
       grid-column: 1/3;
       padding-right: 276px;
+      padding-bottom: 0;
     }
 
     &--second::before {
@@ -407,7 +409,7 @@
 
     &:last-of-type::before {
       top: 474px;
-      right: 171px;
+      right: 170px;
       width: 12px;
       height: 12px;
       background-color: var(--basic-white);
@@ -496,7 +498,7 @@
     display: none;
 
     &:checked ~ .choose__country {
-      right: 100px;
+      left: 0;
       box-sizing: border-box;
       width: 369px;
       font-size: 20px;
@@ -505,7 +507,8 @@
   }
 
   .choose__country {
-    top: -3000px;
+    top: -4000px;
+    left: -277px;
     display: grid;
     grid-template-columns: 369px 207px;
     grid-template-rows: min-content minmax(420px, auto);
@@ -618,6 +621,14 @@
       left: 22px;
     }
   }
+
+  .plan__next {
+
+    &--second::before {
+      top: 37px;
+      right: 39px;
+    }
+  }
 }
 
 @media (min-width: $desktop-width) {
@@ -627,7 +638,7 @@
   }
 
   .itinerary__container {
-    padding: 98px 160px 104px 160px;
+    padding: 98px 160px 96px 160px;
   }
 
   .plan__title {
@@ -724,8 +735,8 @@
 
   .itinerary__input {
     &:checked ~ .choose__country {
-      top: -500px;
-      left: 400px;
+      top: 207px;
+      left: 428px;
       grid-template-columns: 490px 240px;
       width: 730px;
     }
