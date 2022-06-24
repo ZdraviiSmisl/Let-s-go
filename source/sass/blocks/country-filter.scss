@@ -12,7 +12,7 @@
 }
 
 .filter__wrap {
-  padding: 30px 0 0 0;
+  padding: 33px 0 0 0;
   text-align: left;
   font-size: 16px;
 }
@@ -70,6 +70,14 @@
   -webkit-tap-highlight-color: var(--trasparent);
   cursor: pointer;
   z-index: 10;
+
+  &:hover {
+    opacity: 0.6;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .continents {
@@ -86,8 +94,13 @@
 
 .filter-open__svg,
 .filter-close__svg {
-  padding-bottom: 4px;
+  display: block;
+  padding-top: 7px;
   fill: currentColor;
+}
+
+.filter-close__svg {
+  padding-top: 0;
 }
 
 .filter__modal,
@@ -109,6 +122,14 @@
   line-height: 18px;
   font-weight: bold;
   color: var(--black-blue)
+}
+
+.continents__name:hover {
+  opacity: 0.6;
+}
+
+.continents__name:active {
+  opacity: 1;
 }
 
 .filter__tittle {
@@ -198,9 +219,12 @@
 }
 
 .filter__label-close {
-  display: inline-block;
+  position: relative;
+  display: inline-flex;
   margin: 0;
-  padding: 10px 81px 10px 109px;
+  padding: 11px 81px 7px 108px;
+  box-sizing: border-box;
+  min-width: 270px;
   line-height: 20px;
   font-weight: 700;
   letter-spacing: 1.6px;
@@ -210,6 +234,18 @@
   border-radius: 20px;
   -webkit-tap-highlight-color: var(--trasparent);
   cursor: pointer;
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.filter__label-close .filter-close__svg {
+  position: absolute;
+  top: 0.8em;
+  left: 83px;
+  width: 15px;
+  height: 15px;
 }
 
 @media (min-width: $tablet-width) {
@@ -262,19 +298,21 @@
     letter-spacing: 1px;
 
     .filter__btn:checked ~ .filter & {
-      transform: translateY(-8px);
+      transform: translateY(-4px);
     }
   }
 
   .filter-open__svg {
+    display: inline;
     width: 30px;
     height: 7px;
   }
 
   .filter-close__svg {
+    display: inline;
     width: 23px;
     height: 23px;
-    padding-left: 39px;
+
   }
 
   .continents,
@@ -353,12 +391,24 @@
   }
 
   .filter__label-close {
+    position: relative;
+    top: 0;
+    left: 0;
     margin: 0;
     grid-area: 3/1/4/3;
     box-sizing: border-box;
-    width: 615px;
-    padding: 41px 22px 40px 282px;
-    transform: translateX(36px);
+    justify-self: center;
+    justify-content: center;
+    padding: 41px 22px 40px 62px;
+    min-width: 615px;
+    letter-spacing: 0.5px;
+  }
+
+  .filter__label-close .filter-close__svg {
+    top: 1.9em;
+    left: 242px;
+    width: 22px;
+    height: 22px;
   }
 }
 
@@ -370,7 +420,7 @@
     .filter__btn:checked ~ & {
       position: relative;
       top: 1329px;
-      margin-bottom: -40px;
+      margin-bottom: -55px;
     }
   }
 
@@ -420,7 +470,6 @@
 
   .filter__modal {
     position: relative;
-    /*top: -3000px;*/
 
     .filter__btn:checked ~ .filter & {
       top: 0;
@@ -479,8 +528,11 @@
   .filter__label-close {
     padding: 42px 0 38px 40px;
     min-width: 1320px;
-    text-align: center;
-    transform: translateX(0px);
     border-radius: 20px;
+  }
+
+  .filter__label-close .filter-close__svg {
+    top: 2em;
+    left: 45%;
   }
 }

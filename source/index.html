@@ -39,7 +39,7 @@
             </a>
           </li>
           <li class="header-info__item">
-            <a class="intro__auto page__link" href="login.html">Авторизация</a>
+            <a class="intro__auto page__auto-link page__link" href="login.html">Авторизация</a>
           </li>
         </ul>
         <label class="menu-open" for="toggle"></label>
@@ -48,18 +48,24 @@
         <nav class="main-nav header__nav">
           <ul class="main-nav__list service-list page__list">
             <li class="main-nav__item">
-              <a class="main-nav__service page__link main-services" href="../index.html" aria-current="page">О сервисе</a>
+              <a class="main-nav__service page__link main-services" href="../index.html" aria-current="page">
+                <span class="main-nav__text" data-hover="О сервисе">О сервисе</span>
+              </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__destinations page__link main-services" href="../form.html">Направления</a>
+              <a class="main-nav__destinations page__link main-services" href="../form.html">
+                <span class="main-nav__text" data-hover="Направления">Направления</span>
+              </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__companions page__link main-services" href="../catalog.html">Попутчики</a>
+              <a class="main-nav__companions page__link main-services" href="../catalog.html">
+                <span class="main-nav__text" data-hover="Попутчики">Попутчики</span>
+              </a>
             </li>
           </ul>
           <ul class="main-nav__list nav-contacts page__list">
             <li class="nav-contacts__item">
-              <a class="nav-contacts__link nav-contacts__login page__link" href="login.html">Авторизация</a>
+              <a class="nav-contacts__link page__auto-link nav-contacts__login page__link" href="login.html">Авторизация</a>
             </li>
             <li class="nav-contacts__item">
               <a class="nav-contacts__link nav-contacts__number page__link" href="tel:+7800 555-86-28">8 800 555-86-28</a>
@@ -71,17 +77,17 @@
           <div class="main-nav__social social social--head">
             <ul class="social__list page__list">
               <li class="social__item">
-                <a class="social-fb" href="https://www.facebook.com/htmlacademy">
+                <a class="social__link social__link--head social__link--fb" href="https://www.facebook.com/htmlacademy">
                   <span class="page__hidden">Мы в Фейсбуке</span>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social-vk" href="https://vk.com/htmlacademy">
+                <a class="social__link social__link--head social__link--vk" href="https://vk.com/htmlacademy">
                   <span class="page__hidden">Мы Вконтакте</span>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social-inst" href="https://www.instagram.com/htmlacademy/">
+                <a class="social__link social__link--head social__link--inst" href="https://www.instagram.com/htmlacademy/">
                   <span class="page__hidden">Мы в инстаграм</span>
                 </a>
               </li>
@@ -107,7 +113,7 @@
               </a>
             </li>
             <li class="intro__item">
-              <a class="intro__auto page__link" href="login.html">Авторизация</a>
+              <a class="intro__auto page__auto-link page__link" href="login.html">Авторизация</a>
             </li>
           </ul>
           <blockquote class="intro__reviews reviews">
@@ -147,7 +153,7 @@
             <br class="tablet-wrap">
             и черпайте вдохновение в чужих.</p>
           <p class="call-to-action"><strong>А если найдете кого-то близкого по духу — скорее зовите в совместный трип!</strong></p>
-          <a class="about-us__more page__link" href="#">Подробнее</a>
+          <a class="about-us__more page__link-changed page__link" href="#">Подробнее</a>
         </div>
       </section>
       <section class="directions">
@@ -191,7 +197,7 @@
               <span class="card-count card-count--czech">5326</span>
             </div>
           </article>
-          <a class="directions__show-all page__link page__button" href="form.html">Показать все</a>
+          <a class="directions__show-all page__link page__link-changed" href="form.html">Показать все</a>
         </div>
       </section>
       <section class="companions">
@@ -212,30 +218,52 @@
               <source media="(min-width: 768px)" srcset="../img/woman-photo-desktop@1x.jpg, ../img/woman-photo-desktop@2x.jpg 2x">
               <img class="person__img page__img" src="../img/woman-photo-mobile@1x.jpg" srcset="../img/woman-photo-mobile@2x.jpg 2x" alt="woman swimming in a pool">
             </picture>
-            <div class="companions__bar circle-bar">
-              <div class="circle-bar__field">
-                <svg class="circle-bar__svg">
-                  <circle class="circle-bar__circle-99" cx="25" cy="25" r="25"></circle>
-                  <circle class="circle-bar__circle-99" cx="30" cy="30" r="28"></circle>
+            <div class="person__bar progress-bar">
+              <div class="progress-bar__outer">
+                <svg class="progress-bar__svg">
+                  <circle class="progress-bar__circle" cx="25" cy="25" r="25" stroke-dasharray="125 10" stroke-dashoffset="0"></circle>
+                  <circle class="progress-bar__circle" cx="30" cy="30" r="28" stroke-dasharray="125 10" ></circle>
                 </svg>
-                <div class="circle-bar__reached-level">
-                  <span class="circle-bar__number">99</span><span class="circle-bar__level">level</span>
-                </div>
+                <span class="progress-bar__figure">
+                  99
+                  <span class="progress-bar__level">level</span>
+                </span>
               </div>
             </div>
             <div class="person__wrap">
-              <ul class="person__flags-list page__list">
-                <li class="person__flag-item"></li>
-                <li class="person__flag-item"></li>
-                <li class="person__flag-item"></li>
+              <ul class="person__list countries page__list">
+                <li class="countries__item" data-hover="Шри-ланка">
+                  <img class="countries__img" src="img/sri-Lanka.png" width="35" height="25" alt="Sri-Lanka">
+                  <span class="countries__country">Шри-ланка</span>
+                </li>
+                <li class="countries__item" data-hover="Тайланд">
+                  <img class="countries__img" src="img/thailand.png" width="35" height="24" alt="Thailand">
+                  <span class="countries__country">Тайланд</span>
+                </li>
+                <li class="countries__item" data-hover="Сейшелы">
+                  <img class="countries__img" src="img/seychelles.png" width="35" height="25" alt="Seychelles">
+                  <span class="countries__country">Сейшелы</span>
+                </li>
               </ul>
               <a class="person__name page__link" href="catalog.html">Таня Фирсова</a>
               <p class="person__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
-              <ul class="person__ways-list page__list">
-                <li class="person__way-item"></li>
-                <li class="person__way-item"></li>
-                <li class="person__way-item"></li>
-                <li class="person__way-item"></li>
+              <ul class="person__ways ways page__list">
+                <li class="ways__item ways__item--no-bg" data-hover="Авиаперелет">
+                  <img class="ways__img ways__img--index ways__img--plane" src="icons/plane-svg.svg" alt="plane" width="14" height="16">
+                  <span class="page__hidden">По воздуху</span>
+                </li>
+                <li class="ways__item ways__item--no-bg" data-hover="Автотранспорт">
+                  <img class="ways__img ways__img--index ways__img--bus" src="icons/bus-svg.svg" alt="public transport" width="17" height="16">
+                  <span class="page__hidden">Общественным транспортом</span>
+                </li>
+                <li class="ways__item ways__item--no-bg" data-hover="Велосипедом">
+                  <img class="ways__img ways__img--index ways__img--bike" src="icons/bicycle-svg.svg" alt="bike" width="17" height="16">
+                  <span class="page__hidden">На мотоцикле</span>
+                </li>
+                <li class="ways__item ways__item--no-bg" data-hover="Пешком">
+                  <img class="ways__img ways__img--index ways__img--walk" src="icons/walk-svg.svg" alt="walk" width="17" height="16">
+                  <span class="page__hidden">Пешком</span>
+                </li>
               </ul>
             </div>
           </article>
@@ -245,34 +273,52 @@
               <source media="(min-width: 768px)" srcset="../img/man-photo-desktop@1x.jpg, ../img/man-photo-desktop@2x.jpg 2x">
               <img class="person__img page__img" src="../img/man-photo-mobile@1x.jpg" srcset="../img/man-photo-mobile@2x.jpg" alt="a bearded man in a hat and glasses">
             </picture>
-            <div class="companions__bar circle-bar">
-              <div class="circle-bar__field">
-                <svg class="circle-bar__svg">
-                  <circle class="circle-bar__circle-80" cx="25" cy="25" r="25"></circle>
-                  <circle class="circle-bar__circle-80" cx="30" cy="30" r="28"></circle>
+            <div class="person__bar progress-bar">
+              <div class="progress-bar__outer">
+                <svg class="progress-bar__svg">
+                  <circle class="progress-bar__circle" cx="25" cy="25" r="25" stroke-dasharray="125 35" stroke-dashoffset="0"></circle>
+                  <circle class="progress-bar__circle" cx="30" cy="30" r="28" stroke-dasharray="125 35" stroke-dashoffset="25" ></circle>
                 </svg>
-                <div class="circle-bar__reached-level">
-                  <span class="circle-bar__number">80</span><span class="circle-bar__level">level</span>
-                </div>
+                <span class="progress-bar__figure">
+                  80
+                  <span class="progress-bar__level">level</span>
+                </span>
               </div>
             </div>
             <div class="person__wrap">
-              <ul class="person__flags-list page__list">
-                <li class="person__flag-item"></li>
-                <li class="person__flag-item"></li>
-                <li class="person__flag-item"></li>
+              <ul class="person__list countries page__list">
+                <li class="countries__item" data-hover="Бельгия">
+                  <img class="countries__img" src="img/belgium.png" width="35" height="24" alt="Belgium">
+                  <span class="countries__country">Бельгия</span>
+                </li>
+                <li class="countries__item" data-hover="Чехия">
+                  <img class="countries__img" src="img/czech.png" width="35" height="24" alt="Czech">
+                  <span class="countries__country">Чехия</span>
+                </li>
               </ul>
-              <a class="person__name person__bearded-man page__link" href="catalog.html">Петя Демин</a>
+              <a class="person__name person__name--2  page__link" href="catalog.html">Петя Демин</a>
               <p class="person__hashtags person__hashtags--2">#бургер #бар #футбол #концерт #крафт</p>
-              <ul class="person__ways-list page__list">
-                <li class="person__way-item"></li>
-                <li class="person__way-item"></li>
-                <li class="person__way-item"></li>
-                <li class="person__way-item"></li>
+              <ul class="person__ways ways page__list">
+                <li class="ways__item ways__item--no-bg" data-hover="Авиаперелет">
+                  <img class="ways__img ways__img--index ways__img--plane" src="icons/plane-svg.svg" alt="plane" width="14" height="16">
+                  <span class="page__hidden">По воздуху</span>
+                </li>
+                <li class="ways__item ways__item--no-bg" data-hover="Автотранспорт">
+                  <img class="ways__img ways__img--index ways__img--bus" src="icons/bus-svg.svg" alt="public transport" width="17" height="16">
+                  <span class="page__hidden">Общественным транспортом</span>
+                </li>
+                <li class="ways__item ways__item--no-bg" data-hover="Велосипедом">
+                  <img class="ways__img ways__img--index ways__img--bike" src="icons/bicycle-svg.svg" alt="bike" width="17" height="16">
+                  <span class="page__hidden">На мотоцикле</span>
+                </li>
+                <li class="ways__item ways__item--no-bg" data-hover="Пешком">
+                  <img class="ways__img ways__img--index ways__img--walk" src="icons/walk-svg.svg" alt="walk" width="17" height="16">
+                  <span class="page__hidden">Пешком</span>
+                </li>
               </ul>
             </div>
           </article>
-          <a class="companions__show-all page__link" href="catalog.html">Показать всех</a>
+          <a class="companions__show-all page__link page__link-changed" href="catalog.html">Показать всех</a>
         </div>
       </section>
       <section class="tariffs">
@@ -294,48 +340,48 @@
             </li>
           </ul>
           <label class="tariffs-others" for="all">Показать тарифы для бизнеса</label>
-          <input class="tariffs-input" type="checkbox" id="all">
-          <div class="tariffs__popup tariffs-modal">
-            <div class="tariffs-modal__wrap">
-              <h3 class="tariffs-modal__tittle">Бизнес-тарифы</h3>
-              <ul class="tariffs-modal__list page__list">
-                <li class="tariffs-modal__item">
-                  <p class="tariffs-modal__text">Реклама у блоггера</p>
-                  <span class="tariffs-modal__price">300 000 руб.<span class="page__hidden">рублей</span>/пост</span>
-                </li>
-                <li class="tariffs-modal__item">
-                  <p class="tariffs-modal__text">Накрутка подписчиков</p>
-                  <span class="tariffs-modal__price">от 1 руб.<span class="page__hidden">рублей</span>/шт.<span class="page__hidden">штук</span></span>
-                </li>
-                <li class="tariffs-modal__item">
-                  <p class="tariffs-modal__text">Лайки от ботов</p>
-                  <span class="tariffs-modal__price">от 20 коп.<span class="page__hidden">копеек</span>/лайк</span>
-                </li>
-                <li class="tariffs-modal__item">
-                  <p class="tariffs-modal__text">Ваш продакт-плейсмент</p>
-                  <span class="tariffs-modal__price tariffs-modal__price--last">Индивидуально</span>
-                </li>
-              </ul>
-            </div>
-            <label class="tariffs-close" for="all">Закрыть окно</label>
-          </div>
         </div>
       </section>
+      <input class="tariffs-input" type="checkbox" id="all">
+      <div class="tariffs__popup tariffs-modal">
+        <div class="tariffs-modal__wrap">
+          <h3 class="tariffs-modal__tittle">Бизнес-тарифы</h3>
+          <ul class="tariffs-modal__list page__list">
+            <li class="tariffs-modal__item">
+              <p class="tariffs-modal__text">Реклама у блоггера</p>
+              <span class="tariffs-modal__price">300 000 руб.<span class="page__hidden">рублей</span>/пост</span>
+            </li>
+            <li class="tariffs-modal__item">
+              <p class="tariffs-modal__text">Накрутка подписчиков</p>
+              <span class="tariffs-modal__price">от 1 руб.<span class="page__hidden">рублей</span>/шт.<span class="page__hidden">штук</span></span>
+            </li>
+            <li class="tariffs-modal__item">
+              <p class="tariffs-modal__text">Лайки от ботов</p>
+              <span class="tariffs-modal__price">от 20 коп.<span class="page__hidden">копеек</span>/лайк</span>
+            </li>
+            <li class="tariffs-modal__item">
+              <p class="tariffs-modal__text">Ваш продакт-плейсмент</p>
+              <span class="tariffs-modal__price tariffs-modal__price--last">Индивидуально</span>
+            </li>
+          </ul>
+        </div>
+        <label class="tariffs-close" for="all">Закрыть окно</label>
+      </div>
       <section class="authorization">
         <h2 class="page__hidden">Авторизация</h2>
         <div class="page__center authorization__wrap">
           <strong class="authorization__suggest">Заинтересовались?</strong>
           <p class="authorization__expectation">Зарегистрируйтесь, это&nbsp;быстро и бесплатно! Уже&nbsp;зарегистрированы? Тогда скорее <a class="authorization__link" href="authorization.html">авторизуйтесь</a>.</p>
-          <form class="authorization__form" action="https://echo.htmlacademy.ru" method="post">
-            <input class="authorization__email" name="email" type="email" placeholder="E-mail" aria-label="Введите почту">
-            <button class="authorization__btn" type="submit" aria-label="Регистрация">
+          <form class="authorization__form" action="https://echo.htmlacademy.ru" method="post" novalidate>
+            <input class="authorization__email" name="email" type="email" placeholder="E-mail" aria-label="Введите почту" oninvalid="">
+            <button class="authorization__btn page__button page__link-changed" type="submit" aria-label="Регистрация">
               <span class="authorization__name">Регистрация</span>
             </button>
           </form>
           <div class="authorization__block contacts">
             <p class="contacts__text">Остались вопросы? Мы&nbsp;срадостью на них ответим!</p>
-            <a class="contacts__phone page__link" href="tel:8 800 555-86-28">8 800 555-86-28</a>
-            <a class="contacts__email page__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
+            <a class="nav-contacts__number contacts__link page__link" href="tel:8 800 555-86-28">8 800 555-86-28</a>
+            <a class="nav-contacts__mail contacts__link page__link" href="mailto:mail@htmlacademy.ru">mail@htmlacademy.ru</a>
           </div>
         </div>
       </section>
@@ -343,7 +389,7 @@
         <h2 class="page__hidden">Контакты</h2>
         <div class="page__center info__wrap">
           <a class="info__address page__link" href="#">ул. Большая Конюшенная, 19/8</a>
-          <a class="info__route page__link" href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1998.603787258681!2d30.320853351661526!3d59.93871648178732!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1631807521084!5m2!1sru!2sru">Проложить маршрут</a>
+          <a class="info__route page__link" href="https://www.google.ru/maps/dir/%D0%9C%D0%B5%D1%82%D1%80%D0%BE+%D0%9F%D0%B5%D1%82%D1%80%D0%BE%D0%B3%D1%80%D0%B0%D0%B4%D1%81%D0%BA%D0%B0%D1%8F,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3/%D0%BD%D0%B0%D0%B1.+P%D0%B5%D0%BA%D0%B8+%D0%9A%D0%B0%D1%80%D0%BF%D0%BE%D0%B2%D0%BA%D0%B8,+5+%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81+%D0%9F,+%D0%A1%D0%B0%D0%BD%D0%BA%D1%82-%D0%9F%D0%B5%D1%82%D0%B5%D1%80%D0%B1%D1%83%D1%80%D0%B3,+197022/@59.968865,30.3086626,16z/data=!3m1!4b1!4m14!4m13!1m5!1m1!1s0x4696315ae8aaae41:0x71c197f2c712c2a2!2m2!1d30.31101!2d59.966535!1m5!1m1!1s0x4696315bc4e8ce61:0x74d4f0cbfe1fd995!2m2!1d30.317381!2d59.968342!3e0?hl=ru">Проложить маршрут</a>
         </div>
       </section>
       <section class="map">
@@ -391,14 +437,13 @@
             </li>
           </ul>
         </div>
-        <div class="footer__part copyright ">
+        <a class="footer__part copyright page__link" href="https://htmlacademy.ru/intensive/htmlcss">
           <span class="copyright__text">Разработано</span>
-          <a class="copyright__link page__link" href="https://htmlacademy.ru/intensive/htmlcss">
-            <span class="page__hidden">HTML Academy</span>
-          </a>
-        </div>
+          <img class="copyright__img" src="icons/html-academy.svg" alt="Html Academy">
+        </a>
       </div>
     </footer>
     <script src="js/scrolled-menu.js"></script>
+    <script src="js/change-placeholder.js"></script>
   </body>
 </html>

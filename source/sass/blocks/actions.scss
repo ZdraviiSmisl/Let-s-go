@@ -63,9 +63,11 @@
 
 @media (min-width: $tablet-width) {
   .actions {
-    position: relative;
-    margin-bottom: -140px;
+    position: absolute;
+    top: 864px;
+    left: 50%;
     background-color: transparent;
+    transform: translate(-50%,-50%);
     z-index: 8;
 
     &__list {
@@ -116,7 +118,7 @@
 
 @media (min-width: $desktop-width) {
   .actions {
-    margin-bottom: -172px;
+    top: 486px;
 
     &__list {
       grid-template-columns: repeat(4, auto);

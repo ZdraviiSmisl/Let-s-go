@@ -11,12 +11,12 @@
 }
 
 .tariffs__wrap {
-  padding-top: 85px;
-  padding-bottom: 40px;
+  padding-top: 86px;
+  padding-bottom: 35px;
   background-image: url("../../img/rates@1x.png");
-  background-position: 170px 71px;
+  background-position: 169px 73px;
   background-repeat: no-repeat;
-  background-size: 100px;
+  background-size: 101px;
 }
 
 .tariffs__add {
@@ -107,12 +107,19 @@
   font-weight: 700;
   color: var(--middle-blue);
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover {
+    opacity: 0.7;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .tariffs__popup {
-  position: relative;
-  top: -9000px;
-  display: block;
+  display: none;
   height: 0;
 }
 
@@ -120,11 +127,15 @@
   display: none;
 
   &:checked ~ .tariffs__popup {
-    position: relative;
-    margin-bottom: -449px;
-    top: -415px;
-    height: auto;
+    position: absolute;
+    top: 3837px;
+    left: 50%;
     box-sizing: border-box;
+    display: block;
+    min-width: 270px;
+    height: auto;
+    transform: translate(-50%, -50%);
+    filter: drop-shadow(0 2px 8px var(--for-shadow));
     background-color: var(--basic-white);
     border-radius: 20px;
     z-index: 10;
@@ -206,6 +217,15 @@
   background-color: var(--super-light-blue);
   border-radius: 0 0 20px 20px;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+
+  &:hover {
+    background-color: var(--very-light-blue);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 @media (min-width: $tablet-width) {
@@ -275,17 +295,42 @@
   }
 
   .tariffs-others {
+    position: relative;;
     padding: 0 0 106px 91px;
     letter-spacing: 0.8px;
     font-size: 20px;
     line-height: 20px;
+
+    &::before {
+      content: "";
+      position: absolute;
+      width: 26px;
+      height: 26px;
+      top: -0.1em;
+      left: 21px;
+      background-image: url("../../icons/icon-businessman.svg");
+      background-size: 26px 26px;
+      background-repeat: no-repeat;
+      background-position: center center;
+      z-index: 5;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: -1.1em;
+      left: 1px;
+      width: 66px;
+      height: 66px;
+      background-color: var(--light-blue-2);
+      border-radius: 50%;
+    }
   }
 
   .tariffs-input {
 
     &:checked ~ .tariffs__popup {
-      margin-bottom: -516px;
-      top: -453px;
+      top: 4391px;
     }
   }
 
@@ -294,6 +339,8 @@
     grid-template-rows: repeat(auto-fit, minmax(60px, auto));
     padding: 54px 93px 50px 90px;
     row-gap: 27px;
+    box-sizing: border-box;
+    min-width: 688px;
   }
 
   .tariffs-modal__tittle {
@@ -398,25 +445,54 @@
 
   .tariffs-others {
     padding-left: 159px;
-    -webkit-tap-highlight-color: transparent;
+
+    &::before {
+      width: 28px;
+      height: 28px;
+      top: -2px;
+      left: 91px;
+      background-size: 28px 28px;
+    }
+
+    &::after {
+      left: 71px;
+      width: 68px;
+      height: 68px;
+    }
   }
 
   .tariffs-input {
 
     &:checked ~ .tariffs__popup {
-      margin: 0 auto -527px auto;
-      width: 750px;
+      top: 3283px;
+      border-radius: 30px;
     }
   }
 
   .tariffs-modal__wrap {
-    padding-bottom: 64px;
     padding-left: 60px;
     padding-right: 60px;
+    min-width: 750px;
+    gap: 0;
+  }
+
+  .tariffs-modal__tittle {
+    margin-bottom: 58px;
+    padding-top: 0;
 
   }
 
   .tariffs-modal__text {
+    align-self: self-start;
+    max-height: 28px;
+
+    &:not(:last-child) {
+      margin-bottom: 27px;
+    }
+
+    &:last-child {
+      margin-bottom: 25px;
+    }
 
     &::before {
       min-width: 625px;
@@ -424,10 +500,18 @@
   }
 
   .tariffs-modal__price {
+    max-height: 28px;
 
     &--last::before {
       left: -485px;
       min-width: 625px;
     }
+  }
+
+  .tariffs-close {
+    font-size: 23px;
+    line-height: 26px;
+    letter-spacing: 1.5px;
+    border-radius: 0 0 30px 30px;
   }
 }

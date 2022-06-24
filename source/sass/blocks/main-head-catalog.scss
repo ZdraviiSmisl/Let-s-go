@@ -50,6 +50,10 @@
   .catalog-head {
     margin-bottom: -47px;
     border-radius: 0 0 60px 60px;
+
+    &--form .catalog-head__wrapper {
+      gap: 111px;
+    }
   }
 
   .catalog-head__wrapper {
@@ -58,6 +62,8 @@
     padding-top: 108px;
     padding-bottom: 90px;
   }
+
+
 
   .catalog-head__title {
     padding-left: 37px;
@@ -89,7 +95,15 @@
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--basic-white);
-    -webkit-tap-highlight-color: transparent;
+
+    &:hover {
+      opacity: 0.6;
+    }
+
+    &:active {
+      opacity: 0.3;
+    }
+
   }
 
   .catalog__svg-back {
