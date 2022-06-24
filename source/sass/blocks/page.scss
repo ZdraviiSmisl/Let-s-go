@@ -9,6 +9,7 @@
   padding: 0;
   border: none;
   border: 0;
+  outline: 0;
 }
 
 .page__container {
@@ -75,9 +76,42 @@
   color: inherit;
   background-color: transparent;
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+}
+
+.page__auto-link {
+  display: block;
+  box-sizing: border-box;
+  font-weight: 700;
+  letter-spacing: 1px;
+  color: var(--basic-blue);
+  text-transform: uppercase;
+  background-color: var(--white-yellow);
+  border-radius: 25px;
+
+  &:hover {
+    background-color: var(--white-orange);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.page__link-changed {
+
+  &:hover {
+    background-color: var(--white-orange);
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
 }
 
 .page__link {
+  box-sizing: border-box;
+  -webkit-tap-highlight-color: transparent;
   &,
   &:visited,
   &:hover,

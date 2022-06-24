@@ -39,7 +39,7 @@
             </a>
           </li>
           <li class="header-info__item">
-            <a class="intro__auto page__link" href="login.html">Авторизация</a>
+            <a class="intro__auto page__auto-link page__link" href="login.html">Авторизация</a>
           </li>
         </ul>
         <label class="menu-open" for="toggle"></label>
@@ -48,18 +48,24 @@
         <nav class="main-nav header__nav">
           <ul class="main-nav__list service-list page__list">
             <li class="main-nav__item">
-              <a class="main-nav__service page__link main-services" href="../index.html" aria-current="page">О сервисе</a>
+              <a class="main-nav__service page__link main-services" href="../index.html" aria-current="page">
+                <span class="main-nav__text" data-hover="О сервисе">О сервисе</span>
+              </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__destinations page__link main-services" href="../form.html">Направления</a>
+              <a class="main-nav__destinations page__link main-services" href="../form.html">
+                <span class="main-nav__text" data-hover="Направления">Направления</span>
+              </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__companions page__link main-services" href="../catalog.html">Попутчики</a>
+              <a class="main-nav__companions page__link main-services" href="../catalog.html">
+                <span class="main-nav__text" data-hover="Попутчики">Попутчики</span>
+              </a>
             </li>
           </ul>
           <ul class="main-nav__list nav-contacts page__list">
             <li class="nav-contacts__item">
-              <a class="nav-contacts__link nav-contacts__login page__link" href="login.html">Авторизация</a>
+              <a class="nav-contacts__link page__auto-link nav-contacts__login page__link" href="login.html">Авторизация</a>
             </li>
             <li class="nav-contacts__item">
               <a class="nav-contacts__link nav-contacts__number page__link" href="tel:+7800 555-86-28">8 800 555-86-28</a>
@@ -71,17 +77,17 @@
           <div class="main-nav__social social social--head">
             <ul class="social__list page__list">
               <li class="social__item">
-                <a class="social-fb" href="https://www.facebook.com/htmlacademy">
+                <a class="social__link social__link--head social__link--fb" href="https://www.facebook.com/htmlacademy">
                   <span class="page__hidden">Мы в Фейсбуке</span>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social-vk" href="https://vk.com/htmlacademy">
+                <a class="social__link social__link--head social__link--vk" href="https://vk.com/htmlacademy">
                   <span class="page__hidden">Мы Вконтакте</span>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social-inst" href="https://www.instagram.com/htmlacademy/">
+                <a class="social__link social__link--head social__link--inst" href="https://www.instagram.com/htmlacademy/">
                   <span class="page__hidden">Мы в инстаграм</span>
                 </a>
               </li>
@@ -91,30 +97,35 @@
       </div>
     </header>
     <main class="page-main">
-     <!-- <picture class="">
-        <source media="(min-width: 1320px)" srcset="../img/demin-desktop-form@1x.jpg, ../img/demin-desktop-form@2x.jpg 2x">
-        <source media="(min-width: 768px)" srcset="../img/demin-tablet-form@1x.jpg, ../img/demin-tablet-form@2x.jpg 2x">
-        <img class="profile__photo page__img" src="../img/demin-mobile-form@1x.jpg" srcset="../img/demin-mobile-form@2x.jpg 2x"  alt="Фото профиля">
-      </picture>-->
       <section class="catalog-head catalog-head--form">
         <div class="page__center catalog-head__wrapper">
           <h1 class="catalog-head__title catalog-head__title--dir">Направления</h1>
-          <a class="catalog-head__back catalog-head__back--dir page__link" href="index.html">на главную</a>
+          <a class="catalog-head__back catalog-head__back--dir page__link" href="index.html">на главную
+            <svg class="catalog__svg-back" width="32" height="16" focusable="false" role="img" viewBox="0 0 32 16"
+                 xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                    d="M4 16h24a4 4 0 004-4V7a4 4 0 00-4-4H4v2h24a2 2 0 012 2v5a2 2 0 01-2 2H4v2z"/>
+              <path d="M0 4L9 .54v6.92L0 4z"/>
+            </svg>
+          </a>
         </div>
       </section>
       <section class="profile">
         <h2 class="page__hidden">Ваш профиль</h2>
         <div class="page__center page__center--tablet-except profile__wrap">
-          <div class="person__bar circle-bar circle-bar--form">
-            <div class="circle-bar__field person__bar-field bar-field">
-              <svg class="circle-bar__svg">
-                <circle class="circle-bar__circle-80 circle-80" cx="20" cy="20" r="20"></circle>
-                <circle class="circle-bar__circle-80 circle-80" cx="23" cy="23" r="21"></circle>
+          <div class="person__bar profile__bar progress-bar">
+            <div class="progress-bar__outer">
+              <svg class="progress-bar__svg-mobile">
+                <circle class="progress-bar__circle" cx="48" cy="48" r="48" stroke-dasharray="125 10" stroke-dashoffset="0"></circle>
+                <circle class="progress-bar__circle" cx="50" cy="50" r="48" stroke-dasharray="173 55"></circle>
               </svg>
-              <div class="circle-bar__reached-level catalog-level">
-                <span class="circle-bar__number number-catalog">80</span><span
-                class="circle-bar__level circle-bar__level--hide">level</span>
-              </div>
+              <svg class="progress-bar__svg-tablet">
+                <circle class="progress-bar__circle" cx="48" cy="48" r="48" stroke-dasharray="125 10" stroke-dashoffset="0"></circle>
+                <circle class="progress-bar__circle" cx="50" cy="50" r="45" stroke-dasharray="162 51"></circle>
+              </svg>
+              <span class="progress-bar__figure">80
+                <span class="progress-bar__level">level</span>
+              </span>
             </div>
           </div>
           <picture class="profile__pic">
@@ -127,10 +138,10 @@
             <span class="profile__name-desktop">фото</span>
           </a>
           <form class="profile__form" action="https://echo.htmlacademy.ru" method="GET">
-            <fieldset class="profile__field hashtags">
-              <legend class="hashtags__legend profile-legend">тэги</legend>
-              <label for="hashtags"></label>
-              <textarea class="hashtags__textarea" id="hashtags" name="hashtags" placeholder="Укажите минимум 3 хэштэга">#бургер #бар #футбол #концерт #крафт</textarea>
+            <fieldset class="profile__field hashtags page__field">
+              <legend class="page__hidden profile-legend">тэги</legend>
+              <label class="hashtags__label" for="hashtags">тэги</label>
+              <textarea class="hashtags__textarea page__field" id="hashtags" name="hashtags" placeholder="Коротко о себе в виде 5-8 хештэгов">#бургер #бар #футбол #концерт #крафт</textarea>
             </fieldset>
           </form>
           <form class="profile__form" action="https://echo.htmlacademy.ru" method="GET">
@@ -237,14 +248,14 @@
                     <th class="table-plan__head"><span class="table-plan__head-mobile">С</span><span class="table-plan__desktop">Сб</span></th>
                     <th class="table-plan__head"><span class="table-plan__head-mobile">В</span><span class="table-plan__desktop">Вс</span></th>
                   </tr>
-                  <tr class="table-plan__row">
+                  <tr class="table-plan__row"ï>
                     <td class="table-plan__cell"><span class="table-plan__number">23</span></td>
                     <td class="table-plan__cell"><span class="table-plan__number">24</span></td>
                     <td class="table-plan__cell"><span class="table-plan__number">25</span></td>
                     <td class="table-plan__cell"><span class="table-plan__number">26</span></td>
                     <td class="table-plan__cell"><span class="table-plan__number">27</span></td>
                     <td class="table-plan__cell"><span class="table-plan__number">28</span></td>
-                    <td class="table-plan__cell"><span class="table-plan__number">1<span class="table-plan__first-day"> мар</span></span></td>
+                    <td class="table-plan__cell"><span class="table-plan__number table-plan__number--1">1<span class="table-plan__first-day"> мар</span></span></td>
                   </tr>
                   <tr class="table-plan__row">
                     <td class="table-plan__cell"><span class="table-plan__number">2</span></td>
@@ -277,15 +288,15 @@
                     <td class="table-plan__cell"><span class="table-plan__number">23</span></td>
                     <td class="table-plan__cell"><span class="table-plan__number">24</span></td>
                     <td class="table-plan__cell"><span class="table-plan__number">25</span></td>
-                    <td class="table-plan__cell current table-plan__cell--selected"><span class="table-plan__number">26<span class="table-plan__cell-desktop">Заезд</span></span></td>
-                    <td class="table-plan__cell table-plan__cell--selected"><span class="table-plan__number table-plan__number--current">27</span></td>
+                    <td class="table-plan__cell table-plan__cell--selected"><span class="table-plan__number table-plan__number--current">26<span class="table-plan__cell-desktop">Заезд</span></span></td>
+                    <td class="table-plan__cell table-plan__cell--selected"><span class="table-plan__number table-plan__number--interim">27</span></td>
                     <td class="table-plan__cell table-plan__cell--selected"><span class="table-plan__number">28<span class="table-plan__cell-desktop">Выезд</span></span></td>
                     <td class="table-plan__cell table-plan__cell--gray"><span class="table-plan__number">29</span></td>
                   </tr>
                   <tr class="table-plan__row table-plan__row--gray">
                     <td class="table-plan__cell"><span class="table-plan__number">30</span></td>
                     <td class="table-plan__cell"><span class="table-plan__number">31</span></td>
-                    <td class="table-plan__cell"><span class="table-plan__number">1<span class="table-plan__first-day"> апр</span></span></td>
+                    <td class="table-plan__cell"><span class="table-plan__number table-plan__number--1">1<span class="table-plan__first-day">апр</span></span></td>
                     <td class="table-plan__cell"><span class="table-plan__number">2</span></td>
                     <td class="table-plan__cell"><span class="table-plan__number">3</span></td>
                     <td class="table-plan__cell"><span class="table-plan__number">4</span></td>
@@ -293,7 +304,7 @@
                   </tr>
                   </tbody>
                 </table>
-                <a class="plan__next page__link" href="#second-step">Следующий шаг</a>
+                <a class="plan__next page__link page__link-changed" href="#second-step">Следующий шаг</a>
               </div>
             </fieldset>
             <fieldset class="plan__field itinerary page__field" id="second-step">
@@ -309,9 +320,11 @@
                   <label class="selection-label" for="choice">Босния и герцеговина</label>
                   <button class="selection-btn page__button" type="button"></button>
                   <span class="itinerary__flag"></span>
+                  <div class="itinerary__chosen-country"></div>
                   <label class="selection-label" for="choice">Чехия</label>
                   <button class="selection-btn page__button" type="button"></button>
                   <span class="itinerary__flag"></span>
+                  <div class="itinerary__chosen-country"></div>
                   <label class="selection-label" for="choice">выберите страну</label>
                   <button class="selection-btn page__button" type="button"></button>
                   <a class="add-country page__link" href="#">
@@ -376,21 +389,21 @@
                   </div>
                   <div class="choose-country__result">
                     <ul class="filter__filtered-list page__list">
-                      <li class="filter__filtered-item"><a class="filter__location page__link" href="islands/australia">Австралия</a></li>
-                      <li class="filter__filtered-item"><a class="filter__location page__link" href="europe/austria">Австрия</a></li>
-                      <li class="filter__filtered-item"><a class="filter__location page__link" href="asia/azerbaijan">Азербайджан</a></li>
-                      <li class="filter__filtered-item"><a class="filter__location page__link" href="europe/albania">Албания</a></li>
-                      <li class="filter__filtered-item"><a class="filter__location page__link" href="africa/algeria">Алжир</a></li>
-                      <li class="filter__filtered-item"><a class="filter__location page__link" href="africa/angola">Ангола</a></li>
-                      <li class="filter__filtered-item"><a class="filter__location page__link" href="europe/andorra">Андора</a></li>
-                      <li class="filter__filtered-item"><a class="filter__location page__link" href="islands/antigua-and-barbuda">Антигуа и Барбуда</a></li>
-                      <li class="filter__filtered-item"><a class="filter__location page__link" href="south-america/argentine">Аргентина</a></li>
-                      <li class="filter__filtered-item"><a class="filter__location page__link" href="asia/armenia">Армения</a></li>
-                      <li class="filter__filtered-item"><a class="filter__location page__link" href="asia/afghanistan">Афганистан</a></li>
+                      <li class="filter__filtered-item"><a class="filter__country page__link" href="islands/australia">Австралия</a></li>
+                      <li class="filter__filtered-item"><a class="filter__country page__link" href="europe/austria">Австрия</a></li>
+                      <li class="filter__filtered-item"><a class="filter__country page__link" href="asia/azerbaijan">Азербайджан</a></li>
+                      <li class="filter__filtered-item"><a class="filter__country page__link" href="europe/albania">Албания</a></li>
+                      <li class="filter__filtered-item"><a class="filter__country page__link" href="africa/algeria">Алжир</a></li>
+                      <li class="filter__filtered-item"><a class="filter__country page__link" href="africa/angola">Ангола</a></li>
+                      <li class="filter__filtered-item"><a class="filter__country page__link" href="europe/andorra">Андора</a></li>
+                      <li class="filter__filtered-item"><a class="filter__country page__link" href="islands/antigua-and-barbuda">Антигуа и Барбуда</a></li>
+                      <li class="filter__filtered-item"><a class="filter__country page__link" href="south-america/argentine">Аргентина</a></li>
+                      <li class="filter__filtered-item"><a class="filter__country page__link" href="asia/armenia">Армения</a></li>
+                      <li class="filter__filtered-item"><a class="filter__country page__link" href="asia/afghanistan">Афганистан</a></li>
                     </ul>
                   </div>
                 </div>
-                <a class="plan__next plan__next--second page__link" href="#third-step">Следующий шаг</a>
+                <a class="plan__next plan__next--second page__link page__link-changed" href="#third-step">Следующий шаг</a>
                 <a class="plan__back page__link" href="#first-step">На шаг назад</a>
               </div>
             </fieldset>
@@ -403,11 +416,16 @@
                 </ul>
                 <h3 class="plan__title plan__title--third">Шаг 3. Развлечения</h3>
                 <p class="plan__description plan__description--about">Наконец, расскажите о своих планах времяпровождения. Можно писать в свободной форме и ставить тэги.</p>
-                <label class="comment-label" for="comment-first">Босния и Герцеговина</label>
-                <textarea class="comment-text" name="comment" id="comment-first" placeholder="План действий"></textarea>
-                <label class="comment-label" for="comment-second">Чехия</label>
-                <textarea class="comment-text" name="comment" id="comment-second" placeholder="Пить пиво и лазить по&nbsp;старым замкам, наслаждаться архитектурой и вот это все." readonly></textarea>
-                <button class="submit-form" type="submit" aria-label="Отправить форму">Отправить</button>
+                <div class="plan__input-group">
+                  <label class="comment-label" for="comment-first">Босния и Герцеговина</label>
+                  <textarea class="comment-text comment-text--required page__field" name="comment" id="comment-first" placeholder="План действий"></textarea>
+                  <span class="plan__error-text">Это поле должно быть заполнено</span>
+                </div>
+                <div class="plan__input-group">
+                  <label class="comment-label" for="comment-second">Чехия</label>
+                  <textarea class="comment-text page__field" name="comment" id="comment-second" placeholder="Пить пиво и лазить по&nbsp;старым замкам, наслаждаться архитектурой и вот это все." readonly></textarea>
+                </div>
+                <button class="submit-form page__link-changed" type="submit" aria-label="Отправить форму">Отправить</button>
                 <a class="plan__back plan__back--second page__link" href="#second-step">На шаг назад</a>
               </div>
             </fieldset>
@@ -453,14 +471,14 @@
             </li>
           </ul>
         </div>
-        <div class="footer__part copyright ">
+        <a class="footer__part copyright page__link" href="https://htmlacademy.ru/intensive/htmlcss">
           <span class="copyright__text">Разработано</span>
-          <a class="copyright__link page__link" href="https://htmlacademy.ru/intensive/htmlcss">
-            <span class="page__hidden">HTML Academy</span>
-          </a>
-        </div>
+          <img class="copyright__img" src="icons/html-academy.svg" alt="Html Academy">
+        </a>
       </div>
     </footer>
+    <script src="js/placeholder-hashtags.js"></script>
+    <script src="js/validation-textarea.js"></script>
     <script src="js/scrolled-menu.js"></script>
   </body>
 </html>

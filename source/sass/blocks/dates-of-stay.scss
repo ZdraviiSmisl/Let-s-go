@@ -9,7 +9,7 @@
   padding: 24px 24px 11px 24px;
 }
 
-.plan__list{
+.plan__list {
   display: none;
 }
 
@@ -24,7 +24,7 @@
 }
 
 .plan__description {
-  margin: 0 0 20px 0;
+  margin: 0 0 22px 0;
   padding: 0;
   font-size: 16px;
   line-height: 22px;
@@ -42,6 +42,15 @@
   position: absolute;
   color: var(--next-gray);
   -webkit-tap-highlight-color: transparent;
+
+  &:hover {
+    color: var(--slightly-gray);
+  }
+
+  &:active {
+    color: var(--extrim-gray);
+  }
+;
 
   &:first-of-type {
     top: 32px;
@@ -84,6 +93,16 @@
   text-align: center;
   border: 1px solid var(--basic-gray);
   border-radius: 7px;
+
+  &:hover {
+    color: var(--new-gray);
+    border: 1px solid var(--new-gray);
+  }
+
+  &:active {
+    color: var(--basic-blue);
+    border: 1px solid var(--basic-blue);
+  }
 }
 
 .with-kids {
@@ -116,7 +135,16 @@
     height: 26px;
     vertical-align: -0.25em;
     border-radius: 4px;
-    border: 1px solid var(--basic-gray);
+    outline: 1px solid var(--basic-gray);
+  }
+
+  & + .with-kids__text:hover::before {
+    outline: 1px solid var(--new-gray);
+  }
+
+  & + .with-kids__text:active::before {
+    background-color: var(--super-blue);
+    outline: 0;
   }
 
   &:checked + .with-kids__text::after {
@@ -131,6 +159,10 @@
     background-repeat: no-repeat;
     background-position: center center;
   }
+
+  &:checked + .with-kids__text:active::after {
+    opacity: 0.3;
+  }
 }
 
 .dates__date {
@@ -141,6 +173,7 @@
   font-size: 20px;
   line-height: 20px;
   font-weight: 700;
+  color: var(--special-blue);
 
   &::before,
   &::after {
@@ -172,6 +205,14 @@
   background-repeat: no-repeat;
   background-size: 9px 19px;
   opacity: 0.3;
+
+  &:hover {
+    opacity: 0.5;
+  }
+
+  &:active {
+    opacity: 0.1;
+  }
 }
 
 .nxt-btn {
@@ -179,8 +220,11 @@
   transform: rotate(180deg);
 }
 
+
 .table-plan {
   margin-bottom: 20px;
+  max-height: 186px;
+  table-layout: fixed;
   border-collapse: collapse;
 }
 
@@ -201,12 +245,22 @@
   padding: 0;
   height: 30px;
   width: 33px;
-  text-align: center;
-  vertical-align: center;
-  border: 0.5px solid var(--origin-gray-transparent);
+  text-overflow: ellipsis;
+  border: 0.5px solid var(--slightly-blue);
 
   &--gray {
     background-color: var(--very-light-blue);
+  }
+
+  &--selected:hover .table-plan__number,
+  &--selected .table-plan__number--current,
+  &--gray:hover .table-plan__number,
+  .table-plan__row--gray &:hover .table-plan__number {
+    position: relative;
+    box-shadow: inset 0 0 0 1px var(--light-orange),
+    0 0 0 1px var(--light-orange);
+
+    z-index: 5;
   }
 
   &--gray .table-plan__number {
@@ -215,17 +269,26 @@
   }
 
   &--selected {
-    background-color: var(--special-blue);
-    border: 1px solid var(--basic-gray);
+    border: 0.5px solid var(--basic-gray);
   }
 
-  &--selected .table-plan__number {
+  &--selected .table-plan__number,
+  &--gray:active .table-plan__number,
+  .table-plan__row--gray &:active .table-plan__number {
     color: var(--basic-white);
+    background-color: var(--special-blue);
     opacity: 1;
   }
 }
 
 .table-plan__number {
+  display: inline-flex;
+  justify-content: center;
+  align-self: center;
+  box-sizing: border-box;
+  padding-top: 6px;
+  width: 100%;
+  height: 100%;
   font-size: 14px;
   line-height: 18px;
   color: var(--origin-gray);
@@ -235,10 +298,6 @@
 .table-plan__first-day,
 .table-plan__cell-desktop {
   display: none;
-}
-
-.current {
-  border: 2px solid var(--light-orange);
 }
 
 .table-plan__cell--gray,
@@ -264,12 +323,12 @@
   text-transform: uppercase;
   background-color: var(--white-yellow);
   border-radius: 20px;
-  -webkit-tap-highlight-color: transparent ;
+  -webkit-tap-highlight-color: transparent;
 }
 
 @media (min-width: $tablet-width) {
   .plan__field {
-    margin-bottom: 39px;
+    margin-bottom: 44px;
     padding: 0;
     border-radius: 30px;
   }
@@ -394,7 +453,7 @@
     }
 
     & + .with-kids__text::before {
-      margin-right: 17px;
+      margin-right: 22px;
       width: 36px;
       height: 36px;
     }
@@ -454,16 +513,21 @@
   }
 
   .table-plan__cell {
-    height: 68px;
-    width: 77.1px;
+    height: 69px;
+    width: 78px;
+
+    &--selected:hover .table-plan__number,
+    &--selected .table-plan__number--current,
+    &--gray:hover .table-plan__number,
+    .table-plan__row--gray &:hover .table-plan__number {
+      box-shadow: inset 0 0 1px 2px var(--light-orange),
+      0 0 0 2px var(--light-orange);
+    }
   }
 
   .table-plan__number {
+    padding-top: 24px;
     font-size: 18px;
-  }
-
-  .current {
-    border-width: 4px;
   }
 
   .plan__next {
@@ -498,7 +562,7 @@
 
   .dates__container {
     grid-template-columns: repeat(2, auto);
-    padding: 98px 162px 98px 158px;
+    padding: 98px 162px 108px 158px;
   }
 
   .plan__list {
@@ -624,7 +688,7 @@
   }
 
   .dates__date {
-    margin-bottom: 44px;
+    margin-bottom: 42px;
     grid-area: 5/1/6/3;
   }
 
@@ -654,8 +718,9 @@
 
   .table-plan__cell {
     box-sizing: border-box;
-    padding: 5px 0 0 15px;
-    height: 71px;
+    padding: 0;
+    min-height: 71px;
+    min-width: 142px;
     text-align: start;
     vertical-align: top;
 
@@ -663,14 +728,27 @@
       display: flex;
       flex-flow: column wrap;
       gap: 7px;
-      box-sizing: content-box;
-      justify-self: self-start;
-      align-self: self-start;
+      padding: 5px 0 0 13px;
+    }
+
+    &--selected .table-plan__number--interim {
+      display: inline-block;
+      padding-top: 15px;
+    }
+  }
+
+  .table-plan__number {
+    padding-top: 13px;
+    padding-right: 95px;
+
+    &--1 {
+      padding-right: 65px;
     }
   }
 
   .table-plan__first-day {
     display: inline;
+    padding-left: 5px;
     font-size: 18px;
     line-height: 18px;
     color: var(--origin-gray);
@@ -679,12 +757,15 @@
 
   .table-plan__cell-desktop {
     display: inline-block;
+    min-width: 43px;
     font-size: 18px;
     line-height: 20px;
     color: var(--basic-white);
   }
 
   .plan__next {
+    margin-top: 18px;
+    margin-bottom: 0;
     grid-area: 7/1/8/2;
   }
 }

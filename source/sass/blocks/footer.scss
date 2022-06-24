@@ -49,11 +49,9 @@
 
   &:hover {
     background-color: var(--white-orange);
-    opacity: 0.6;
   }
 
   &:active {
-    background-color: var(--white-orange);
     opacity: 0.3;
   }
 }
@@ -76,20 +74,6 @@
   justify-content: space-between;
   align-items: center;
   padding-top: 13px;
-}
-
-.copyright__text {
-  color: var(--origin-gray)
-}
-
-.copyright__link {
-  display: block;
-  width: 27px;
-  height: 34px;
-  background-size: 27px 34px;
-  background-image: url("../../icons/html-academy.svg");
-  background-position: center center;
-  background-repeat: no-repeat;
 
   &:hover {
     opacity: 0.6;
@@ -99,6 +83,20 @@
     opacity: 0.3;
   }
 }
+
+.copyright__text {
+  color: var(--origin-gray)
+}
+
+/*.copyright__link {
+  display: block;
+  width: 27px;
+  height: 34px;
+  background-size: 27px 34px;
+  background-image: url("../../icons/html-academy.svg");
+  background-position: center center;
+  background-repeat: no-repeat;
+}*/
 
 @media (min-width: $tablet-width) {
   .footer {

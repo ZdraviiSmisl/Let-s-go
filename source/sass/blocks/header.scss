@@ -34,12 +34,9 @@
 
 .header__input:checked ~ .page-header {
   margin-bottom: 1px;
+  min-height: 495px;
   background-color: var(--basic-white);
   z-index: 10;
-}
-
-.header__input:checked ~ .page-header--scrolled {
-  min-height: 568px;
 }
 
 .header__wrapper {
@@ -54,7 +51,7 @@
 .header__logo {
   display: block;
   grid-area: 1/1/-1/2;
-  padding-bottom: 15px;
+  padding-bottom: 0;
   align-self: center;
   z-index: 2;
 
@@ -69,11 +66,11 @@
 
 .menu-open {
   position: absolute;
-  display: block;
-  align-self: center;
+  top: 27px;
   right: 0;
+  display: block;
   width: 25px;
-  height: 25px;
+  height: 20px;
   cursor: pointer;
   z-index: 2;
   -webkit-tap-highlight-color: transparent;
@@ -83,7 +80,6 @@
   position: absolute;
   bottom: 0;
   left: 0;
-  /*padding-top: var(--header-min-height);*/
   width: 100%;
   max-height: 0;
   text-align: center;
@@ -96,13 +92,9 @@
 .header__input {
   display: none;
 
-  &:checked ~ .page-header--scrolled {
-    position: sticky;
-  }
-
   &:checked ~ .page-header .header__nav {
     padding-top: 0;
-    max-height: 498px;
+    min-height: 495px;
     font-size: 16px;
     background-color: var(--basic-white);
     box-shadow: 30vw 0 0 0 var(--basic-white),
@@ -114,9 +106,10 @@
     fill: var(--black-blue);
   }
 
-  &:checked ~ .page-header .header__line:first-of-type {
+  &:checked ~ .page-header .header__line:first-of-type,
+  &:checked ~ .page-header .header__line:last-of-type {
     transform: rotate(45deg);
-    top: 30px;
+    top: 36px;
     width: 23px;
     height: 2px;
     background-color: var(--next-gray);
@@ -125,10 +118,6 @@
 
   &:checked ~ .page-header .header__line:last-of-type {
     transform: rotate(-45deg);
-    width: 23px;
-    height: 2px;
-    background-color: var(--next-gray);
-    transition: 0.5s all;
   }
 }
 
@@ -138,7 +127,7 @@
 
 .header__line {
   position: absolute;
-  top: 22px;
+  top: 30px;
   align-self: center;
   right: 0;
   width: 25px;
@@ -146,16 +135,16 @@
   background-color: var(--basic-white);
 
   &:last-of-type {
-    top: 30px;
+    top: 40px;
   }
 }
 
 @media (min-width: $tablet-width) {
 
-  .header__input:checked ~ .page-header--scrolled {
+ /* .header__input:checked ~ .page-header--scrolled {
     min-height: 910px;
   }
-
+*/
   .header__logo {
     padding-top: 15px;
   }
@@ -172,17 +161,10 @@
     }
 
     & .header-info__item:last-of-type .intro__auto {
-      display: block;
       padding: 16px 29px 14px 28px;
-      box-sizing: border-box;
       min-width: 188px;
       font-size: 20px;
       line-height: 20px;
-      letter-spacing: 1px;
-      color: var(--basic-blue);
-      text-transform: uppercase;
-      background-color: var(--white-yellow);
-      border-radius: 25px;
     }
   }
 
@@ -203,7 +185,7 @@
   .header__input {
 
     &:checked ~ .page-header .header__nav {
-      max-height: 910px;
+      min-height: 778px;
     }
 
     &:checked ~ .page-header .header__line:first-of-type,
@@ -334,5 +316,16 @@
 
   .nav-contacts {
     display: none;
+  }
+
+
+  .header .intro__link--mail::before {
+    top: 17px;
+    left: 16px;
+  }
+
+  .header .intro__link--phone::before {
+    top: 15px;
+    left: 15px;
   }
 }

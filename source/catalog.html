@@ -8,7 +8,7 @@
   </head>
   <body class="page__body page__body--catalog">
     <input class="header__input" id="toggle" type="checkbox">
-    <header class="page-header header header--catalog">
+    <header class="page-header header">
       <div class="header__wrapper page__center">
         <a class="header__logo logo">
           <div class="logo__wrap logo__wrap--mobile">
@@ -39,7 +39,7 @@
             </a>
           </li>
           <li class="header-info__item">
-            <a class="intro__auto page__link" href="login.html">Авторизация</a>
+            <a class="intro__auto page__auto-link page__link" href="login.html">Авторизация</a>
           </li>
         </ul>
         <label class="menu-open" for="toggle"></label>
@@ -48,18 +48,24 @@
         <nav class="main-nav header__nav">
           <ul class="main-nav__list service-list page__list">
             <li class="main-nav__item">
-              <a class="main-nav__service page__link main-services" href="../index.html" aria-current="page">О сервисе</a>
+              <a class="main-nav__service page__link main-services" href="../index.html" aria-current="page">
+                <span class="main-nav__text" data-hover="О сервисе">О сервисе</span>
+              </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__destinations page__link main-services" href="../form.html">Направления</a>
+              <a class="main-nav__destinations page__link main-services" href="../form.html">
+                <span class="main-nav__text" data-hover="Направления">Направления</span>
+              </a>
             </li>
             <li class="main-nav__item">
-              <a class="main-nav__companions page__link main-services" href="../catalog.html">Попутчики</a>
+              <a class="main-nav__companions page__link main-services" href="../catalog.html">
+                <span class="main-nav__text" data-hover="Попутчики">Попутчики</span>
+              </a>
             </li>
           </ul>
           <ul class="main-nav__list nav-contacts page__list">
             <li class="nav-contacts__item">
-              <a class="nav-contacts__link nav-contacts__login page__link" href="login.html">Авторизация</a>
+              <a class="nav-contacts__link page__auto-link nav-contacts__login page__link" href="login.html">Авторизация</a>
             </li>
             <li class="nav-contacts__item">
               <a class="nav-contacts__link nav-contacts__number page__link" href="tel:+7800 555-86-28">8 800 555-86-28</a>
@@ -71,17 +77,17 @@
           <div class="main-nav__social social social--head">
             <ul class="social__list page__list">
               <li class="social__item">
-                <a class="social-fb" href="https://www.facebook.com/htmlacademy">
+                <a class="social__link social__link--head social__link--fb" href="https://www.facebook.com/htmlacademy">
                   <span class="page__hidden">Мы в Фейсбуке</span>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social-vk" href="https://vk.com/htmlacademy">
+                <a class="social__link social__link--head social__link--vk" href="https://vk.com/htmlacademy">
                   <span class="page__hidden">Мы Вконтакте</span>
                 </a>
               </li>
               <li class="social__item">
-                <a class="social-inst" href="https://www.instagram.com/htmlacademy/">
+                <a class="social__link social__link--head social__link--inst" href="https://www.instagram.com/htmlacademy/">
                   <span class="page__hidden">Мы в инстаграм</span>
                 </a>
               </li>
@@ -501,7 +507,12 @@
                 <li class="filter__sorted-item"><a class="filter__location page__link" href="asia/afghanistan">Афганистан</a>
                 </li>
               </ul>
-              <label class="filter__label-close" for="modal-filter">Свернуть</label>
+              <label class="filter__label-close" for="modal-filter">
+                <svg class="filter-close__svg" viewBox="0 0 16 16" width="16" height="16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M14 2L2 14M2 2l12 12" stroke="#192144" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <span class="filter__word-close">Свернуть</span>
+              </label>
             </div>
           </div>
         </section>
@@ -611,7 +622,9 @@
                     <label for="max-value"><span class="page__hidden">Максимальное значене</span></label>
                   </div>
                   <div class="level__slider" aria-label="Отфильтровать уровни в диапазоне">
+                    <div class="level__left-slider"></div>
                     <div class="level__bar"></div>
+                    <div class="level__right-slider"></div>
                   </div>
                 </div>
               </fieldset>
@@ -639,27 +652,38 @@
               </a>
               <p class="personal-card__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
               <span class="personal-card__desires">хочет посетить:</span>
-              <ul class="personal-card__list desires page__list">
-                <li class="desires__item"><span class="person__country">шри-ланка</span></li>
-                <li class="desires__item"><span class="person__country">Таиланд</span></li>
-                <li class="desires__item"><span class="person__country">сейшелы</span></li>
-              </ul>
+              <div class="personal-card__block personal-card__block--1">
+                <ul class="personal__list countries desires page__list">
+                  <li class="countries__item">
+                    <img class="countries__img" src="img/sri-Lanka.png" width="35" height="25" alt="Sri-Lanka">
+                    <span class="countries__country">Шри-ланка</span>
+                  </li>
+                  <li class="countries__item">
+                    <img class="countries__img" src="img/thailand.png" width="35" height="24" alt="Thailand">
+                    <span class="countries__country">Тайланд</span>
+                  </li>
+                  <li class="countries__item">
+                    <img class="countries__img" src="img/seychelles.png" width="35" height="25" alt="Seychelles">
+                    <span class="countries__country countries__country--last">Сейшелы</span>
+                  </li>
+                </ul>
+              </div>
               <div class="personal-card__block">
                 <span class="personal-card__transport">транспорт:</span>
                 <ul class="personal-card__list ways page__list">
-                  <li class="ways__item">
+                  <li class="ways__item" data-hover="Авиаперелет">
                     <img class="ways__img ways__img--plane" src="icons/plane-svg.svg" alt="plane" width="14" height="16">
                     <span class="page__hidden">По воздуху</span>
                   </li>
-                  <li class="ways__item">
+                  <li class="ways__item" data-hover="Автотранспортом">
                     <img class="ways__img ways__img--bus" src="icons/bus-svg.svg" alt="public transport" width="17" height="16">
                     <span class="page__hidden">Общественным транспортом</span>
                   </li>
-                  <li class="ways__item">
+                  <li class="ways__item" data-hover="Велосипед">
                     <img class="ways__img ways__img--bike" src="icons/bicycle-svg.svg" alt="bike" width="17" height="16">
                     <span class="page__hidden">На мотоцикле</span>
                   </li>
-                  <li class="ways__item">
+                  <li class="ways__item" data-hover="Пешком">
                     <img class="ways__img ways__img--walk" src="icons/walk-svg.svg" alt="walk" width="17" height="16">
                     <span class="page__hidden">Пешком</span>
                   </li>
@@ -667,18 +691,21 @@
               </div>
               <div class="personal-card__block">
                 <span class="personal-card__level">левел:</span>
-               <!-- <div class="person__bar circle-bar circle-bar&#45;&#45;catalog">
-                  <div class="circle-bar__field person__bar-field">
-                    <svg class="circle-bar__svg">
-                      <circle class="circle-bar__circle-99 circle" cx="20" cy="20" r="20"></circle>
-                      <circle class="circle-bar__circle-99 circle" cx="23" cy="23" r="21"></circle>
+                <div class="person__bar progress-bar">
+                  <div class="progress-bar__outer">
+                    <svg class="progress-bar__svg-mobile">
+                      <circle class="progress-bar__circle" cx="25" cy="25" r="25" stroke-dasharray="125 10" stroke-dashoffset="0"></circle>
+                      <circle class="progress-bar__circle" cx="25" cy="25" r="21" stroke-dasharray="95 5"></circle>
                     </svg>
-                    <div class="circle-bar__reached-level catalog-level">
-                      <span class="circle-bar__number number-catalog">99</span><span
-                      class="circle-bar__level circle-bar__level&#45;&#45;hide">level</span>
-                    </div>
+                    <svg class="progress-bar__svg-tablet">
+                      <circle class="progress-bar__circle" cx="35" cy="35" r="38" stroke-dasharray="125 10" stroke-dashoffset="0"></circle>
+                      <circle class="progress-bar__circle" cx="35" cy="35" r="30" stroke-dasharray="137 5"></circle>
+                    </svg>
+                    <span class="progress-bar__figure">99
+                      <span class="progress-bar__level">level</span>
+                    </span>
                   </div>
-                </div>-->
+                </div>
               </div>
               <a class="personal-card__feedback-link page__link" href="feedback.html">Позвать!</a>
             </article>
@@ -698,26 +725,34 @@
               </a>
               <p class="personal-card__hashtags personal-card__hashtags--2">#бургер #бар #футбол #концерт #крафт</p>
               <span class="personal-card__desires">хочет посетить:</span>
-              <ul class="personal-card__list desires desires--2 page__list">
-                <li class="desires__item"><span class="person__country">бельгия</span></li>
-                <li class="desires__item"><span class="person__country">чехия</span></li>
-              </ul>
+              <div class="personal-card__block personal-card__block--2">
+                <ul class="personal__list countries desires page__list">
+                  <li class="countries__item">
+                    <img class="countries__img" src="img/belgium.png" width="35" height="24" alt="Belgium">
+                    <span class="countries__country">Бельгия</span>
+                  </li>
+                  <li class="countries__item">
+                    <img class="countries__img" src="img/czech.png" width="35" height="24" alt="Czech">
+                    <span class="countries__country countries__country--last">Чехия</span>
+                  </li>
+                </ul>
+              </div>
               <div class="personal-card__block">
                 <span class="personal-card__transport">транспорт:</span>
                 <ul class="personal-card__list ways page__list">
-                  <li class="ways__item">
+                  <li class="ways__item" data-hover="Авиаперелет">
                     <img class="ways__img ways__img--plane" src="icons/plane-svg.svg" alt="plane" width="14" height="16">
                     <span class="page__hidden">По воздуху</span>
                   </li>
-                  <li class="ways__item">
+                  <li class="ways__item" data-hover="Автотранспортом">
                     <img class="ways__img ways__img--bus" src="icons/bus-svg.svg" alt="public transport" width="17" height="16">
                     <span class="page__hidden">Общественным транспортом</span>
                   </li>
-                  <li class="ways__item">
+                  <li class="ways__item" data-hover="Велосипед">
                     <img class="ways__img ways__img--bike" src="icons/bicycle-svg.svg" alt="bike" width="17" height="16">
                     <span class="page__hidden">На мотоцикле</span>
                   </li>
-                  <li class="ways__item">
+                  <li class="ways__item" data-hover="Пешком">
                     <img class="ways__img ways__img--walk" src="icons/walk-svg.svg" alt="walk" width="17" height="16">
                     <span class="page__hidden">Пешком</span>
                   </li>
@@ -725,18 +760,21 @@
               </div>
               <div class="personal-card__block">
                 <span class="personal-card__level">левел:</span>
-               <!-- <div class="person__bar circle-bar circle-bar&#45;&#45;catalog">
-                  <div class="circle-bar__field person__bar-field">
-                    <svg class="circle-bar__svg">
-                      <circle class="circle-bar__circle-80 circle-80" cx="20" cy="20" r="20"></circle>
-                      <circle class="circle-bar__circle-80 circle-80" cx="23" cy="23" r="21"></circle>
+                <div class="person__bar progress-bar">
+                  <div class="progress-bar__outer">
+                    <svg class="progress-bar__svg-mobile">
+                      <circle class="progress-bar__circle" cx="25" cy="25" r="25" stroke-dasharray="125 10" stroke-dashoffset="0"></circle>
+                      <circle class="progress-bar__circle" cx="25" cy="25" r="21" stroke-dasharray="72 26"></circle>
                     </svg>
-                    <div class="circle-bar__reached-level catalog-level">
-                      <span class="circle-bar__number number-catalog">80</span><span
-                      class="circle-bar__level circle-bar__level&#45;&#45;hide">level</span>
-                    </div>
+                    <svg class="progress-bar__svg-tablet">
+                      <circle class="progress-bar__circle" cx="35" cy="35" r="38" stroke-dasharray="125 10" stroke-dashoffset="0"></circle>
+                      <circle class="progress-bar__circle" cx="35" cy="35" r="30" stroke-dasharray="107 38"></circle>
+                    </svg>
+                    <span class="progress-bar__figure">80
+                      <span class="progress-bar__level">level</span>
+                    </span>
                   </div>
-                </div>-->
+                </div>
               </div>
               <a class="personal-card__feedback-link page__link" href="feedback.html">Позвать!</a>
             </article>
@@ -756,27 +794,38 @@
               </a>
               <p class="personal-card__hashtags">#рэп #тату #хайпбист #кроссовки #суприм</p>
               <span class="personal-card__desires">хочет посетить:</span>
-              <ul class="personal-card__list desires page__list">
-                <li class="desires__item"><span class="person__country">сша</span></li>
-                <li class="desires__item"><span class="person__country">австралия</span></li>
-                <li class="desires__item"><span class="person__country">доминика</span></li>
-              </ul>
+              <div class="personal-card__block personal-card__block--3">
+                <ul class="personal__list countries desires page__list">
+                  <li class="countries__item">
+                    <img class="countries__img" src="img/usa2x.png" width="70" height="47" alt="USA">
+                    <span class="countries__country">сша</span>
+                  </li>
+                  <li class="countries__item">
+                    <img class="countries__img" src="img/australia2x.png" width="70" height="47" alt="Australia">
+                    <span class="countries__country">австралия</span>
+                  </li>
+                  <li class="countries__item">
+                    <img class="countries__img" src="img/dominica2x.png" width="70" height="47" alt="Dominica">
+                    <span class="countries__country countries__country--last">доминика</span>
+                  </li>
+                </ul>
+              </div>
               <div class="personal-card__block">
                 <span class="personal-card__transport">транспорт:</span>
                 <ul class="personal-card__list ways page__list">
-                  <li class="ways__item">
+                  <li class="ways__item" data-hover="Авиаперелет">
                     <img class="ways__img ways__img--plane" src="icons/plane-svg.svg" alt="plane" width="14" height="16">
                     <span class="page__hidden">По воздуху</span>
                   </li>
-                  <li class="ways__item">
+                  <li class="ways__item" data-hover="Автотранспортом">
                     <img class="ways__img ways__img--bus" src="icons/bus-svg.svg" alt="public transport" width="17" height="16">
                     <span class="page__hidden">Общественным транспортом</span>
                   </li>
-                  <li class="ways__item">
+                  <li class="ways__item" data-hover="Велосипед">
                     <img class="ways__img ways__img--bike" src="icons/bicycle-svg.svg" alt="bike" width="17" height="16">
                     <span class="page__hidden">На мотоцикле</span>
                   </li>
-                  <li class="ways__item">
+                  <li class="ways__item" data-hover="Пешком">
                     <img class="ways__img ways__img--walk" src="icons/walk-svg.svg" alt="walk" width="17" height="16">
                     <span class="page__hidden">Пешком</span>
                   </li>
@@ -784,18 +833,21 @@
               </div>
               <div class="personal-card__block">
                 <span class="personal-card__level">левел:</span>
-               <!-- <div class="person__bar circle-bar circle-bar&#45;&#45;catalog">
-                  <div class="circle-bar__field person__bar-field">
-                    <svg class="circle-bar__svg">
-                      <circle class="circle-bar__circle-80 circle-25" cx="20" cy="20" r="20"></circle>
-                      <circle class="circle-bar__circle-80 circle-25" cx="23" cy="23" r="21"></circle>
+                <div class="person__bar progress-bar">
+                  <div class="progress-bar__outer">
+                    <svg class="progress-bar__svg-mobile">
+                      <circle class="progress-bar__circle" cx="25" cy="25" r="25" stroke-dasharray="125 10" stroke-dashoffset="0"></circle>
+                      <circle class="progress-bar__circle" cx="25" cy="25" r="21" stroke-dasharray="95 49"></circle>
                     </svg>
-                    <div class="circle-bar__reached-level catalog-level">
-                      <span class="circle-bar__number number-catalog">25</span><span
-                      class="circle-bar__level circle-bar__level&#45;&#45;hide">level</span>
-                    </div>
+                    <svg class="progress-bar__svg-tablet">
+                      <circle class="progress-bar__circle" cx="35" cy="35" r="38" stroke-dasharray="125 10" stroke-dashoffset="0"></circle>
+                      <circle class="progress-bar__circle" cx="35" cy="35" r="30" stroke-dasharray="140 55"></circle>
+                    </svg>
+                    <span class="progress-bar__figure">25
+                      <span class="progress-bar__level">level</span>
+                    </span>
                   </div>
-                </div>-->
+                </div>
               </div>
               <a class="personal-card__feedback-link page__link" href="feedback.html">Позвать!</a>
             </article>
@@ -816,26 +868,34 @@
               </a>
               <p class="personal-card__hashtags personal-card__hashtags--4">#образование #карьера #учеба #линкедин</p>
               <span class="personal-card__desires">хочет посетить:</span>
-              <ul class="personal-card__list desires desires--4 page__list">
-                <li class="desires__item"><span class="person__country">Великобритания</span></li>
-                <li class="desires__item"><span class="person__country">Германия</span></li>
-              </ul>
+              <div class="personal-card__block personal-card__block--4">
+                <ul class="personal__list countries desires page__list">
+                  <li class="countries__item">
+                    <img class="countries__img" src="img/uk2x.png" width="70" height="47" alt="United Kingdom">
+                    <span class="countries__country">Великобритания</span>
+                  </li>
+                  <li class="countries__item">
+                    <img class="countries__img" src="img/germany2x.png" width="70" height="47" alt="Germany">
+                    <span class="countries__country countries__country--last">Германия</span>
+                  </li>
+                </ul>
+              </div>
               <div class="personal-card__block">
                 <span class="personal-card__transport">транспорт:</span>
                 <ul class="personal-card__list ways page__list">
-                  <li class="ways__item">
+                  <li class="ways__item" data-hover="Авиаперелет">
                     <img class="ways__img ways__img--plane" src="icons/plane-svg.svg" alt="plane" width="14" height="16">
                     <span class="page__hidden">По воздуху</span>
                   </li>
-                  <li class="ways__item">
+                  <li class="ways__item" data-hover="Автотранспортом">
                     <img class="ways__img ways__img--bus" src="icons/bus-svg.svg" alt="public transport" width="17" height="16">
                     <span class="page__hidden">Общественным транспортом</span>
                   </li>
-                  <li class="ways__item">
+                  <li class="ways__item" data-hover="Велосипед">
                     <img class="ways__img ways__img--bike" src="icons/bicycle-svg.svg" alt="bike" width="17" height="16">
                     <span class="page__hidden">На мотоцикле</span>
                   </li>
-                  <li class="ways__item">
+                  <li class="ways__item" data-hover="Пешком">
                     <img class="ways__img ways__img--walk" src="icons/walk-svg.svg" alt="walk" width="17" height="16">
                     <span class="page__hidden">Пешком</span>
                   </li>
@@ -843,18 +903,21 @@
               </div>
               <div class="personal-card__block">
                 <span class="personal-card__level">левел:</span>
-               <!-- <div class="person__bar circle-bar circle-bar&#45;&#45;catalog">
-                  <div class="circle-bar__field person__bar-field">
-                    <svg class="circle-bar__svg">
-                      <circle class="circle-bar__circle-80 circle-50" cx="20" cy="20" r="20"></circle>
-                      <circle class="circle-bar__circle-80 circle-50" cx="23" cy="23" r="21"></circle>
+                <div class="person__bar progress-bar">
+                  <div class="progress-bar__outer">
+                    <svg class="progress-bar__svg-mobile">
+                      <circle class="progress-bar__circle" cx="25" cy="25" r="25" stroke-dasharray="125 10" stroke-dashoffset="0"></circle>
+                      <circle class="progress-bar__circle" cx="25" cy="25" r="21" stroke-dasharray="35 61"></circle>
                     </svg>
-                    <div class="circle-bar__reached-level catalog-level">
-                      <span class="circle-bar__number number-catalog">50</span><span
-                      class="circle-bar__level circle-bar__level&#45;&#45;hide">level</span>
-                    </div>
+                    <svg class="progress-bar__svg-tablet">
+                      <circle class="progress-bar__circle" cx="35" cy="35" r="38" stroke-dasharray="125 10" stroke-dashoffset="0"></circle>
+                      <circle class="progress-bar__circle" cx="35" cy="35" r="30" stroke-dasharray="45 97"></circle>
+                    </svg>
+                    <span class="progress-bar__figure">50
+                      <span class="progress-bar__level">level</span>
+                    </span>
                   </div>
-                </div>-->
+                </div>
               </div>
               <a class="personal-card__feedback-link page__link page__link" href="feedback.html">Позвать!</a>
             </article>
@@ -924,12 +987,10 @@
             </li>
           </ul>
         </div>
-        <div class="footer__part copyright ">
+        <a class="footer__part copyright page__link" href="https://htmlacademy.ru/intensive/htmlcss">
           <span class="copyright__text">Разработано</span>
-          <a class="copyright__link page__link" href="https://htmlacademy.ru/intensive/htmlcss">
-            <span class="page__hidden">HTML Academy</span>
-          </a>
-        </div>
+          <img class="copyright__img" src="icons/html-academy.svg" alt="Html Academy">
+        </a>
       </div>
     </footer>
     <script src="js/scrolled-menu.js"></script>
