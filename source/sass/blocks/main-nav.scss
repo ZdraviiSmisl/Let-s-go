@@ -116,12 +116,12 @@
 }
 
 .nav-contacts__number::after {
-  mask-image: url("../../icons/menu-phone.svg");
+  mask-image: url("../../icons/sprite.svg#menu-phone");
   mask-size: 17px 15px;
 }
 
 .nav-contacts__mail::after {
-  mask-image: url("../../icons/menu-mail.svg");
+  mask-image: url("../../icons/sprite.svg#menu-mail");
   mask-size: 19px 13px;
 }
 

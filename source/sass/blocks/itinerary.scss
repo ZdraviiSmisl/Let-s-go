@@ -39,7 +39,7 @@
   right: -1px;
   width: 9px;
   height: 9px;
-  mask-image: url("../../icons/delete-country.svg");
+  mask-image: url("../../icons/sprite.svg#delete-country");
   mask-size: 9px 9px;
   mask-repeat: no-repeat;
   mask-position: center center;
@@ -63,7 +63,7 @@
     bottom: 138px;
     width: 8px;
     height: 11px;
-    background-image: url("../../icons/arrow.svg");
+    background-image: url("../../icons/sprite.svg#arrow");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 8px 11px;
@@ -128,7 +128,7 @@
   width: 38px;
   height: 37px;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
-  background-image: url("../../icons/select-open.svg");
+  background-image: url("../../icons/sprite.svg#select-open");
   background-repeat: no-repeat;
   background-position: center center;
   background-color: var(--basic-white);
@@ -252,7 +252,7 @@
     right: 48px;
     width: 8px;
     height: 11px;
-    background-image: url("../../icons/arrow.svg");
+    background-image: url("../../icons/sprite.svg#arrow");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-size: 8px 11px;

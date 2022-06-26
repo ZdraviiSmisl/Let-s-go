@@ -55,6 +55,7 @@
 }
 
 .profile__pic {
+  margin: 0;
   padding: 14px 0 17px 17px;
   width: 100px;
   height: 100px;
@@ -180,24 +181,6 @@
   justify-content: center;
   padding-top: 7px;
   padding-bottom: 14px;
-}
-
-.way__label {
-}
-
-.way__plane {
-}
-
-.way__pointer {
-}
-
-.way__car {
-}
-
-.way__bike {
-}
-
-.way__on-foot {
 }
 
 @media (min-width: $tablet-width) {

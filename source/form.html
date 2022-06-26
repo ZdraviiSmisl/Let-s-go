@@ -4,7 +4,19 @@
     <meta charset="utf-8">
     <title>Let-s-go</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="preload" href="fonts/bloggersans-italic.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="preload" href="fonts/bloggersans-lightitalic.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="preload" href="fonts/bloggersans-mediumitalic.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/favicon-svg.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body page__body--form">
     <input class="header__input" id="toggle" type="checkbox">
@@ -128,11 +140,16 @@
               </span>
             </div>
           </div>
-          <picture class="profile__pic">
-            <source media="(min-width: 1320px)" srcset="../img/demin-desktop-form@1x.jpg, ../img/demin-desktop-form@2x.jpg 2x">
-            <source media="(min-width: 768px)" srcset="../img/demin-tablet-form@1x.jpg, ../img/demin-tablet-form@2x.jpg 2x">
-            <img class="profile__photo page__img" src="../img/demin-mobile-form@1x.jpg" srcset="../img/demin-mobile-form@2x.jpg 2x"  alt="Фото профиля">
-          </picture>
+          <p class="profile__pic">
+            <picture>
+              <source type="image/webp" media="(min-width: 1320px)" srcset="img/demin-desktop-form@1x.webp 1x, img/demin-desktop-form@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet-form@1x.webp 1x, img/demin-tablet-form@2x.webp 2x">
+              <source type="image/webp" srcset="img/demin-mobile-form@1x.webp 1x, img/demin-mobile-form@2x.webp 2x">
+              <source media="(min-width: 1320px)" srcset="img/demin-desktop-form@1x.jpg, img/demin-desktop-form@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/demin-tablet-form@1x.jpg, img/demin-tablet-form@2x.jpg 2x">
+              <img class="profile__photo page__img" src="img/demin-mobile-form@1x.jpg" srcset="img/demin-mobile-form@2x.jpg 2x" alt="Фото профиля">
+            </picture>
+          </p>
           <a class="profile__change-photo page__link" href="#">
             <span class="profile__name-mobile">сменить фото</span>
             <span class="profile__name-desktop">фото</span>

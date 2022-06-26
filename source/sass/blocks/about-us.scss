@@ -11,7 +11,7 @@
 
   @media (min-resolution: 2dppx) {
     background-image: url("../../img/service-back-mobile@2x.png");
-
+    background-size: contain;
   }
 }
 
@@ -66,6 +66,7 @@
 
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/service-back-tablet@2x.png");
+      background-size: contain;
     }
   }
 

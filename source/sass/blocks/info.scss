@@ -26,14 +26,13 @@
   &::before {
     content: "";
     position: absolute;
-    top: 0.7em;
-    left: 15px;
-    width: 16px;
-    height: 21px;
-    background-image: url("../../icons/point.svg");
+    top: 0.2em;
+    left: -15px;
+    width: 76px;
+    height: 41px;
+    background-image: url("../../icons/sprite.svg#point");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 16px 21px;
     z-index: 5;
   }
 
