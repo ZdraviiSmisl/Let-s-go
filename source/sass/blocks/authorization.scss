@@ -59,7 +59,7 @@
 
 .authorization__email {
   margin: 0 -55px 0 0;
-  padding: 23px 83px 23px 21px;
+  padding: 23px 98px 23px 21px;
   box-sizing: border-box;
   min-height: 62px;
 
@@ -194,7 +194,8 @@
 
   .authorization__email {
     margin: 0 -75px 0 0;
-    padding: 35px 409px 29px 39px;
+    padding: 17px 322px 29px 39px;
+    min-width: 616px;
     border-radius: 20px;
 
     &::placeholder {
@@ -239,11 +240,12 @@
 
   .contacts .nav-contacts__number::after,
   .contacts .nav-contacts__mail::after {
-    left: 56px;
+    left: 57px;
   }
 
   .contacts .nav-contacts__mail::after {
-    top: 7px;
+    top: 5px;
+    left: 56px;
   }
 
   .contacts .nav-contacts__number::before {
@@ -285,7 +287,7 @@
 
   .authorization__email {
     margin: 0;
-    padding: 35px 759px 29px 39px;
+    padding: 35px 759px 13px 39px;
     min-width: 850px;
   }
 
@@ -331,7 +333,7 @@
       left: -94px;
       width: 31px;
       height: 30px;
-      mask-size: 31px 30px;
+      mask-size: 120px;
     }
   }
 
@@ -344,10 +346,11 @@
     }
 
     &::after {
-      left: 33px;
-      top: 3px;
-      width: 38px;
-      mask-size: 38px 25px;
+      left: -278px;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      mask-size: 104px;
     }
   }
 }

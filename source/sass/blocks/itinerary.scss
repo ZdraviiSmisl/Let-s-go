@@ -40,7 +40,7 @@
   width: 9px;
   height: 9px;
   mask-image: url("../../icons/sprite.svg#delete-country");
-  mask-size: 9px 9px;
+  mask-size: 37px;
   mask-repeat: no-repeat;
   mask-position: center center;
   background-color: var(--basic-black);
@@ -461,7 +461,7 @@
     right: -1px;
     width: 21px;
     height: 21px;
-    mask-size: 21px 21px;
+    mask-size: 95px;
   }
 
   .itinerary__flag::after {
@@ -544,7 +544,7 @@
     position: absolute;
     top: 292px;
     right: 223px;
-    background-size: 16px;
+    background-size: 50px;
 
     &:nth-of-type(2) {
       top: 379px;
@@ -821,7 +821,7 @@
   .selection-btn {
     top: 350px;
     left: 833px;
-    background-size: 25px;
+    background-size: 65px;
 
     &:nth-of-type(2) {
       top: 433px;

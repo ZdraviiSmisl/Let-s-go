@@ -112,7 +112,7 @@
     background-image: url("../../icons/sprite.svg#hart");
     background-position: center center;
     background-repeat: no-repeat;
-    background-size: 12px 11px;
+    background-size: 45px;
     opacity: 0.3;
   }
 
@@ -352,20 +352,19 @@
   position: relative;
   padding-top: 8px;
   padding-left: 9px;
+  object-fit: cover;
 
-  &--plane {
-    width: 12px;
-    height: 14px;
-  }
 
   &--index {
     padding: 0;
     width: 20px;
     height: 20px;
+    object-fit: cover;
   }
 
   &--bus {
-    width: 13px;
+    left: -22px;
+    width: 59px;
   }
 
   &--bike {
@@ -379,7 +378,7 @@
   }
 
   .ways__item:nth-of-type(2) &--index {
-    width: 18px;
+    width: 23px;
   }
 
   .ways__item:nth-of-type(3) &--index,
@@ -638,7 +637,7 @@
     &::before {
       width: 20px;
       height: 17px;
-      background-size: 20px 17px;
+      background-size: 70px;
     }
   }
 
@@ -781,8 +780,19 @@
   .ways__img {
     padding-top: 5px;
     padding-left: 9px;
-    width: 19px;
-    height: 21px;
+
+    &--bus {
+      width: 65px;
+      height: 19px;
+      left: -20px;
+    }
+
+    &--plane {
+      top: -3px;
+      left: -37px;
+      width: 90px;
+      height: 24px;
+    }
 
     &--bike,
     &--walk {

@@ -221,7 +221,7 @@
   height: 100%;
   mask-position: center center;
   mask-repeat: no-repeat;
-  mask-size: 17px 16px;
+  mask-size: 65px;
   background-color: var(--extra-gray);
 }
 
@@ -241,8 +241,7 @@
 
 .plane__back {
   mask-image: url("../../icons/sprite.svg#plane-svg");
-  mask-position: 41% 50%;
-  mask-size: 14px 16px;
+  mask-position: 55% 50%;
 }
 
 .bus__back {
@@ -494,14 +493,12 @@
     height: 43px;
   }
 
-  .plane__back {
-    mask-size: 20px 20px;
+  .back {
+    mask-size: 90px;
   }
 
-  .bus__back,
-  .bike__back,
-  .on-foot__back {
-    mask-size: 23px 22px;
+  .bus__back {
+    mask-position: 53% 50%;
   }
 
   .level__legend {
@@ -701,10 +698,6 @@
 
   .transport__label {
     width: 44px;
-  }
-
-  .back {
-    mask-size: 22px 22px;
   }
 
   .level-btn:checked ~ .level__wrap {

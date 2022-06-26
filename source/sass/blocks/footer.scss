@@ -86,6 +86,10 @@
   }
 }
 
+.copyright__img {
+  object-fit: cover;
+}
+
 .copyright__text {
   color: var(--origin-gray)
 }
@@ -119,17 +123,17 @@
     height: 62px;
   }
 
-/*  .social__link--fb {
-    background-size: 14px 26px;
+  .social__link--fb {
+    background-size: 116px;
   }
 
   .social__link--vk {
-    background-size: 27px 18px;
+    background-size: 70px;
   }
 
   .social__link--inst {
-    background-size: 22px 22px;
-  }*/
+    background-size: 100px;
+  }
 
   .copyright {
     padding: 15px 0 0 0;

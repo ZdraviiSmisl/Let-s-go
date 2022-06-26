@@ -319,13 +319,13 @@
   }
 
 
-  .header .intro__link--mail::before {
-    top: 17px;
-    left: 16px;
+  .header .intro__link--mail::before,
+  .header .intro__link--phone::before  {
+    top: 0;
+    left: 0;
   }
 
   .header .intro__link--phone::before {
-    top: 15px;
-    left: 15px;
+    left: -12px;
   }
 }
