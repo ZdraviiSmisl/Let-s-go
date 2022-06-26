@@ -187,7 +187,7 @@
 }
 
 .check__input:checked + .check__box {
-  background-image: url("../../icons/check-mark.svg");
+  background-image: url("../../icons/sprite.svg#check-mark");
 }
 
 .check:hover {
@@ -240,21 +240,21 @@
 }
 
 .plane__back {
-  mask-image: url("../../icons/plane-svg.svg");
+  mask-image: url("../../icons/sprite.svg#plane-svg");
   mask-position: 41% 50%;
   mask-size: 14px 16px;
 }
 
 .bus__back {
-  mask-image: url("../../icons/bus-svg.svg");
+  mask-image: url("../../icons/sprite.svg#bus-svg");
 }
 
 .bike__back {
-  mask-image: url("../../icons/bicycle-svg.svg");
+  mask-image: url("../../icons/sprite.svg#bicycle-svg");
 }
 
 .on-foot__back {
-  mask-image: url("../../icons/walk-svg.svg");
+  mask-image: url("../../icons/sprite.svg#walk-svg");
 }
 
 .level__range {

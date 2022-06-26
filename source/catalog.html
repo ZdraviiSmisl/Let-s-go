@@ -4,7 +4,19 @@
     <meta charset="utf-8">
     <title>Let-s-go</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="preload" href="fonts/bloggersans-italic.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="preload" href="fonts/bloggersans-lightitalic.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="preload" href="fonts/bloggersans-mediumitalic.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/favicon-svg.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body page__body--catalog">
     <input class="header__input" id="toggle" type="checkbox">
@@ -643,11 +655,12 @@
               <span class="personal-card__counter-like">1,5 М</span>
               <a class="personal-card__link page__link" href="firsova-profile.html">
                 <picture>
-                  <source media="(min-width: 1320px)"
-                          srcset="../img/firsova-desktop@1x.jpg, ../img/firsova-desktop@2x.jpg 2x">
-                  <source media="(min-width:768px)" srcset="../img/firsova-tablet@1x.jpg, ../img/firsova-tablet@2x.jpg 2x">
-                  <img class="personal-card__photo page__img" src="source/img/firsova-mobile@1x.jpg"
-                       srcset="../img/firsova-mobile@2x.jpg 2x" alt="Tania Firsova">
+                  <source type="image/webp" media="(min-width: 1320px)" srcset="img/firsova-desktop@1x.webp 1x, img/firsova-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/firsova-tablet@1x.webp 1x, img/firsova-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/firsova-mobile@1x.webp 1x, img/firsova-mobile@2x.webp 2x">
+                  <source media="(min-width: 1320px)" srcset="img/firsova-desktop@1x.jpg, img/firsova-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/firsova-tablet@1x.jpg, img/firsova-tablet@2x.jpg 2x">
+                  <img class="personal-card__photo page__img" src="img/firsova-mobile@1x.jpg" srcset="img/firsova-mobile@2x.jpg 2x" alt="Tania Firsova">
                 </picture>
               </a>
               <p class="personal-card__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
@@ -672,19 +685,19 @@
                 <span class="personal-card__transport">транспорт:</span>
                 <ul class="personal-card__list ways page__list">
                   <li class="ways__item" data-hover="Авиаперелет">
-                    <img class="ways__img ways__img--plane" src="icons/plane-svg.svg" alt="plane" width="14" height="16">
+                    <img class="ways__img ways__img--plane" src="icons/sprite.svg#plane-svg" alt="plane" width="14" height="16">
                     <span class="page__hidden">По воздуху</span>
                   </li>
                   <li class="ways__item" data-hover="Автотранспортом">
-                    <img class="ways__img ways__img--bus" src="icons/bus-svg.svg" alt="public transport" width="17" height="16">
+                    <img class="ways__img ways__img--bus" src="icons/sprite.svg#bus-svg" alt="public transport" width="17" height="16">
                     <span class="page__hidden">Общественным транспортом</span>
                   </li>
                   <li class="ways__item" data-hover="Велосипед">
-                    <img class="ways__img ways__img--bike" src="icons/bicycle-svg.svg" alt="bike" width="17" height="16">
+                    <img class="ways__img ways__img--bike" src="icons/sprite.svg#bicycle-svg" alt="bike" width="17" height="16">
                     <span class="page__hidden">На мотоцикле</span>
                   </li>
                   <li class="ways__item" data-hover="Пешком">
-                    <img class="ways__img ways__img--walk" src="icons/walk-svg.svg" alt="walk" width="17" height="16">
+                    <img class="ways__img ways__img--walk" src="icons/sprite.svg#walk-svg" alt="walk" width="17" height="16">
                     <span class="page__hidden">Пешком</span>
                   </li>
                 </ul>
@@ -717,10 +730,13 @@
               <span class="personal-card__counter-like">1500</span>
               <a class="personal-card__link page__link" href="demin-profile.html">
                 <picture>
-                  <source media="(min-width: 1320px)" srcset="../img/demin-desktop@1x.jpg, ../img/demin-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="../img/demin-tablet@1x.jpg, ../img/demin-tablet@2x.jpg 2x">
-                  <img class="personal-card__photo page__img" src="source/img/demin-mobile@1x.jpg"
-                       srcset="../img/demin-mobile@2x.jpg 2x" alt="Peter Demin">
+                  <source type="image/webp" media="(min-width: 1320px)" srcset="img/demin-desktop@1x.webp 1x, img/demin-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/demin-tablet@1x.webp 1x, img/demin-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/demin-mobile-form@1x.webp 1x, img/demin-mobile@2x.jpg 2x">
+                  <source media="(min-width: 1320px)" srcset="img/demin-desktop@1x.jpg, img/demin-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/demin-tablet@1x.jpg, img/demin-tablet@2x.jpg 2x">
+                  <img class="personal-card__photo page__img" src="img/demin-mobile@1x.jpg"
+                       srcset="img/demin-mobile@2x.jpg 2x" alt="Peter Demin">
                 </picture>
               </a>
               <p class="personal-card__hashtags personal-card__hashtags--2">#бургер #бар #футбол #концерт #крафт</p>
@@ -741,19 +757,19 @@
                 <span class="personal-card__transport">транспорт:</span>
                 <ul class="personal-card__list ways page__list">
                   <li class="ways__item" data-hover="Авиаперелет">
-                    <img class="ways__img ways__img--plane" src="icons/plane-svg.svg" alt="plane" width="14" height="16">
+                    <img class="ways__img ways__img--plane" src="icons/sprite.svg#plane-svg" alt="plane" width="14" height="16">
                     <span class="page__hidden">По воздуху</span>
                   </li>
                   <li class="ways__item" data-hover="Автотранспортом">
-                    <img class="ways__img ways__img--bus" src="icons/bus-svg.svg" alt="public transport" width="17" height="16">
+                    <img class="ways__img ways__img--bus" src="icons/sprite.svg#bus-svg" alt="public transport" width="17" height="16">
                     <span class="page__hidden">Общественным транспортом</span>
                   </li>
                   <li class="ways__item" data-hover="Велосипед">
-                    <img class="ways__img ways__img--bike" src="icons/bicycle-svg.svg" alt="bike" width="17" height="16">
+                    <img class="ways__img ways__img--bike" src="icons/sprite.svg#bicycle-svg" alt="bike" width="17" height="16">
                     <span class="page__hidden">На мотоцикле</span>
                   </li>
                   <li class="ways__item" data-hover="Пешком">
-                    <img class="ways__img ways__img--walk" src="icons/walk-svg.svg" alt="walk" width="17" height="16">
+                    <img class="ways__img ways__img--walk" src="icons/sprite.svg#walk-svg" alt="walk" width="17" height="16">
                     <span class="page__hidden">Пешком</span>
                   </li>
                 </ul>
@@ -786,10 +802,13 @@
               <span class="personal-card__counter-like">170</span>
               <a class="personal-card__link page__link" href="smolov-profile.html">
                 <picture>
-                  <source media="(min-width: 1320px)" srcset="../img/smolov-desktop@1x.jpg, ../img/smolov-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="../img/smolov-tablet@1x.jpg, ../img/smolov-tablet@2x.jpg 2x">
-                  <img class="personal-card__photo page__img" src="source/img/smolov-mobile@1x.jpg"
-                       srcset="../img/smolov-mobile@2x.jpg 2x" alt="Mark Smolov">
+                  <source type="image/webp" media="(min-width: 1320px)" srcset="img/smolov-desktop@1x.webp 1x, img/smolov-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/smolov-tablet@1x.webp, img/smolov-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/smolov-mobile@1x.webp 1x, img/smolov-mobile@2x.webp 2x">
+                  <source media="(min-width: 1320px)" srcset="img/smolov-desktop@1x.jpg, img/smolov-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/smolov-tablet@1x.jpg, img/smolov-tablet@2x.jpg 2x">
+                  <img class="personal-card__photo page__img" src="img/smolov-mobile@1x.jpg"
+                       srcset="img/smolov-mobile@2x.jpg 2x" alt="Mark Smolov">
                 </picture>
               </a>
               <p class="personal-card__hashtags">#рэп #тату #хайпбист #кроссовки #суприм</p>
@@ -814,19 +833,19 @@
                 <span class="personal-card__transport">транспорт:</span>
                 <ul class="personal-card__list ways page__list">
                   <li class="ways__item" data-hover="Авиаперелет">
-                    <img class="ways__img ways__img--plane" src="icons/plane-svg.svg" alt="plane" width="14" height="16">
+                    <img class="ways__img ways__img--plane" src="icons/sprite.svg#plane-svg" alt="plane" width="14" height="16">
                     <span class="page__hidden">По воздуху</span>
                   </li>
                   <li class="ways__item" data-hover="Автотранспортом">
-                    <img class="ways__img ways__img--bus" src="icons/bus-svg.svg" alt="public transport" width="17" height="16">
+                    <img class="ways__img ways__img--bus" src="icons/sprite.svg#bus-svg" alt="public transport" width="17" height="16">
                     <span class="page__hidden">Общественным транспортом</span>
                   </li>
                   <li class="ways__item" data-hover="Велосипед">
-                    <img class="ways__img ways__img--bike" src="icons/bicycle-svg.svg" alt="bike" width="17" height="16">
+                    <img class="ways__img ways__img--bike" src="icons/sprite.svg#bicycle-svg" alt="bike" width="17" height="16">
                     <span class="page__hidden">На мотоцикле</span>
                   </li>
                   <li class="ways__item" data-hover="Пешком">
-                    <img class="ways__img ways__img--walk" src="icons/walk-svg.svg" alt="walk" width="17" height="16">
+                    <img class="ways__img ways__img--walk" src="icons/sprite.svg#walk-svg" alt="walk" width="17" height="16">
                     <span class="page__hidden">Пешком</span>
                   </li>
                 </ul>
@@ -859,11 +878,14 @@
               <span class="personal-card__counter-like">23</span>
               <a class="personal-card__link page__link" href="rogovaia-profile.html">
                 <picture>
+                  <source type="image/webp" media="(min-width: 1320px)" srcset="img/rogovaya-desktop@1x.webp 1x, img/rogovaya-desktop@2x.webp 2x">
+                  <source type="image/webp" media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.webp 1x, img/rogovaya-tablet@2x.webp 2x">
+                  <source type="image/webp" srcset="img/rogovaya-mobile@1x.webp 1x, img/rogovaya-mobile@2x.webp 2x">
                   <source media="(min-width: 1320px)"
-                          srcset="../img/rogovaya-desktop@1x.jpg, ../img/rogovaya-desktop@2x.jpg 2x">
-                  <source media="(min-width: 768px)" srcset="../img/rogovaya-tablet@1x.jpg, ../img/rogovaya-tablet@2x.jpg 2x">
-                  <img class="personal-card__photo page__img" src="source/img/rogovaya-mobile@1x.jpg"
-                       srcset="../img/rogovaya-mobile@2x.jpg 2x" alt="Larisa Rogovaya">
+                          srcset="img/rogovaya-desktop@1x.jpg, img/rogovaya-desktop@2x.jpg 2x">
+                  <source media="(min-width: 768px)" srcset="img/rogovaya-tablet@1x.jpg, img/rogovaya-tablet@2x.jpg 2x">
+                  <img class="personal-card__photo page__img" src="img/rogovaya-mobile@1x.jpg"
+                       srcset="img/rogovaya-mobile@2x.jpg 2x" alt="Larisa Rogovaya">
                 </picture>
               </a>
               <p class="personal-card__hashtags personal-card__hashtags--4">#образование #карьера #учеба #линкедин</p>
@@ -884,19 +906,19 @@
                 <span class="personal-card__transport">транспорт:</span>
                 <ul class="personal-card__list ways page__list">
                   <li class="ways__item" data-hover="Авиаперелет">
-                    <img class="ways__img ways__img--plane" src="icons/plane-svg.svg" alt="plane" width="14" height="16">
+                    <img class="ways__img ways__img--plane" src="icons/sprite.svg#plane-svg" alt="plane" width="14" height="16">
                     <span class="page__hidden">По воздуху</span>
                   </li>
                   <li class="ways__item" data-hover="Автотранспортом">
-                    <img class="ways__img ways__img--bus" src="icons/bus-svg.svg" alt="public transport" width="17" height="16">
+                    <img class="ways__img ways__img--bus" src="icons/sprite.svg#bus-svg" alt="public transport" width="17" height="16">
                     <span class="page__hidden">Общественным транспортом</span>
                   </li>
                   <li class="ways__item" data-hover="Велосипед">
-                    <img class="ways__img ways__img--bike" src="icons/bicycle-svg.svg" alt="bike" width="17" height="16">
+                    <img class="ways__img ways__img--bike" src="icons/sprite.svg#bicycle-svg" alt="bike" width="17" height="16">
                     <span class="page__hidden">На мотоцикле</span>
                   </li>
                   <li class="ways__item" data-hover="Пешком">
-                    <img class="ways__img ways__img--walk" src="icons/walk-svg.svg" alt="walk" width="17" height="16">
+                    <img class="ways__img ways__img--walk" src="icons/sprite.svg#walk-svg" alt="walk" width="17" height="16">
                     <span class="page__hidden">Пешком</span>
                   </li>
                 </ul>
@@ -989,7 +1011,7 @@
         </div>
         <a class="footer__part copyright page__link" href="https://htmlacademy.ru/intensive/htmlcss">
           <span class="copyright__text">Разработано</span>
-          <img class="copyright__img" src="icons/html-academy.svg" alt="Html Academy">
+          <img class="copyright__img" src="icons/sprite.svg#html-academy" alt="Html Academy">
         </a>
       </div>
     </footer>

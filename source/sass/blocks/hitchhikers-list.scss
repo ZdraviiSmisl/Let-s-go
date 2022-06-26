@@ -109,7 +109,7 @@
     left: 31%;
     width: 12px;
     height: 11px;
-    background-image: url("../../icons/hart.svg");
+    background-image: url("../../icons/sprite.svg#hart");
     background-position: center center;
     background-repeat: no-repeat;
     background-size: 12px 11px;
@@ -134,7 +134,7 @@
   }
 
   &--first::before {
-    background-image: url("../../icons/red-hart.svg ");
+    background-image: url("../../icons/sprite.svg#red-hart ");
     opacity: 1;
   }
 }
@@ -472,7 +472,7 @@
     left: 60px;
     width: 18px;
     height: 18px;
-    background-image: url("../../icons/show-more.svg");
+    background-image: url("../../icons/sprite.svg#show-more");
     background-repeat: no-repeat;
     background-position: center center;;
     background-size: 18px 18px;

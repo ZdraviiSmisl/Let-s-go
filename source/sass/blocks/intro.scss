@@ -77,7 +77,7 @@
     right: 12px;
     width: 19px;
     height: 19px;
-    background-image: url("../../icons/icon-call.svg");
+    background-image: url("../../icons/sprite.svg#icon-call");
     background-size: 19px 19px;
   }
 
@@ -96,7 +96,7 @@
     content: "";
     width: 17px;
     height: 14px;
-    background-image: url("../../icons/mail-icon.svg");
+    background-image: url("../../icons/sprite.svg#mail-icon");
     background-size: 17px 14px;
   }
 }
@@ -138,6 +138,9 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/traveller-illustration-tablet@2x.png"),
       url("../../img/globe-back-tablet.jpg@2x.jpg");
+      /*
+      background-size: 744px 1536px;
+      */
     }
 
     &::before {

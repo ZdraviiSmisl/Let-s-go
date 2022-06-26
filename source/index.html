@@ -4,7 +4,19 @@
     <meta charset="utf-8">
     <title>Let-s-go</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="./css/style.css">
+    <link rel="preload" href="fonts/bloggersans.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="preload" href="fonts/bloggersans-bold.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="preload" href="fonts/bloggersans-bolditalic.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="preload" href="fonts/bloggersans-italic.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="preload" href="fonts/bloggersans-light.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="preload" href="fonts/bloggersans-lightitalic.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="preload" href="fonts/bloggersans-mediumitalic.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="preload" href="fonts/bloggersans-medium.woff2" as="font" type="font/woff2" crossorigin="use-credentials">
+    <link rel="stylesheet" href="css/style.min.css">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="favicons/favicon-svg.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
   </head>
   <body class="page__body">
     <input class="header__input" id="toggle" type="checkbox">
@@ -163,9 +175,12 @@
             бы отправиться и чем можно там заняться.</p>
           <article class="directions__tai card">
             <picture>
-              <source media="(min-width: 1320px)" srcset="../img/thailand-desktop@x1.jpg, ../img/thailand-desktop@2x.jpg 2x"/>
-              <source media="(min-width: 768px)" srcset="../img/thailand-desktop@x1.jpg, ../img/thailand-desktop@2x.jpg 2x"/>
-              <img class="card__photo page__img" src="../img/thailand-mobile-1@1x.jpg" srcset="../img/thailand-mobile-1@2x.jpg 2x" alt="Thailand-photo">
+              <source type="image/webp" media="(min-width:1320px)" srcset="img/thailand-desktop@x1.webp 1x, img/thailand-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/thailand-desktop@x1.webp 1x, img/thailand-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/thailand-mobile-1@1x.webp 1x, img/thailand-mobile-1@2x.webp 2x"/>
+              <source media="(min-width: 1320px)" srcset="img/thailand-desktop@x1.jpg, img/thailand-desktop@2x.jpg 2x"/>
+              <source media="(min-width: 768px)" srcset="img/thailand-desktop@x1.jpg, img/thailand-desktop@2x.jpg 2x"/>
+              <img class="card__photo page__img" src="img/thailand-mobile-1@1x.jpg" srcset="img/thailand-mobile-1@2x.jpg 2x" alt="Thailand-photo">
             </picture>
             <div class="card__wrap card__wrap--thailand">
               <b class="card__tittle card__tittle--thailand">Таиланд</b>
@@ -175,9 +190,12 @@
           </article>
           <article class="directions__france card">
             <picture>
-              <source media="(min-width: 1320px)" srcset="../img/france-desktop@1x.jpg, ../img/france-desktop@2x.jpg 2x"/>
-              <source media="(min-width: 768px)" srcset="../img/france-desktop@1x.jpg, ../img/france-desktop@2x.jpg 2x"/>
-              <img class="card__photo page__img" src="source/img/france-mobile-1@1x.jpg" srcset="../img/france-mobile-1@2x.jpg 2x" alt="France-photo">
+              <source type="image/webp" media="(min-width:1320px)" srcset="img/france-desktop@1x.webp 1x, img/france-desktop@2x.jpg 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/france-desktop@1x.webp 1x, img/france-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/france-mobile-1@1x.webp 1x, img/france-mobile-1@2x.webp 2x"/>
+              <source media="(min-width: 1320px)" srcset="img/france-desktop@1x.jpg, img/france-desktop@2x.jpg 2x"/>
+              <source media="(min-width: 768px)" srcset="img/france-desktop@1x.jpg, img/france-desktop@2x.jpg 2x"/>
+              <img class="card__photo page__img" src="img/france-mobile-1@1x.jpg" srcset="img/france-mobile-1@2x.jpg 2x" alt="France-photo">
             </picture>
             <div class="card__wrap card__wrap--france">
               <b class="card__tittle card__tittle--france">Франция</b>
@@ -187,9 +205,12 @@
           </article>
           <article class="directions__czech card">
             <picture>
-              <source media="(min-width: 1320px)" srcset="../img/czech-desktop@1x.jpg, ../img/czech-desktop@2x.jpg 2x"/>
-              <source media="(min-width: 768px)" srcset="../img/czech-desktop@1x.jpg, ../img/czech-desktop@2x.jpg 2x"/>
-              <img class="card__photo card__photo--czech page__img" src="source/img/czech-mobile-1@1x.jpg" srcset="../img/czech-mobile-1@2x.jpg 2x" alt="France-photo">
+              <source type="image/webp" media="(min-width:1320px)" srcset="img/czech-desktop@1x.webp 1x, img/czech-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/czech-desktop@1x.webp 1x, img/czech-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/czech-mobile-1@1x.webp 1x, img/czech-mobile-1@2x.webp 2x"/>
+              <source media="(min-width: 1320px)" srcset="img/czech-desktop@1x.jpg, img/czech-desktop@2x.jpg 2x"/>
+              <source media="(min-width: 768px)" srcset="img/czech-desktop@1x.jpg, img/czech-desktop@2x.jpg 2x"/>
+              <img class="card__photo card__photo--czech page__img" src="img/czech-mobile-1@1x.jpg" srcset="img/czech-mobile-1@2x.jpg 2x" alt="France-photo">
             </picture>
             <div class="card__wrap card__wrap--czech">
               <b class="card__tittle card__tittle--czech">Чехия</b>
@@ -214,9 +235,12 @@
           </p>
           <article class="companions__people person">
             <picture>
-              <source media="(min-width: 1320px)" srcset="../img/woman-photo-desktop@1x.jpg, ../img/woman-photo-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="../img/woman-photo-desktop@1x.jpg, ../img/woman-photo-desktop@2x.jpg 2x">
-              <img class="person__img page__img" src="../img/woman-photo-mobile@1x.jpg" srcset="../img/woman-photo-mobile@2x.jpg 2x" alt="woman swimming in a pool">
+              <source type="image/webp" media="(min-width: 1320px)" srcset="img/woman-photo-desktop@1x.webp 1x, img/woman-photo-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/woman-photo-desktop@1x.webp 1x, img/woman-photo-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/woman-photo-mobile@1x.webp 1x, img/woman-photo-mobile@2x.webp 2x">
+              <source media="(min-width: 1320px)" srcset="img/woman-photo-desktop@1x.jpg, img/woman-photo-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/woman-photo-desktop@1x.jpg, img/woman-photo-desktop@2x.jpg 2x">
+              <img class="person__img page__img" src="img/woman-photo-mobile@1x.jpg" srcset="img/woman-photo-mobile@2x.jpg 2x" alt="woman swimming in a pool">
             </picture>
             <div class="person__bar progress-bar">
               <div class="progress-bar__outer">
@@ -249,19 +273,19 @@
               <p class="person__hashtags">#ЗОЖ #ПП #Фитнес #пляж #авокадо #смузи</p>
               <ul class="person__ways ways page__list">
                 <li class="ways__item ways__item--no-bg" data-hover="Авиаперелет">
-                  <img class="ways__img ways__img--index ways__img--plane" src="icons/plane-svg.svg" alt="plane" width="14" height="16">
+                  <img class="ways__img ways__img--index ways__img--plane" src="icons/sprite.svg#plane-svg" alt="plane" width="14" height="16">
                   <span class="page__hidden">По воздуху</span>
                 </li>
                 <li class="ways__item ways__item--no-bg" data-hover="Автотранспорт">
-                  <img class="ways__img ways__img--index ways__img--bus" src="icons/bus-svg.svg" alt="public transport" width="17" height="16">
+                  <img class="ways__img ways__img--index ways__img--bus" src="icons/sprite.svg#bus-svg" alt="public transport" width="17" height="16">
                   <span class="page__hidden">Общественным транспортом</span>
                 </li>
                 <li class="ways__item ways__item--no-bg" data-hover="Велосипедом">
-                  <img class="ways__img ways__img--index ways__img--bike" src="icons/bicycle-svg.svg" alt="bike" width="17" height="16">
+                  <img class="ways__img ways__img--index ways__img--bike" src="icons/sprite.svg#bicycle-svg" alt="bike" width="17" height="16">
                   <span class="page__hidden">На мотоцикле</span>
                 </li>
                 <li class="ways__item ways__item--no-bg" data-hover="Пешком">
-                  <img class="ways__img ways__img--index ways__img--walk" src="icons/walk-svg.svg" alt="walk" width="17" height="16">
+                  <img class="ways__img ways__img--index ways__img--walk" src="icons/sprite.svg#walk-svg" alt="walk" width="17" height="16">
                   <span class="page__hidden">Пешком</span>
                 </li>
               </ul>
@@ -269,9 +293,12 @@
           </article>
           <article class="companions__people person">
             <picture>
-              <source media="(min-width: 1320px)" srcset="../img/man-photo-desktop@1x.jpg, ../img/man-photo-desktop@2x.jpg 2x">
-              <source media="(min-width: 768px)" srcset="../img/man-photo-desktop@1x.jpg, ../img/man-photo-desktop@2x.jpg 2x">
-              <img class="person__img page__img" src="../img/man-photo-mobile@1x.jpg" srcset="../img/man-photo-mobile@2x.jpg" alt="a bearded man in a hat and glasses">
+              <source type="image/webp" media="(min-width: 1320px)" srcset="img/man-photo-desktop@1x.webp 1x, img/man-photo-desktop@2x.webp 2x">
+              <source type="image/webp" media="(min-width: 768px)" srcset="img/man-photo-desktop@1x.webp 1x, img/man-photo-desktop@2x.webp 2x">
+              <source type="image/webp" srcset="img/man-photo-mobile@1x.webp 1x, img/man-photo-mobile@2x.webp 2x">
+              <source media="(min-width: 1320px)" srcset="img/man-photo-desktop@1x.jpg, img/man-photo-desktop@2x.jpg 2x">
+              <source media="(min-width: 768px)" srcset="img/man-photo-desktop@1x.jpg, img/man-photo-desktop@2x.jpg 2x">
+              <img class="person__img page__img" src="img/man-photo-mobile@1x.jpg" srcset="img/man-photo-mobile@2x.jpg" alt="a bearded man in a hat and glasses">
             </picture>
             <div class="person__bar progress-bar">
               <div class="progress-bar__outer">
@@ -300,19 +327,19 @@
               <p class="person__hashtags person__hashtags--2">#бургер #бар #футбол #концерт #крафт</p>
               <ul class="person__ways ways page__list">
                 <li class="ways__item ways__item--no-bg" data-hover="Авиаперелет">
-                  <img class="ways__img ways__img--index ways__img--plane" src="icons/plane-svg.svg" alt="plane" width="14" height="16">
+                  <img class="ways__img ways__img--index ways__img--plane" src="icons/sprite.svg#plane-svg" alt="plane" width="14" height="16">
                   <span class="page__hidden">По воздуху</span>
                 </li>
                 <li class="ways__item ways__item--no-bg" data-hover="Автотранспорт">
-                  <img class="ways__img ways__img--index ways__img--bus" src="icons/bus-svg.svg" alt="public transport" width="17" height="16">
+                  <img class="ways__img ways__img--index ways__img--bus" src="icons/sprite.svg#bus-svg" alt="public transport" width="17" height="16">
                   <span class="page__hidden">Общественным транспортом</span>
                 </li>
                 <li class="ways__item ways__item--no-bg" data-hover="Велосипедом">
-                  <img class="ways__img ways__img--index ways__img--bike" src="icons/bicycle-svg.svg" alt="bike" width="17" height="16">
+                  <img class="ways__img ways__img--index ways__img--bike" src="icons/sprite.svg#bicycle-svg" alt="bike" width="17" height="16">
                   <span class="page__hidden">На мотоцикле</span>
                 </li>
                 <li class="ways__item ways__item--no-bg" data-hover="Пешком">
-                  <img class="ways__img ways__img--index ways__img--walk" src="icons/walk-svg.svg" alt="walk" width="17" height="16">
+                  <img class="ways__img ways__img--index ways__img--walk" src="icons/sprite.svg#walk-svg" alt="walk" width="17" height="16">
                   <span class="page__hidden">Пешком</span>
                 </li>
               </ul>
@@ -439,7 +466,7 @@
         </div>
         <a class="footer__part copyright page__link" href="https://htmlacademy.ru/intensive/htmlcss">
           <span class="copyright__text">Разработано</span>
-          <img class="copyright__img" src="icons/html-academy.svg" alt="Html Academy">
+          <img class="copyright__img" src="icons/sprite.svg#html-academy" width="27" height="33" alt="Html Academy">
         </a>
       </div>
     </footer>
