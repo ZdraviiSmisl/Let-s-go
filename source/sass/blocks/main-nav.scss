@@ -117,12 +117,12 @@
 
 .nav-contacts__number::after {
   mask-image: url("../../icons/sprite.svg#menu-phone");
-  mask-size: 17px 15px;
+  mask-size: 59px;
 }
 
 .nav-contacts__mail::after {
   mask-image: url("../../icons/sprite.svg#menu-mail");
-  mask-size: 19px 13px;
+  mask-size: 52px;
 }
 
 .nav-contacts__number:hover::after,
@@ -224,18 +224,20 @@
   .nav-contacts__number::after {
     width: 24px;
     height: 22px;
-    mask-size: 24px 22px;
+    mask-size: 91px;
   }
 
   .nav-contacts__mail::after {
-    top: 5px;
+    top: 4px;
+    left: 78px;
     width: 28px;
     height: 19px;
-    mask-size: 28px 19px;
+    mask-size: 78px;
   }
 
   .main-nav .social__list {
     justify-content: start;
+    padding-left: 58px;
   }
 
   .main-nav .social__link--head {

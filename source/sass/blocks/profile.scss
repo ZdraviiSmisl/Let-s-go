@@ -30,6 +30,10 @@
   stroke-linecap: square;
 }
 
+.profile__bar .progress-bar__svg-mobile {
+  width: 100%;
+}
+
 .profile__bar .progress-bar__figure {
   top: 16px;
   font-size: 38px;
@@ -114,6 +118,15 @@
   }
 }
 
+.profile__field .back {
+  mask-position: center;
+  mask-size: 66px;
+}
+
+.profile__field .plane__back {
+  mask-position: 55% 50%;
+}
+
 .profile-legend,
 .hashtags__label {
   font-size: 16px;
@@ -149,7 +162,6 @@
   min-width: 270px;
   font-size: 16px;
   line-height: 18px;
-  letter-spacing: -1.5px;
   font-weight: 400;
   overflow: hidden;
   word-break: break-word;
@@ -281,7 +293,6 @@
     min-height: 94.5px;
     font-size: 20px;
     line-height: 22px;
-    letter-spacing: -2px;
   }
 
   .way {
@@ -310,26 +321,9 @@
     }
   }
 
-  .way .bus__back {
-    mask-position: 11px 10px;
-  }
-
-  .way__label {
-  }
-
-  .way__plane {
-  }
-
-  .way__pointer {
-  }
-
-  .way__car {
-  }
-
-  .way__bike {
-  }
-
-  .way__on-foot {
+  .profile__field .back {
+    mask-size: 90px;
+    mask-position: -23px 9px;
   }
 }
 
@@ -445,7 +439,6 @@
     min-width: 732px;
     font-size: 20px;
     line-height: 22px;
-    letter-spacing: -2px;
   }
 
   .way {

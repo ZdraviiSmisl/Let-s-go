@@ -55,7 +55,10 @@
   border-radius: 50%;
   min-width: 40px;
   min-height: 40px;
-  background-repeat: no-repeat;
+
+  &::before {
+
+  }
 
   &--phone {
     background-color: var(--special-orange);
@@ -70,15 +73,37 @@
     opacity: 0.3;
   }
 
-  &--phone::before {
+  &--phone::before,
+  &--mail::before {
     position: absolute;
     content: "";
-    top: 10px;
-    right: 12px;
-    width: 19px;
-    height: 19px;
+    top: 0;
+    right: 0;
+    width: 100%;
+    height: 100%;
     background-image: url("../../icons/sprite.svg#icon-call");
-    background-size: 19px 19px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    z-index: 6;
+  }
+
+  &--phone::before {
+    width: 146%;
+  }
+
+  .intro__list &--phone::before {
+    right: -16px;
+    width: 180%;
+  }
+
+  .intro__list &--mail::before {
+    right: -10px;
+    width: 150%;
+  }
+
+  &--mail::before {
+    background-image: url("../../icons/sprite.svg#mail-icon");
   }
 
   &--mail {
@@ -89,16 +114,6 @@
     background-color: var(--extra-yellow);
   }
 
-  &--mail::before {
-    position: absolute;
-    right: 11px;
-    top: 12px;
-    content: "";
-    width: 17px;
-    height: 14px;
-    background-image: url("../../icons/sprite.svg#mail-icon");
-    background-size: 17px 14px;
-  }
 }
 
 .intro__reviews {
@@ -138,9 +153,6 @@
     @media (min-resolution: 2dppx) {
       background-image: url("../../img/traveller-illustration-tablet@2x.png"),
       url("../../img/globe-back-tablet.jpg@2x.jpg");
-      /*
-      background-size: 744px 1536px;
-      */
     }
 
     &::before {

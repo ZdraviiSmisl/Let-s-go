@@ -93,7 +93,7 @@
   &::placeholder {
     font-size: 16px;
     line-height: 22px;
-    letter-spacing: -1.2px;
+    letter-spacing: 0;
   }
 
   &:first-of-type {
@@ -244,7 +244,6 @@
     &::placeholder {
       font-size: 20px;
       line-height: 23px;
-      letter-spacing: -1.5px;
     }
 
     &:first-of-type {
@@ -253,12 +252,11 @@
 
     &:last-of-type {
       margin-bottom: 44px;
-      padding: 15px 40px 94px 22px;
+      padding: 15px 40px 87px 22px;
     }
 
     &:last-of-type::placeholder {
       word-spacing: -1px;
-      letter-spacing: -1.8px;
     }
   }
 
@@ -343,11 +341,15 @@
     min-width: 730px;
 
     &:first-of-type {
-      padding: 21px 0 88px 23px;
+      padding: 21px 0 80px 23px;
     }
 
     &:last-of-type {
       margin-bottom: 51px;
+    }
+
+    .plan__input-group:last-of-type &::placeholder {
+      letter-spacing: 0.15px;
     }
   }
 

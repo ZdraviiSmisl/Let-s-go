@@ -126,10 +126,10 @@
     right: 48px;
     width: 11px;
     height: 12px;
-    background-image: url("../../icons/person-icon.svg");
+    background-image: url("../../icons/sprite.svg#person-icon");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 11px 12px;
+    background-size: 48px;
   }
 
   &--czech::before {
@@ -293,7 +293,7 @@
       left: -30px;
       width: 20px;
       height: 20px;
-      background-size: 20px 20px;
+      background-size: 83px;
     }
   }
 

@@ -306,12 +306,12 @@
       position: absolute;
       width: 26px;
       height: 26px;
-      top: -0.1em;
+      top: -0.2em;
       left: 21px;
       background-image: url("../../icons/sprite.svg#icon-businessman");
-      background-size: 26px 26px;
+      background-size: cover;
       background-repeat: no-repeat;
-      background-position: center center;
+      background-position: center;
       z-index: 5;
     }
 
@@ -451,7 +451,6 @@
       height: 28px;
       top: -2px;
       left: 91px;
-      background-size: 28px 28px;
     }
 
     &::after {
