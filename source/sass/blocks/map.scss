@@ -7,7 +7,7 @@
 .map__wrap {
   width: 100%;
 
-  &:before {
+  &::before {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -28,8 +28,6 @@
 }
 
 @media (min-width: $tablet-width) {
-  .map {
-  }
 
   .map__frame {
     height: 581px;
@@ -37,7 +35,8 @@
   }
 }
 
-@media(min-width: $desktop-width) {
+@media (min-width: $desktop-width) {
+
   .map {
     margin-bottom: -138px;
   }

@@ -70,7 +70,7 @@
   }
 
   &::before {
-    bottom: 202px
+    bottom: 202px;
   }
 }
 
@@ -97,7 +97,7 @@
   z-index: 10;
 
   &:hover {
-    border: 1px solid var(--new-gray)
+    border: 1px solid var(--new-gray);
   }
 
   &:first-of-type {
@@ -350,7 +350,7 @@
 
   &:hover {
     position: relative;
-    box-shadow: 0 0 0 1px var(--new-gray)
+    box-shadow: 0 0 0 1px var(--new-gray);
   }
 
   &--selected,
@@ -423,6 +423,7 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .itinerary {
     margin-bottom: 49px;
     padding: 0;
@@ -477,7 +478,7 @@
     }
 
     &--visit::after {
-      top: 82px
+      top: 82px;
     }
   }
 
@@ -553,7 +554,7 @@
 
     &:last-of-type {
       top: 463px;
-      right: 222px
+      right: 222px;
     }
   }
 
@@ -708,6 +709,11 @@
       align-self: center;
       letter-spacing: 1px;
     }
+
+    &--second::before {
+      top: 37px;
+      right: 39px;
+    }
   }
 
   .plan__back {
@@ -743,17 +749,10 @@
       left: 22px;
     }
   }
-
-  .plan__next {
-
-    &--second::before {
-      top: 37px;
-      right: 39px;
-    }
-  }
 }
 
 @media (min-width: $desktop-width) {
+
   .itinerary {
     margin-bottom: 44px;
     border-radius: 60px;
@@ -814,7 +813,7 @@
 
     &:last-of-type::before {
       top: 528px;
-      right: 377px
+      right: 377px;
     }
   }
 
@@ -866,6 +865,7 @@
   }
 
   .itinerary__input {
+
     &:checked ~ .choose__country {
       top: 207px;
       left: 428px;

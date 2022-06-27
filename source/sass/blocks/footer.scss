@@ -91,10 +91,11 @@
 }
 
 .copyright__text {
-  color: var(--origin-gray)
+  color: var(--origin-gray);
 }
 
 @media (min-width: $tablet-width) {
+
   .footer {
     border-radius: 69px 69px 0 0;
     font-size: 20px;
@@ -143,6 +144,7 @@
 }
 
 @media (min-width: $desktop-width) {
+
   .footer {
     border-radius: 55px 55px 0 0;
   }

@@ -126,7 +126,6 @@
 
   &--first {
     background-color: var(--light-pink);
-
   }
 
   &--first:hover {
@@ -164,8 +163,7 @@
   color: var(--origin-gray);
 }
 
-.personal-card__hashtags {;
-  display: -webkit-box;
+.personal-card__hashtags {
   grid-area: 3/1/4/2;
   padding-left: 7px;
   max-height: 35px;
@@ -231,6 +229,9 @@
 
 .personal-card__transport {
   position: relative;
+  margin: 0;
+  display: inline-block;
+  padding: 0 0 17px 9px;
 
   &::before {
     content: "";
@@ -292,12 +293,6 @@
 
 .personal-card__block--4 .countries__img {
   left: -40px;
-}
-
-.personal-card__transport {
-  margin: 0;
-  display: inline-block;
-  padding: 0 0 17px 9px;
 }
 
 .ways {
@@ -473,7 +468,7 @@
     height: 18px;
     background-image: url("../../icons/sprite.svg#show-more");
     background-repeat: no-repeat;
-    background-position: center center;;
+    background-position: center center;
     background-size: 18px 18px;
   }
 
@@ -658,8 +653,6 @@
   .like-2 {
     padding-right: 25px;
   }
-  .personal-card__link {
-  }
 
   .personal-card__photo {
     position: static;
@@ -811,7 +804,7 @@
     top: 32px;
     left: -13px;
     width: 70px;
-    height: 70px
+    height: 70px;
   }
 
   .progress-bar__svg-tablet {
@@ -875,11 +868,6 @@
     }
   }
 
-  .hitchhikers__pagination {
-
-
-  }
-
   .pagination {
     gap: 5px;
     padding: 42px 0 41px 50px;
@@ -915,9 +903,6 @@
     }
   }
 
-  .pagination__item {
-  }
-
   .pagination__link {
     position: relative;
     display: inline-flex;
@@ -949,13 +934,11 @@
 }
 
 @media (min-width: $desktop-width) {
+
   .hitchhikers {
     order: 1;
     grid-area: 3/1/4/2;
     margin-left: 60px;
-  }
-
-  .hitchhikers__wrap {
   }
 
   .hitchhikers__article {
@@ -968,9 +951,6 @@
     &:last-of-type {
       margin-bottom: 65px;
     }
-  }
-
-  .personal-card {
   }
 
   .personal-card__title {
@@ -1039,15 +1019,6 @@
     align-self: self-start;
     min-width: 226px;
     max-height: initial;
-
-    /*&--2 {
-      padding-right: 94px;
-    }
-
-    &--4 {
-        padding-top: 20px;
-         padding-bottom: 45px;
-    }*/
   }
 
   .personal-card__block {
@@ -1107,6 +1078,7 @@
   }
 
   .page__list {
+
     & .pagination__item:first-of-type {
       padding-left: 607px;
     }
@@ -1124,9 +1096,6 @@
     &--walk {
       padding-top: 5px;
     }
-  }
-
-  .transport__item {
   }
 
   .personal-card .progress-bar {

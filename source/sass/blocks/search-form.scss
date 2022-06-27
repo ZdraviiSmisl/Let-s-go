@@ -181,21 +181,13 @@
   height: 1.1em;
   overflow: hidden;
   border-radius: 0.2em;
-  background-color: white;
+  background-color: var(--basic-white);
   background-repeat: no-repeat;
   background-position: 50% 50%;
 }
 
 .check__input:checked + .check__box {
   background-image: url("../../icons/sprite.svg#check-mark");
-}
-
-.check:hover {
-  opacity: 0.6;
-}
-
-.check:active {
-  opacity: 0.3;
 }
 
 .transport__label {
@@ -212,7 +204,6 @@
   &:active {
     background-color: var(--super-blue);
   }
-;
 }
 
 .back {
@@ -263,7 +254,7 @@
   padding: 0 0 23px 0;
 }
 
-.level__range:before {
+.level__range::before {
   content: "";
   position: absolute;
   top: 30%;
@@ -377,10 +368,11 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .search {
     margin-bottom: 41px;
-
   }
+
   .search__wrap {
     font-size: 20px;
   }
@@ -433,6 +425,7 @@
     padding-bottom: 0;
     padding-top: 0;
   }
+
   .level__wrap,
   .level-btn:checked ~ .level__wrap {
     flex-flow: row-reverse wrap;
@@ -522,6 +515,7 @@
   }
 
   .level__range {
+
     &::before {
       left: 63px;
       width: 21px;
@@ -584,6 +578,7 @@
 }
 
 @media (min-width: $desktop-width) {
+
   .search {
     order: 2;
     grid-area: 3/2/4/3;
@@ -636,6 +631,7 @@
   .food-btn:checked ~ .food__legend {
     padding-bottom: 25px;
   }
+
   .level-btn:checked ~ .level__legend,
   .transport-btn:checked ~ .transport__legend {
     padding-bottom: 23px;

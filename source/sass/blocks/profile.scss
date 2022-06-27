@@ -38,10 +38,10 @@
   top: 16px;
   font-size: 38px;
   line-height: 38px;
-  color: var(--special-blue)
+  color: var(--special-blue);
 }
 
-.profile__bar .progress-bar__figure:before {
+.profile__bar .progress-bar__figure::before {
   top: 40px;
   left: 76%;
   width: 51px;
@@ -143,7 +143,6 @@
 
 .hashtags {
   border: 0;
-  border: none;
 }
 
 .hashtags__label {
@@ -184,7 +183,7 @@
   }
 
   &:focus::placeholder {
-    color: var(--origin-gray)
+    color: var(--origin-gray);
   }
 }
 
@@ -196,6 +195,7 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .profile__wrap {
     grid-template-columns: repeat(auto-fit, minmax(100px, auto));
     gap: 0;
@@ -205,9 +205,6 @@
   .profile__bar {
     top: 49px;
     left: -29px;
-  }
-
-  .bar-field {
   }
 
   .profile__pic {
@@ -232,9 +229,6 @@
     line-height: 18px;
     letter-spacing: 2.2px;
     border-radius: 10px;
-  }
-
-  .profile__name-mobile {
   }
 
   .profile__name-desktop {
@@ -266,17 +260,11 @@
   }
 
   .profile-legend {
-    letter-spacing: 2px;
-  }
-
-  .hashtags {
-  }
-
-  .profile-legend {
     position: absolute;
     font-size: 20px;
     line-height: 20px;
     font-weight: 500;
+    letter-spacing: 2px;
   }
 
   .hashtags__label {
@@ -457,5 +445,3 @@
     padding: 0 19px;
   }
 }
-
-

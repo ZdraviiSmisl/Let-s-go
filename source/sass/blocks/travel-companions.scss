@@ -178,7 +178,7 @@
   min-width: 25px;
   font-size: 14px;
   line-height: 14px;
-  color: var(--basic-white)
+  color: var(--basic-white);
 }
 
 .person__wrap {
@@ -226,6 +226,7 @@
     left: 38px;
     top: -71px;
   }
+
   .person:nth-of-type(2) &:nth-of-type(2):hover::before {
     right: -100%;
     top: -253%;
@@ -297,6 +298,14 @@
   max-width: 130px;
 }
 
+.person__ways .ways__img--plane {
+  left: 5px;
+}
+
+.person__ways .ways__img--bus {
+  left: 2px;
+}
+
 .person:first-of-type .ways__img:not(.ways__img--plane),
 .person:nth-of-type(2) :is(.ways__img--bike) {
   opacity: 0.15;
@@ -327,6 +336,7 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .companions {
     border-radius: 0 0 60px 60px;
   }
@@ -463,6 +473,10 @@
     }
   }
 
+  .person__ways .ways__img--plane {
+    left: -28px;
+  }
+
   .companions__show-all {
     margin: 0 auto;
     grid-area: 3/1/4/3;
@@ -479,6 +493,7 @@
 }
 
 @media (min-width: $desktop-width) {
+
   .companions__wrap {
     position: relative;
     grid-row: 0;
@@ -517,9 +532,6 @@
     letter-spacing: 1px;
   }
 
-  .companions__people {
-  }
-
   .person {
     padding-top: 111px;
 
@@ -547,15 +559,6 @@
     top: 131px;
   }
 
-  .person__wrap {
-  }
-
-  .person__flags-list {
-  }
-
-  .person__flag-item {
-  }
-
   .person__name {
 
     &::before {
@@ -577,9 +580,6 @@
 
   .person .person__ways {
     margin: 0 auto;
-  }
-
-  .person__way-item {
   }
 
   .companions__show-all {

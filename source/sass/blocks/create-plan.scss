@@ -30,7 +30,7 @@
     background-color: var(--special-blue);
     border-radius: 50%;
     box-shadow: 20px 0 0 0 var(--special-blue-30),
-    41px 0 0 0 var(--special-blue-30);
+      41px 0 0 0 var(--special-blue-30);
   }
 }
 
@@ -39,6 +39,7 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .new-plan {
     margin-bottom: -61px;
   }
@@ -63,13 +64,13 @@
       background-color: var(--special-blue);
       border-radius: 50%;
       box-shadow: 34px 0 0 0 var(--special-blue-30),
-      70px 0 0 0 var(--special-blue-30);
+        70px 0 0 0 var(--special-blue-30);
     }
   }
-
 }
 
 @media (min-width: $desktop-width) {
+
   .new-plan {
     margin-bottom: -100px;
     border-radius: 57px 65px 0 0;

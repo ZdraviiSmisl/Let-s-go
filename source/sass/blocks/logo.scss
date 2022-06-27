@@ -3,6 +3,7 @@
 }
 
 .logo__wrap {
+
   &--tablet {
     display: none;
   }
@@ -13,7 +14,9 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .logo__wrap {
+
     &--mobile {
       display: none;
     }
@@ -29,7 +32,9 @@
 }
 
 @media (min-width: $desktop-width) {
+
   .logo__wrap {
+
     &--mobile {
       display: none;
     }
@@ -43,5 +48,3 @@
     }
   }
 }
-
-

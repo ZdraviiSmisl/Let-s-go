@@ -19,6 +19,3 @@ area.addEventListener("input", (e) => {
     textError.classList.remove("plan__error-text--show");
   }
 })
-
-
-

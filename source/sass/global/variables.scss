@@ -7,7 +7,6 @@ $not-desktop: 1439px;
 :root {
   --light-pink: hsla(0, 56%, 95%, 1);
   --slightly-pink: hsla(0, 73%, 91%, 1);
-  --trasparent: hsla(50, 33%, 25%, 1.00);
   --basic-white: hsla(0, 0%, 100%, 1);
   --white: hsla(0, 0%, 95%, 1);
   --basic-pink: hsla(344, 68%, 49%, 1);
@@ -22,7 +21,7 @@ $not-desktop: 1439px;
   --new-blue: hsla(229, 48%, 18%, 1);
   --black-blue: hsla(229, 46%, 18%, 1);
   --super-blue: hsla(228, 35%, 92%, 1);
-  --sky-blue: hsla(225, 35%, 87%, 1);;
+  --sky-blue: hsla(225, 35%, 87%, 1);
   --basic-blue: hsla(228, 41%, 15%, 1);
   --dark-blue: hsla(228, 50%, 14%, 1);
   --origin-blue: hsla(229, 49%, 15%, 1);
@@ -40,7 +39,7 @@ $not-desktop: 1439px;
   --origin-gray: hsla(0, 0%, 27%, 1);
   --origin-gray-transparent: hsla(0, 0%, 27%, 0.8);
   --white-gray: hsla(0, 0%, 77%, 1);
-  --extra-gray: hsla(0, 0%, 85%, 1);;
+  --extra-gray: hsla(0, 0%, 85%, 1);
   --next-gray: hsla(0, 0%, 80%, 1);
   --white-yellow: hsla(47, 100%, 65%, 1);
   --one-more-yellow: hsl(47, 89%, 56%, 1);
@@ -54,7 +53,7 @@ $not-desktop: 1439px;
   --one-more-blue: hsla(227, 37%, 88%, 1);
   --one-blue-trasnparent: hsla(227, 37%, 88%, 0.25);
   --basic-gray: hsla(227, 16%, 82%, 1);
-    --slightly-blue: hsla(229, 24%, 87%, 1);
+  --slightly-blue: hsla(229, 24%, 87%, 1);
   --slightly-gray: hsla(0, 0%, 60%, 1);
   --extrim-gray: hsla(0, 0%, 90%, 1);
   --new-gray: hsla(228, 16%, 64%, 1);
@@ -71,6 +70,6 @@ $not-desktop: 1439px;
   }
 
   @media (min-width: $desktop-width) {
-    --header-min-height: 90px
+    --header-min-height: 90px;
   }
 }
