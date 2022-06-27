@@ -21,7 +21,7 @@
 
 .tariffs__add {
   margin: 0;
-  padding: 0 109px 55px 26px;;
+  padding: 0 109px 55px 26px;
   font-size: 24px;
   line-height: 24px;
   font-weight: 700;
@@ -229,6 +229,7 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .tariffs {
     margin-bottom: -50px;
     font-size: 28px;
@@ -239,7 +240,7 @@
   .tariffs__wrap {
     padding-bottom: 102px;
     background-image: url("../../img/rates@1x.png"),
-    url("../../img/price-back-tablet@1x.png");
+      url("../../img/price-back-tablet@1x.png");
     background-position: 542px 441px, 490px 182px;
     background-size: 100px, 198px;
   }
@@ -295,7 +296,7 @@
   }
 
   .tariffs-others {
-    position: relative;;
+    position: relative;
     padding: 0 0 106px 91px;
     letter-spacing: 0.8px;
     font-size: 20px;
@@ -390,6 +391,7 @@
 }
 
 @media (min-width: $desktop-width) {
+
   .tariffs {
     border-radius: 0 0 60px 60px;
   }
@@ -398,13 +400,13 @@
     padding-top: 31px;
     padding-bottom: 188px;
     background-image: url("../../img/rates-desktop@1x.png"),
-    url("../../img/price-back-desktop@1x.png");
+      url("../../img/price-back-desktop@1x.png");
     background-size: 198px, 446px;
     background-position: 1049px 316px, 690px 264px;
   }
 
   .tariffs__add {
-    padding: 101px 0 154px 422px
+    padding: 101px 0 154px 422px;
   }
 
   .tariffs__list {
@@ -478,7 +480,6 @@
   .tariffs-modal__tittle {
     margin-bottom: 58px;
     padding-top: 0;
-
   }
 
   .tariffs-modal__text {

@@ -46,7 +46,6 @@
     background-color: var(--dark-blue);
     border-radius: 50%;
   }
-
 }
 
 .info__route {
@@ -83,10 +82,11 @@
 
   &:active {
     opacity: 0.3;
-  };
+  }
 }
 
 @media (min-width: $tablet-width) {
+
   .info {
     margin-bottom: -50px;
     border-radius: 0 0 55px 55px;
@@ -135,6 +135,7 @@
 }
 
 @media (min-width: $desktop-width) {
+
   .info {
     border-radius: 0 0 59px 62px;
   }

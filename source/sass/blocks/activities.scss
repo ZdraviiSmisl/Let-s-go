@@ -20,6 +20,7 @@
 }
 
 .plan__description {
+
   &--about {
     margin: 0;
     padding: 0 8px 19px 0;
@@ -79,7 +80,7 @@
   border-radius: 4px;
 
   &:hover {
-    border: 1px solid var(--new-gray)
+    border: 1px solid var(--new-gray);
   }
 
   &:active {
@@ -149,12 +150,12 @@
   color: var(--special-blue);
   text-transform: uppercase;
   background-color: var(--white-yellow);
-  border: none;
   border: 0;
   border-radius: 20px;
 }
 
 .plan__back {
+
   &--second {
     padding-left: 58px;
     letter-spacing: 0.5px;
@@ -162,6 +163,7 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .activities {
     background-image: url("../../img/line-country.png");
     background-size: 14px 274px;
@@ -193,7 +195,7 @@
     }
 
     &--about::after {
-      top: 82px
+      top: 82px;
     }
   }
 
@@ -292,13 +294,14 @@
     }
 
     &--second::before {
-      top:5px;
+      top: 5px;
       left: 22px;
     }
   }
 }
 
 @media (min-width: $desktop-width) {
+
   .activities {
     background-position: 927px 364px;
   }

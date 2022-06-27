@@ -167,6 +167,7 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .directions {
     margin-bottom: -50px;
     border-radius: 0 0 60px 60px;
@@ -314,6 +315,7 @@
 }
 
 @media (min-width: $desktop-width) {
+
   .directions {
     border-radius: 0 0 56px 56px;
   }
@@ -343,6 +345,7 @@
   }
 
   .card__photo {
+
     &--czech {
       margin: 0;
     }
@@ -370,6 +373,7 @@
 
   .card__tittle {
     padding: 23px 0 4px 30px;
+
     &::before {
       top: 23px;
       left: 339px;

@@ -34,7 +34,7 @@
     min-width: 172px;
     height: 5px;
     border-radius: 4px;
-    background-color: var(--special-orange)
+    background-color: var(--special-orange);
   }
 
   &--dir::before {
@@ -47,6 +47,7 @@
 }
 
 @media (min-width: $tablet-width) {
+
   .catalog-head {
     margin-bottom: -47px;
     border-radius: 0 0 60px 60px;
@@ -62,8 +63,6 @@
     padding-top: 108px;
     padding-bottom: 90px;
   }
-
-
 
   .catalog-head__title {
     padding-left: 37px;
@@ -103,16 +102,16 @@
     &:active {
       opacity: 0.3;
     }
-
   }
 
   .catalog__svg-back {
     padding-left: 27px;
-    fill: currentColor;
+    fill: currentcolor;
   }
 }
 
 @media (min-width: $desktop-width) {
+
   .catalog-head {
     grid-column: 1/3;
 

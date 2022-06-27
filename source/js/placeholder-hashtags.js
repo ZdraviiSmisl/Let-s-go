@@ -10,6 +10,3 @@ formHash.addEventListener("focus", (e) => {
 aria.addEventListener("blur", () => {
   aria.value = "#бургер #бар #футбол #концерт #крафт";
 })
-
-
-
