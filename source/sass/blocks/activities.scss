@@ -52,18 +52,20 @@
   &::before {
     content: "";
     position: absolute;
-    right: 8px;
+    right: 10px;
     width: 35px;
     height: 24px;
-    background-image: url("../../img/bosnia-and-herzegovina.png");
+    background-image: url("../../icons/sprite.svg#bosnia-and-herzegovina1");
     background-repeat: no-repeat;
+    background-size: 99px;
+    background-position: center;
     box-shadow: -26px 0 9px 4px var(--basic-white);
     border-radius: 4px;
   }
 
   .plan__input-group:nth-of-type(2) &::before {
     top: -5px;
-    background-image: url("../../img/czech.png");
+    background-image: url("../../icons/sprite.svg#czech1");
   }
 }
 
@@ -223,14 +225,14 @@
       right: 32px;
       width: 70px;
       height: 47px;
-      background-size: 70px 47px;
-      background-image: url("../../img/bosnia-and-Herzegovina2x.png");
+      background-size: cover;
+      background-image: url("../../icons/sprite.svg#bosnia-and-herzegovina2");
       border-radius: 7px;
       box-shadow: none;
     }
 
     .plan__input-group:nth-of-type(2) &::before {
-      background-image: url("../../img/czech2x.png");
+      background-image: url("../../icons/sprite.svg#czech2");
     }
 
     &:first-of-type {

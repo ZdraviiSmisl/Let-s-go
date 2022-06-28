@@ -212,6 +212,7 @@
   left: -42px;
   width: 26px;
   height: 18px;
+  object-fit: cover;
 }
 
 .countries .countries__item {
@@ -469,7 +470,7 @@
     background-image: url("../../icons/sprite.svg#show-more");
     background-repeat: no-repeat;
     background-position: center center;
-    background-size: 18px 18px;
+    background-size: cover;
   }
 
   &:hover::before {
@@ -857,6 +858,13 @@
     padding: 0 0 52px 41px;
     font-size: 20px;
     line-height: 20px;
+
+    &::before {
+      top: -0.2em;
+      left: 247px;
+      width: 31px;
+      height: 28px;
+    }
   }
 
   .hitchhikers__bottom {
@@ -1112,6 +1120,10 @@
 
   .hitchhikers__more {
     padding: 0 21px 71px 0;
+
+    &::before {
+      left: 343px;
+    }
   }
 
   .hitchhikers__pagination {

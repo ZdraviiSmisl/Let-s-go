@@ -168,7 +168,7 @@
   height: 40px;
   background-repeat: no-repeat;
   background-position: 50% 50%;
-  background-size: 35px 24px;
+  background-size: 99px;
   border-radius: 4px;
   border: 1px solid var(--basic-gray);
 
@@ -193,16 +193,18 @@
     width: 21px;
     height: 21px;
     background-color: var(--very-light-blue);
+    background-position: center;
+    background-size: cover;
     border-radius: 50%;
     cursor: pointer;
   }
 
   &:first-of-type {
-    background-image: url("../../img/bosnia-and-herzegovina.png");
+    background-image: url("../../icons/sprite.svg#bosnia-and-herzegovina1");
   }
 
   &:nth-of-type(2) {
-    background-image: url("../../img/czech.png");
+    background-image: url("../../icons/sprite.svg#czech1");
   }
 }
 
@@ -466,7 +468,8 @@
   }
 
   .itinerary__flag::after {
-    top: 109px;
+    top: 98px;
+    right: -45px;
   }
 
   .plan__description {
@@ -559,31 +562,26 @@
   }
 
   .itinerary__flag {
+    margin-bottom: 28px;
+    margin-right: 43px;
     grid-column: 2/3;
     justify-self: self-end;
-    align-self: self-start;
-    padding-right: 84px;
-    width: 65px;
-    height: 70px;
-    background-size: 70px 47px;
+    align-self: self-end;
+    width: 70px;
+    height: 47px;
+    background-size: cover;
     border: none;
 
     &:first-of-type {
-      background-image: url("../../img/bosnia-and-Herzegovina2x.png");
+      background-image: url("../../icons/sprite.svg#bosnia-and-herzegovina2");
     }
 
     &:last-of-type {
-      background-image: url("../../img/czech2x.png");
+      background-image: url("../../icons/sprite.svg#czech2");
     }
 
     &::before {
-      top: 18px;
-      right: -6px;
-      width: 24px;
-      height: 24px;
-      background-size: 26px 26px;
-      background-color: var(--basic-white);
-      opacity: 0.2;
+      display: none;
     }
   }
 
@@ -833,16 +831,17 @@
   }
 
   .itinerary__flag {
+    margin-bottom: 13px;
     justify-self: self-start;
-    padding-right: 10px;
+    align-self: center;
 
     &::before {
       display: none;
     }
 
     &::after {
-      top: 109px;
-      left: 159px;
+      top: 97px;
+      left: 160px;
     }
   }
 
